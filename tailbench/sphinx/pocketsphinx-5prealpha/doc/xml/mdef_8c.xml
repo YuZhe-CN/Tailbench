@@ -22,6 +22,9 @@
       <node id="1127">
         <label>sphinxbase/ckd_alloc.h</label>
       </node>
+      <node id="1124">
+        <label>string.h</label>
+      </node>
       <node id="1122">
         <label>src/libpocketsphinx/mdef.c</label>
         <link refid="mdef_8c"/>
@@ -47,9 +50,6 @@
         </childnode>
         <childnode refid="1130" relation="include">
         </childnode>
-      </node>
-      <node id="1124">
-        <label>string.h</label>
       </node>
       <node id="1128">
         <label>sphinxbase/err.h</label>

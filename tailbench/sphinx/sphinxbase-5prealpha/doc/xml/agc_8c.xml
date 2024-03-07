@@ -7,34 +7,18 @@
     <includes refid="ckd__alloc_8h" local="yes">sphinxbase/ckd_alloc.h</includes>
     <includes refid="agc_8h" local="yes">sphinxbase/agc.h</includes>
     <incdepgraph>
-      <node id="1528">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
-      </node>
-      <node id="1524">
-        <label>stdarg.h</label>
-      </node>
-      <node id="1521">
-        <label>src/libsphinxbase/feat/agc.c</label>
-        <link refid="agc_8c"/>
-        <childnode refid="1522" relation="include">
+      <node id="1536">
+        <label>sphinxbase/fixpoint.h</label>
+        <link refid="fixpoint_8h_source"/>
+        <childnode refid="1537" relation="include">
         </childnode>
-        <childnode refid="1523" relation="include">
-        </childnode>
-        <childnode refid="1529" relation="include">
-        </childnode>
-        <childnode refid="1533" relation="include">
-        </childnode>
-      </node>
-      <node id="1533">
-        <label>sphinxbase/agc.h</label>
-        <link refid="agc_8h"/>
         <childnode refid="1528" relation="include">
         </childnode>
         <childnode refid="1531" relation="include">
         </childnode>
-        <childnode refid="1534" relation="include">
-        </childnode>
+      </node>
+      <node id="1524">
+        <label>stdarg.h</label>
       </node>
       <node id="1526">
         <label>stdlib.h</label>
@@ -63,26 +47,15 @@
         <childnode refid="1531" relation="include">
         </childnode>
       </node>
+      <node id="1528">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
+      </node>
       <node id="1537">
         <label>limits.h</label>
       </node>
-      <node id="1535">
-        <label>sphinxbase/cmd_ln.h</label>
-        <link refid="cmd__ln_8h"/>
-        <childnode refid="1525" relation="include">
-        </childnode>
-        <childnode refid="1524" relation="include">
-        </childnode>
-        <childnode refid="1528" relation="include">
-        </childnode>
-        <childnode refid="1531" relation="include">
-        </childnode>
-      </node>
       <node id="1532">
         <label>sphinx_config.h</label>
-      </node>
-      <node id="1522">
-        <label>string.h</label>
       </node>
       <node id="1523">
         <label>sphinxbase/err.h</label>
@@ -98,6 +71,43 @@
         <childnode refid="1528" relation="include">
         </childnode>
       </node>
+      <node id="1522">
+        <label>string.h</label>
+      </node>
+      <node id="1521">
+        <label>src/libsphinxbase/feat/agc.c</label>
+        <link refid="agc_8c"/>
+        <childnode refid="1522" relation="include">
+        </childnode>
+        <childnode refid="1523" relation="include">
+        </childnode>
+        <childnode refid="1529" relation="include">
+        </childnode>
+        <childnode refid="1533" relation="include">
+        </childnode>
+      </node>
+      <node id="1535">
+        <label>sphinxbase/cmd_ln.h</label>
+        <link refid="cmd__ln_8h"/>
+        <childnode refid="1525" relation="include">
+        </childnode>
+        <childnode refid="1524" relation="include">
+        </childnode>
+        <childnode refid="1528" relation="include">
+        </childnode>
+        <childnode refid="1531" relation="include">
+        </childnode>
+      </node>
+      <node id="1533">
+        <label>sphinxbase/agc.h</label>
+        <link refid="agc_8h"/>
+        <childnode refid="1528" relation="include">
+        </childnode>
+        <childnode refid="1531" relation="include">
+        </childnode>
+        <childnode refid="1534" relation="include">
+        </childnode>
+      </node>
       <node id="1534">
         <label>sphinxbase/fe.h</label>
         <link refid="fe_8h_source"/>
@@ -110,16 +120,6 @@
       </node>
       <node id="1525">
         <label>stdio.h</label>
-      </node>
-      <node id="1536">
-        <label>sphinxbase/fixpoint.h</label>
-        <link refid="fixpoint_8h_source"/>
-        <childnode refid="1537" relation="include">
-        </childnode>
-        <childnode refid="1528" relation="include">
-        </childnode>
-        <childnode refid="1531" relation="include">
-        </childnode>
       </node>
     </incdepgraph>
       <sectiondef kind="var">

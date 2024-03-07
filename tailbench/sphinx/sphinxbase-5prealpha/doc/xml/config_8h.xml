@@ -220,7 +220,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/config.h" line="90" column="9" bodyfile="include/config.h" bodystart="90" bodyend="-1"/>
+        <location file="include/config.h" line="89" column="9" bodyfile="include/config.h" bodystart="89" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1a1d1d2d7f8d2f95b376954d649ab03233" prot="public" static="no">
         <name>PACKAGE_BUGREPORT</name>
@@ -231,7 +231,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/config.h" line="93" column="9" bodyfile="include/config.h" bodystart="93" bodyend="-1"/>
+        <location file="include/config.h" line="92" column="9" bodyfile="include/config.h" bodystart="92" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1a1c0439e4355794c09b64274849eb0279" prot="public" static="no">
         <name>PACKAGE_NAME</name>
@@ -242,7 +242,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/config.h" line="96" column="9" bodyfile="include/config.h" bodystart="96" bodyend="-1"/>
+        <location file="include/config.h" line="95" column="9" bodyfile="include/config.h" bodystart="95" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1ac73e6f903c16eca7710f92e36e1c6fbf" prot="public" static="no">
         <name>PACKAGE_STRING</name>
@@ -253,7 +253,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/config.h" line="99" column="9" bodyfile="include/config.h" bodystart="99" bodyend="-1"/>
+        <location file="include/config.h" line="98" column="9" bodyfile="include/config.h" bodystart="98" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1af415af6bfede0e8d5453708afe68651c" prot="public" static="no">
         <name>PACKAGE_TARNAME</name>
@@ -264,7 +264,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/config.h" line="102" column="9" bodyfile="include/config.h" bodystart="102" bodyend="-1"/>
+        <location file="include/config.h" line="101" column="9" bodyfile="include/config.h" bodystart="101" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1a5c93853116d5a50307b6744f147840aa" prot="public" static="no">
         <name>PACKAGE_URL</name>
@@ -275,7 +275,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/config.h" line="105" column="9" bodyfile="include/config.h" bodystart="105" bodyend="-1"/>
+        <location file="include/config.h" line="104" column="9" bodyfile="include/config.h" bodystart="104" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1aa326a05d5e30f9e9a4bb0b4469d5d0c0" prot="public" static="no">
         <name>PACKAGE_VERSION</name>
@@ -286,7 +286,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/config.h" line="108" column="9" bodyfile="include/config.h" bodystart="108" bodyend="-1"/>
+        <location file="include/config.h" line="107" column="9" bodyfile="include/config.h" bodystart="107" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1adbe5dcee9c146b338794974137c55e70" prot="public" static="no">
         <name>RETSIGTYPE</name>
@@ -297,7 +297,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/config.h" line="111" column="9" bodyfile="include/config.h" bodystart="111" bodyend="-1"/>
+        <location file="include/config.h" line="110" column="9" bodyfile="include/config.h" bodystart="110" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1a22aece5d034fd9040a3d01c3797fdfe7" prot="public" static="no">
         <name>SIZEOF_LONG</name>
@@ -308,7 +308,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/config.h" line="114" column="9" bodyfile="include/config.h" bodystart="114" bodyend="-1"/>
+        <location file="include/config.h" line="113" column="9" bodyfile="include/config.h" bodystart="113" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1acd1ddb89a6f7f17d1c152499173c3eef" prot="public" static="no">
         <name>SIZEOF_LONG_LONG</name>
@@ -319,7 +319,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/config.h" line="117" column="9" bodyfile="include/config.h" bodystart="117" bodyend="-1"/>
+        <location file="include/config.h" line="116" column="9" bodyfile="include/config.h" bodystart="116" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1a550e5c272cc3cf3814651721167dcd23" prot="public" static="no">
         <name>STDC_HEADERS</name>
@@ -330,7 +330,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/config.h" line="123" column="9" bodyfile="include/config.h" bodystart="123" bodyend="-1"/>
+        <location file="include/config.h" line="122" column="9" bodyfile="include/config.h" bodystart="122" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1a74bf0810efa125bd3d2c9b1ab2b5fac6" prot="public" static="no">
         <name>WITH_LAPACK</name>
@@ -340,7 +340,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/config.h" line="126" column="9" bodyfile="include/config.h" bodystart="126" bodyend="-1"/>
+        <location file="include/config.h" line="125" column="9" bodyfile="include/config.h" bodystart="125" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -435,57 +435,56 @@
 <codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>1<sp/>if<sp/>you<sp/>have<sp/>the<sp/>&lt;unistd.h&gt;<sp/>header<sp/>file.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAVE_UNISTD_H<sp/>1</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>the<sp/>sub-directory<sp/>in<sp/>which<sp/>libtool<sp/>stores<sp/>uninstalled<sp/>libraries.</highlight></codeline>
-<codeline lineno="89"><highlight class="comment"><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LT_OBJDIR<sp/>&quot;.libs/&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>the<sp/>address<sp/>where<sp/>bug<sp/>reports<sp/>for<sp/>this<sp/>package<sp/>should<sp/>be<sp/>sent.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACKAGE_BUGREPORT<sp/>&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"></highlight></codeline>
-<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>the<sp/>full<sp/>name<sp/>of<sp/>this<sp/>package.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACKAGE_NAME<sp/>&quot;sphinxbase&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal"></highlight></codeline>
-<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>the<sp/>full<sp/>name<sp/>and<sp/>version<sp/>of<sp/>this<sp/>package.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACKAGE_STRING<sp/>&quot;sphinxbase<sp/>5prealpha&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"></highlight></codeline>
-<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>the<sp/>one<sp/>symbol<sp/>short<sp/>name<sp/>of<sp/>this<sp/>package.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACKAGE_TARNAME<sp/>&quot;sphinxbase&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="103"><highlight class="normal"></highlight></codeline>
-<codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>the<sp/>home<sp/>page<sp/>for<sp/>this<sp/>package.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACKAGE_URL<sp/>&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="106"><highlight class="normal"></highlight></codeline>
-<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>the<sp/>version<sp/>of<sp/>this<sp/>package.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACKAGE_VERSION<sp/>&quot;5prealpha&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="109"><highlight class="normal"></highlight></codeline>
-<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>as<sp/>the<sp/>return<sp/>type<sp/>of<sp/>signal<sp/>handlers<sp/>(`int&apos;<sp/>or<sp/>`void&apos;).<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RETSIGTYPE<sp/>void</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="112"><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>The<sp/>size<sp/>of<sp/>`long&apos;,<sp/>as<sp/>computed<sp/>by<sp/>sizeof.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIZEOF_LONG<sp/>8</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="115"><highlight class="normal"></highlight></codeline>
-<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>The<sp/>size<sp/>of<sp/>`long<sp/>long&apos;,<sp/>as<sp/>computed<sp/>by<sp/>sizeof.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIZEOF_LONG_LONG<sp/>8</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="118"><highlight class="normal"></highlight></codeline>
-<codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Enable<sp/>debugging<sp/>output<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="120"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>#undef<sp/>SPHINX_DEBUG<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="121"><highlight class="normal"></highlight></codeline>
-<codeline lineno="122"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>1<sp/>if<sp/>you<sp/>have<sp/>the<sp/>ANSI<sp/>C<sp/>header<sp/>files.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STDC_HEADERS<sp/>1</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="124"><highlight class="normal"></highlight></codeline>
-<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Enable<sp/>matrix<sp/>algebra<sp/>with<sp/>LAPACK<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WITH_LAPACK<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="127"><highlight class="normal"></highlight></codeline>
-<codeline lineno="128"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>WORDS_BIGENDIAN<sp/>to<sp/>1<sp/>if<sp/>your<sp/>processor<sp/>stores<sp/>words<sp/>with<sp/>the<sp/>most</highlight></codeline>
-<codeline lineno="129"><highlight class="comment"><sp/><sp/><sp/>significant<sp/>byte<sp/>first<sp/>(like<sp/>Motorola<sp/>and<sp/>SPARC,<sp/>unlike<sp/>Intel).<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>AC_APPLE_UNIVERSAL_BUILD</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>if<sp/>defined<sp/>__BIG_ENDIAN__</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>WORDS_BIGENDIAN<sp/>1</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>WORDS_BIGENDIAN</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="136"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>#<sp/><sp/>undef<sp/>WORDS_BIGENDIAN<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>the<sp/>sub-directory<sp/>where<sp/>libtool<sp/>stores<sp/>uninstalled<sp/>libraries.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LT_OBJDIR<sp/>&quot;.libs/&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>the<sp/>address<sp/>where<sp/>bug<sp/>reports<sp/>for<sp/>this<sp/>package<sp/>should<sp/>be<sp/>sent.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACKAGE_BUGREPORT<sp/>&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>the<sp/>full<sp/>name<sp/>of<sp/>this<sp/>package.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACKAGE_NAME<sp/>&quot;sphinxbase&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>the<sp/>full<sp/>name<sp/>and<sp/>version<sp/>of<sp/>this<sp/>package.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACKAGE_STRING<sp/>&quot;sphinxbase<sp/>5prealpha&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>the<sp/>one<sp/>symbol<sp/>short<sp/>name<sp/>of<sp/>this<sp/>package.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACKAGE_TARNAME<sp/>&quot;sphinxbase&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>the<sp/>home<sp/>page<sp/>for<sp/>this<sp/>package.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACKAGE_URL<sp/>&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>the<sp/>version<sp/>of<sp/>this<sp/>package.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACKAGE_VERSION<sp/>&quot;5prealpha&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>as<sp/>the<sp/>return<sp/>type<sp/>of<sp/>signal<sp/>handlers<sp/>(`int&apos;<sp/>or<sp/>`void&apos;).<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RETSIGTYPE<sp/>void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>The<sp/>size<sp/>of<sp/>`long&apos;,<sp/>as<sp/>computed<sp/>by<sp/>sizeof.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIZEOF_LONG<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>The<sp/>size<sp/>of<sp/>`long<sp/>long&apos;,<sp/>as<sp/>computed<sp/>by<sp/>sizeof.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIZEOF_LONG_LONG<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Enable<sp/>debugging<sp/>output<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>#undef<sp/>SPHINX_DEBUG<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>1<sp/>if<sp/>you<sp/>have<sp/>the<sp/>ANSI<sp/>C<sp/>header<sp/>files.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STDC_HEADERS<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Enable<sp/>matrix<sp/>algebra<sp/>with<sp/>LAPACK<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WITH_LAPACK<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>WORDS_BIGENDIAN<sp/>to<sp/>1<sp/>if<sp/>your<sp/>processor<sp/>stores<sp/>words<sp/>with<sp/>the<sp/>most</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/><sp/><sp/>significant<sp/>byte<sp/>first<sp/>(like<sp/>Motorola<sp/>and<sp/>SPARC,<sp/>unlike<sp/>Intel).<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>AC_APPLE_UNIVERSAL_BUILD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>if<sp/>defined<sp/>__BIG_ENDIAN__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>WORDS_BIGENDIAN<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>WORDS_BIGENDIAN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>#<sp/><sp/>undef<sp/>WORDS_BIGENDIAN<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="include/config.h"/>
   </compounddef>

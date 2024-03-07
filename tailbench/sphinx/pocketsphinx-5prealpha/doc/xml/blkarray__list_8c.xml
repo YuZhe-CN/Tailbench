@@ -11,6 +11,9 @@
       <node id="513">
         <label>assert.h</label>
       </node>
+      <node id="516">
+        <label>sphinxbase/ckd_alloc.h</label>
+      </node>
       <node id="512">
         <label>src/libpocketsphinx/blkarray_list.c</label>
         <link refid="blkarray__list_8c"/>
@@ -30,9 +33,6 @@
         <link refid="blkarray__list_8h_source"/>
         <childnode refid="514" relation="include">
         </childnode>
-      </node>
-      <node id="516">
-        <label>sphinxbase/ckd_alloc.h</label>
       </node>
       <node id="514">
         <label>sphinxbase/prim_type.h</label>

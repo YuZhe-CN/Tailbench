@@ -16,9 +16,170 @@
       <node id="1635">
         <label>sys/stat.h</label>
       </node>
+      <node id="1630">
+        <label>stdarg.h</label>
+      </node>
+      <node id="1628">
+        <label>assert.h</label>
+      </node>
+      <node id="1631">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1639">
+        <label>setjmp.h</label>
+      </node>
+      <node id="1632">
+        <label>errno.h</label>
+      </node>
+      <node id="1636">
+        <label>sphinxbase/prim_type.h</label>
+        <link refid="prim__type_8h"/>
+        <childnode refid="1637" relation="include">
+        </childnode>
+      </node>
+      <node id="1646">
+        <label>sphinxbase/bitvec.h</label>
+        <link refid="bitvec_8h"/>
+        <childnode refid="1627" relation="include">
+        </childnode>
+        <childnode refid="1633" relation="include">
+        </childnode>
+        <childnode refid="1636" relation="include">
+        </childnode>
+        <childnode refid="1638" relation="include">
+        </childnode>
+      </node>
+      <node id="1638">
+        <label>sphinxbase/ckd_alloc.h</label>
+        <link refid="ckd__alloc_8h"/>
+        <childnode refid="1631" relation="include">
+        </childnode>
+        <childnode refid="1639" relation="include">
+        </childnode>
+        <childnode refid="1633" relation="include">
+        </childnode>
+        <childnode refid="1636" relation="include">
+        </childnode>
+      </node>
       <node id="1633">
         <label>sphinxbase/sphinxbase_export.h</label>
         <link refid="sphinxbase__export_8h_source"/>
+      </node>
+      <node id="1637">
+        <label>sphinx_config.h</label>
+      </node>
+      <node id="1629">
+        <label>sphinxbase/err.h</label>
+        <link refid="err_8h"/>
+        <childnode refid="1630" relation="include">
+        </childnode>
+        <childnode refid="1626" relation="include">
+        </childnode>
+        <childnode refid="1631" relation="include">
+        </childnode>
+        <childnode refid="1632" relation="include">
+        </childnode>
+        <childnode refid="1633" relation="include">
+        </childnode>
+      </node>
+      <node id="1640">
+        <label>sphinxbase/strfuncs.h</label>
+        <link refid="strfuncs_8h"/>
+        <childnode refid="1630" relation="include">
+        </childnode>
+        <childnode refid="1633" relation="include">
+        </childnode>
+        <childnode refid="1636" relation="include">
+        </childnode>
+      </node>
+      <node id="1627">
+        <label>string.h</label>
+      </node>
+      <node id="1634">
+        <label>sphinxbase/pio.h</label>
+        <link refid="pio_8h"/>
+        <childnode refid="1626" relation="include">
+        </childnode>
+        <childnode refid="1635" relation="include">
+        </childnode>
+        <childnode refid="1633" relation="include">
+        </childnode>
+        <childnode refid="1636" relation="include">
+        </childnode>
+      </node>
+      <node id="1645">
+        <label>sphinxbase/cmd_ln.h</label>
+        <link refid="cmd__ln_8h"/>
+        <childnode refid="1626" relation="include">
+        </childnode>
+        <childnode refid="1630" relation="include">
+        </childnode>
+        <childnode refid="1633" relation="include">
+        </childnode>
+        <childnode refid="1636" relation="include">
+        </childnode>
+      </node>
+      <node id="1644">
+        <label>sphinxbase/logmath.h</label>
+        <link refid="logmath_8h"/>
+        <childnode refid="1633" relation="include">
+        </childnode>
+        <childnode refid="1636" relation="include">
+        </childnode>
+        <childnode refid="1645" relation="include">
+        </childnode>
+      </node>
+      <node id="1647">
+        <label>sphinxbase/listelem_alloc.h</label>
+        <link refid="listelem__alloc_8h"/>
+        <childnode refid="1631" relation="include">
+        </childnode>
+        <childnode refid="1633" relation="include">
+        </childnode>
+        <childnode refid="1636" relation="include">
+        </childnode>
+      </node>
+      <node id="1643">
+        <label>sphinxbase/fsg_model.h</label>
+        <link refid="fsg__model_8h_source"/>
+        <childnode refid="1626" relation="include">
+        </childnode>
+        <childnode refid="1627" relation="include">
+        </childnode>
+        <childnode refid="1636" relation="include">
+        </childnode>
+        <childnode refid="1642" relation="include">
+        </childnode>
+        <childnode refid="1644" relation="include">
+        </childnode>
+        <childnode refid="1646" relation="include">
+        </childnode>
+        <childnode refid="1641" relation="include">
+        </childnode>
+        <childnode refid="1647" relation="include">
+        </childnode>
+        <childnode refid="1633" relation="include">
+        </childnode>
+      </node>
+      <node id="1642">
+        <label>sphinxbase/glist.h</label>
+        <link refid="glist_8h"/>
+        <childnode refid="1631" relation="include">
+        </childnode>
+        <childnode refid="1633" relation="include">
+        </childnode>
+        <childnode refid="1636" relation="include">
+        </childnode>
+      </node>
+      <node id="1641">
+        <label>sphinxbase/hash_table.h</label>
+        <link refid="hash__table_8h"/>
+        <childnode refid="1633" relation="include">
+        </childnode>
+        <childnode refid="1636" relation="include">
+        </childnode>
+        <childnode refid="1642" relation="include">
+        </childnode>
       </node>
       <node id="1625">
         <label>src/libsphinxbase/lm/fsg_model.c</label>
@@ -44,169 +205,8 @@
         <childnode refid="1643" relation="include">
         </childnode>
       </node>
-      <node id="1630">
-        <label>stdarg.h</label>
-      </node>
-      <node id="1646">
-        <label>sphinxbase/bitvec.h</label>
-        <link refid="bitvec_8h"/>
-        <childnode refid="1627" relation="include">
-        </childnode>
-        <childnode refid="1633" relation="include">
-        </childnode>
-        <childnode refid="1636" relation="include">
-        </childnode>
-        <childnode refid="1638" relation="include">
-        </childnode>
-      </node>
-      <node id="1628">
-        <label>assert.h</label>
-      </node>
-      <node id="1640">
-        <label>sphinxbase/strfuncs.h</label>
-        <link refid="strfuncs_8h"/>
-        <childnode refid="1630" relation="include">
-        </childnode>
-        <childnode refid="1633" relation="include">
-        </childnode>
-        <childnode refid="1636" relation="include">
-        </childnode>
-      </node>
-      <node id="1631">
-        <label>stdlib.h</label>
-      </node>
-      <node id="1639">
-        <label>setjmp.h</label>
-      </node>
-      <node id="1641">
-        <label>sphinxbase/hash_table.h</label>
-        <link refid="hash__table_8h"/>
-        <childnode refid="1633" relation="include">
-        </childnode>
-        <childnode refid="1636" relation="include">
-        </childnode>
-        <childnode refid="1642" relation="include">
-        </childnode>
-      </node>
-      <node id="1632">
-        <label>errno.h</label>
-      </node>
-      <node id="1647">
-        <label>sphinxbase/listelem_alloc.h</label>
-        <link refid="listelem__alloc_8h"/>
-        <childnode refid="1631" relation="include">
-        </childnode>
-        <childnode refid="1633" relation="include">
-        </childnode>
-        <childnode refid="1636" relation="include">
-        </childnode>
-      </node>
-      <node id="1636">
-        <label>sphinxbase/prim_type.h</label>
-        <link refid="prim__type_8h"/>
-        <childnode refid="1637" relation="include">
-        </childnode>
-      </node>
-      <node id="1638">
-        <label>sphinxbase/ckd_alloc.h</label>
-        <link refid="ckd__alloc_8h"/>
-        <childnode refid="1631" relation="include">
-        </childnode>
-        <childnode refid="1639" relation="include">
-        </childnode>
-        <childnode refid="1633" relation="include">
-        </childnode>
-        <childnode refid="1636" relation="include">
-        </childnode>
-      </node>
-      <node id="1644">
-        <label>sphinxbase/logmath.h</label>
-        <link refid="logmath_8h"/>
-        <childnode refid="1633" relation="include">
-        </childnode>
-        <childnode refid="1636" relation="include">
-        </childnode>
-        <childnode refid="1645" relation="include">
-        </childnode>
-      </node>
-      <node id="1645">
-        <label>sphinxbase/cmd_ln.h</label>
-        <link refid="cmd__ln_8h"/>
-        <childnode refid="1626" relation="include">
-        </childnode>
-        <childnode refid="1630" relation="include">
-        </childnode>
-        <childnode refid="1633" relation="include">
-        </childnode>
-        <childnode refid="1636" relation="include">
-        </childnode>
-      </node>
-      <node id="1637">
-        <label>sphinx_config.h</label>
-      </node>
-      <node id="1642">
-        <label>sphinxbase/glist.h</label>
-        <link refid="glist_8h"/>
-        <childnode refid="1631" relation="include">
-        </childnode>
-        <childnode refid="1633" relation="include">
-        </childnode>
-        <childnode refid="1636" relation="include">
-        </childnode>
-      </node>
-      <node id="1627">
-        <label>string.h</label>
-      </node>
-      <node id="1629">
-        <label>sphinxbase/err.h</label>
-        <link refid="err_8h"/>
-        <childnode refid="1630" relation="include">
-        </childnode>
-        <childnode refid="1626" relation="include">
-        </childnode>
-        <childnode refid="1631" relation="include">
-        </childnode>
-        <childnode refid="1632" relation="include">
-        </childnode>
-        <childnode refid="1633" relation="include">
-        </childnode>
-      </node>
-      <node id="1634">
-        <label>sphinxbase/pio.h</label>
-        <link refid="pio_8h"/>
-        <childnode refid="1626" relation="include">
-        </childnode>
-        <childnode refid="1635" relation="include">
-        </childnode>
-        <childnode refid="1633" relation="include">
-        </childnode>
-        <childnode refid="1636" relation="include">
-        </childnode>
-      </node>
       <node id="1626">
         <label>stdio.h</label>
-      </node>
-      <node id="1643">
-        <label>sphinxbase/fsg_model.h</label>
-        <link refid="fsg__model_8h_source"/>
-        <childnode refid="1626" relation="include">
-        </childnode>
-        <childnode refid="1627" relation="include">
-        </childnode>
-        <childnode refid="1636" relation="include">
-        </childnode>
-        <childnode refid="1642" relation="include">
-        </childnode>
-        <childnode refid="1644" relation="include">
-        </childnode>
-        <childnode refid="1646" relation="include">
-        </childnode>
-        <childnode refid="1641" relation="include">
-        </childnode>
-        <childnode refid="1647" relation="include">
-        </childnode>
-        <childnode refid="1633" relation="include">
-        </childnode>
       </node>
     </incdepgraph>
     <innerclass refid="structtrans__list__s" prot="public">trans_list_s</innerclass>

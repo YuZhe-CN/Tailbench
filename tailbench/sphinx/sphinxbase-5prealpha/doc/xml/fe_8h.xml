@@ -21,9 +21,15 @@
     <includedby refid="cmd__ln__defn_8h" local="no">src/sphinx_fe/cmd_ln_defn.h</includedby>
     <includedby refid="sphinx__fe_8c" local="no">src/sphinx_fe/sphinx_fe.c</includedby>
     <incdepgraph>
-      <node id="439">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
+      <node id="445">
+        <label>sphinxbase/fixpoint.h</label>
+        <link refid="fixpoint_8h_source"/>
+        <childnode refid="446" relation="include">
+        </childnode>
+        <childnode refid="439" relation="include">
+        </childnode>
+        <childnode refid="443" relation="include">
+        </childnode>
       </node>
       <node id="442">
         <label>stdarg.h</label>
@@ -34,8 +40,15 @@
         <childnode refid="444" relation="include">
         </childnode>
       </node>
+      <node id="439">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
+      </node>
       <node id="446">
         <label>limits.h</label>
+      </node>
+      <node id="444">
+        <label>sphinx_config.h</label>
       </node>
       <node id="440">
         <label>sphinxbase/cmd_ln.h</label>
@@ -48,9 +61,6 @@
         </childnode>
         <childnode refid="443" relation="include">
         </childnode>
-      </node>
-      <node id="444">
-        <label>sphinx_config.h</label>
       </node>
       <node id="438">
         <label>include/sphinxbase/fe.h</label>
@@ -65,92 +75,8 @@
       <node id="441">
         <label>stdio.h</label>
       </node>
-      <node id="445">
-        <label>sphinxbase/fixpoint.h</label>
-        <link refid="fixpoint_8h_source"/>
-        <childnode refid="446" relation="include">
-        </childnode>
-        <childnode refid="439" relation="include">
-        </childnode>
-        <childnode refid="443" relation="include">
-        </childnode>
-      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="461">
-        <label>src/libsphinxbase/fe/fe_warp_affine.c</label>
-        <link refid="fe__warp__affine_8c_source"/>
-      </node>
-      <node id="453">
-        <label>include/sphinxbase/cmn.h</label>
-        <link refid="cmn_8h"/>
-        <childnode refid="449" relation="include">
-        </childnode>
-        <childnode refid="454" relation="include">
-        </childnode>
-        <childnode refid="455" relation="include">
-        </childnode>
-        <childnode refid="450" relation="include">
-        </childnode>
-      </node>
-      <node id="471">
-        <label>src/libsphinxbase/fe/fe_warp_affine.h</label>
-        <link refid="fe__warp__affine_8h_source"/>
-        <childnode refid="460" relation="include">
-        </childnode>
-        <childnode refid="461" relation="include">
-        </childnode>
-      </node>
-      <node id="465">
-        <label>src/libsphinxbase/fe/fixlog.c</label>
-        <link refid="fixlog_8c_source"/>
-      </node>
-      <node id="452">
-        <label>src/libsphinxbase/feat/agc.c</label>
-        <link refid="agc_8c_source"/>
-      </node>
-      <node id="464">
-        <label>src/libsphinxbase/fe/fe_noise.c</label>
-        <link refid="fe__noise_8c_source"/>
-      </node>
-      <node id="466">
-        <label>src/libsphinxbase/fe/fe_noise.h</label>
-        <link refid="fe__noise_8h_source"/>
-        <childnode refid="456" relation="include">
-        </childnode>
-        <childnode refid="464" relation="include">
-        </childnode>
-      </node>
-      <node id="448">
-        <label>include/sphinxbase/agc.h</label>
-        <link refid="agc_8h"/>
-        <childnode refid="449" relation="include">
-        </childnode>
-        <childnode refid="452" relation="include">
-        </childnode>
-        <childnode refid="450" relation="include">
-        </childnode>
-      </node>
-      <node id="454">
-        <label>src/libsphinxbase/feat/cmn.c</label>
-        <link refid="cmn_8c_source"/>
-      </node>
-      <node id="473">
-        <label>src/sphinx_adtools/cont_seg.c</label>
-        <link refid="cont__seg_8c_source"/>
-      </node>
-      <node id="469">
-        <label>src/libsphinxbase/fe/fe_prespch_buf.c</label>
-        <link refid="fe__prespch__buf_8c_source"/>
-      </node>
-      <node id="468">
-        <label>src/libsphinxbase/fe/fe_prespch_buf.h</label>
-        <link refid="fe__prespch__buf_8h_source"/>
-        <childnode refid="456" relation="include">
-        </childnode>
-        <childnode refid="469" relation="include">
-        </childnode>
-      </node>
       <node id="462">
         <label>src/libsphinxbase/fe/fe_warp_inverse_linear.c</label>
         <link refid="fe__warp__inverse__linear_8c_source"/>
@@ -167,25 +93,55 @@
         <label>src/libsphinxbase/feat/lda.c</label>
         <link refid="lda_8c_source"/>
       </node>
-      <node id="475">
-        <label>src/sphinx_fe/sphinx_fe.c</label>
-        <link refid="sphinx__fe_8c_source"/>
+      <node id="465">
+        <label>src/libsphinxbase/fe/fixlog.c</label>
+        <link refid="fixlog_8c_source"/>
       </node>
-      <node id="459">
-        <label>src/libsphinxbase/fe/fe_sigproc.c</label>
-        <link refid="fe__sigproc_8c_source"/>
+      <node id="450">
+        <label>src/libsphinxbase/feat/feat.c</label>
+        <link refid="feat_8c_source"/>
       </node>
-      <node id="449">
-        <label>include/sphinxbase/feat.h</label>
-        <link refid="feat_8h"/>
-        <childnode refid="450" relation="include">
+      <node id="463">
+        <label>src/libsphinxbase/fe/fe_warp_piecewise_linear.c</label>
+        <link refid="fe__warp__piecewise__linear_8c_source"/>
+      </node>
+      <node id="472">
+        <label>src/libsphinxbase/fe/fe_warp_piecewise_linear.h</label>
+        <link refid="fe__warp__piecewise__linear_8h_source"/>
+        <childnode refid="460" relation="include">
         </childnode>
-        <childnode refid="451" relation="include">
+        <childnode refid="463" relation="include">
         </childnode>
       </node>
       <node id="457">
         <label>src/libsphinxbase/fe/fe_interface.c</label>
         <link refid="fe__interface_8c_source"/>
+      </node>
+      <node id="454">
+        <label>src/libsphinxbase/feat/cmn.c</label>
+        <link refid="cmn_8c_source"/>
+      </node>
+      <node id="464">
+        <label>src/libsphinxbase/fe/fe_noise.c</label>
+        <link refid="fe__noise_8c_source"/>
+      </node>
+      <node id="466">
+        <label>src/libsphinxbase/fe/fe_noise.h</label>
+        <link refid="fe__noise_8h_source"/>
+        <childnode refid="456" relation="include">
+        </childnode>
+        <childnode refid="464" relation="include">
+        </childnode>
+      </node>
+      <node id="474">
+        <label>src/sphinx_fe/cmd_ln_defn.h</label>
+        <link refid="cmd__ln__defn_8h_source"/>
+        <childnode refid="475" relation="include">
+        </childnode>
+      </node>
+      <node id="475">
+        <label>src/sphinx_fe/sphinx_fe.c</label>
+        <link refid="sphinx__fe_8c_source"/>
       </node>
       <node id="456">
         <label>src/libsphinxbase/fe/fe_internal.h</label>
@@ -201,16 +157,70 @@
         <childnode refid="465" relation="include">
         </childnode>
       </node>
-      <node id="463">
-        <label>src/libsphinxbase/fe/fe_warp_piecewise_linear.c</label>
-        <link refid="fe__warp__piecewise__linear_8c_source"/>
+      <node id="469">
+        <label>src/libsphinxbase/fe/fe_prespch_buf.c</label>
+        <link refid="fe__prespch__buf_8c_source"/>
       </node>
-      <node id="472">
-        <label>src/libsphinxbase/fe/fe_warp_piecewise_linear.h</label>
-        <link refid="fe__warp__piecewise__linear_8h_source"/>
+      <node id="468">
+        <label>src/libsphinxbase/fe/fe_prespch_buf.h</label>
+        <link refid="fe__prespch__buf_8h_source"/>
+        <childnode refid="456" relation="include">
+        </childnode>
+        <childnode refid="469" relation="include">
+        </childnode>
+      </node>
+      <node id="460">
+        <label>src/libsphinxbase/fe/fe_warp.c</label>
+        <link refid="fe__warp_8c_source"/>
+      </node>
+      <node id="458">
+        <label>src/libsphinxbase/fe/fe_warp.h</label>
+        <link refid="fe__warp_8h_source"/>
+        <childnode refid="457" relation="include">
+        </childnode>
+        <childnode refid="459" relation="include">
+        </childnode>
         <childnode refid="460" relation="include">
         </childnode>
+        <childnode refid="461" relation="include">
+        </childnode>
+        <childnode refid="462" relation="include">
+        </childnode>
         <childnode refid="463" relation="include">
+        </childnode>
+      </node>
+      <node id="467">
+        <label>src/libsphinxbase/fe/fe_type.h</label>
+        <link refid="fe__type_8h_source"/>
+        <childnode refid="466" relation="include">
+        </childnode>
+        <childnode refid="456" relation="include">
+        </childnode>
+      </node>
+      <node id="452">
+        <label>src/libsphinxbase/feat/agc.c</label>
+        <link refid="agc_8c_source"/>
+      </node>
+      <node id="448">
+        <label>include/sphinxbase/agc.h</label>
+        <link refid="agc_8h"/>
+        <childnode refid="449" relation="include">
+        </childnode>
+        <childnode refid="452" relation="include">
+        </childnode>
+        <childnode refid="450" relation="include">
+        </childnode>
+      </node>
+      <node id="461">
+        <label>src/libsphinxbase/fe/fe_warp_affine.c</label>
+        <link refid="fe__warp__affine_8c_source"/>
+      </node>
+      <node id="471">
+        <label>src/libsphinxbase/fe/fe_warp_affine.h</label>
+        <link refid="fe__warp__affine_8h_source"/>
+        <childnode refid="460" relation="include">
+        </childnode>
+        <childnode refid="461" relation="include">
         </childnode>
       </node>
       <node id="447">
@@ -247,46 +257,36 @@
         <childnode refid="475" relation="include">
         </childnode>
       </node>
-      <node id="460">
-        <label>src/libsphinxbase/fe/fe_warp.c</label>
-        <link refid="fe__warp_8c_source"/>
-      </node>
-      <node id="458">
-        <label>src/libsphinxbase/fe/fe_warp.h</label>
-        <link refid="fe__warp_8h_source"/>
-        <childnode refid="457" relation="include">
-        </childnode>
-        <childnode refid="459" relation="include">
-        </childnode>
-        <childnode refid="460" relation="include">
-        </childnode>
-        <childnode refid="461" relation="include">
-        </childnode>
-        <childnode refid="462" relation="include">
-        </childnode>
-        <childnode refid="463" relation="include">
-        </childnode>
-      </node>
-      <node id="467">
-        <label>src/libsphinxbase/fe/fe_type.h</label>
-        <link refid="fe__type_8h_source"/>
-        <childnode refid="466" relation="include">
-        </childnode>
-        <childnode refid="456" relation="include">
-        </childnode>
-      </node>
-      <node id="450">
-        <label>src/libsphinxbase/feat/feat.c</label>
-        <link refid="feat_8c_source"/>
+      <node id="459">
+        <label>src/libsphinxbase/fe/fe_sigproc.c</label>
+        <link refid="fe__sigproc_8c_source"/>
       </node>
       <node id="455">
         <label>src/libsphinxbase/feat/cmn_prior.c</label>
         <link refid="cmn__prior_8c_source"/>
       </node>
-      <node id="474">
-        <label>src/sphinx_fe/cmd_ln_defn.h</label>
-        <link refid="cmd__ln__defn_8h_source"/>
-        <childnode refid="475" relation="include">
+      <node id="473">
+        <label>src/sphinx_adtools/cont_seg.c</label>
+        <link refid="cont__seg_8c_source"/>
+      </node>
+      <node id="453">
+        <label>include/sphinxbase/cmn.h</label>
+        <link refid="cmn_8h"/>
+        <childnode refid="449" relation="include">
+        </childnode>
+        <childnode refid="454" relation="include">
+        </childnode>
+        <childnode refid="455" relation="include">
+        </childnode>
+        <childnode refid="450" relation="include">
+        </childnode>
+      </node>
+      <node id="449">
+        <label>include/sphinxbase/feat.h</label>
+        <link refid="feat_8h"/>
+        <childnode refid="450" relation="include">
+        </childnode>
+        <childnode refid="451" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

@@ -9,35 +9,37 @@
     <includes refid="bio_8h" local="yes">sphinxbase/bio.h</includes>
     <includes refid="err_8h" local="yes">sphinxbase/err.h</includes>
     <incdepgraph>
-      <node id="1607">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
+      <node id="1613">
+        <label>sphinxbase/fixpoint.h</label>
+        <link refid="fixpoint_8h_source"/>
+        <childnode refid="1614" relation="include">
+        </childnode>
+        <childnode refid="1607" relation="include">
+        </childnode>
+        <childnode refid="1608" relation="include">
+        </childnode>
       </node>
       <node id="1612">
         <label>stdarg.h</label>
       </node>
-      <node id="1615">
-        <label>sphinxbase/cmn.h</label>
-        <link refid="cmn_8h"/>
-        <childnode refid="1607" relation="include">
+      <node id="1602">
+        <label>src/libsphinxbase/feat/lda.c</label>
+        <link refid="lda_8c"/>
+        <childnode refid="1603" relation="include">
         </childnode>
-        <childnode refid="1608" relation="include">
+        <childnode refid="1604" relation="include">
         </childnode>
-        <childnode refid="1610" relation="include">
+        <childnode refid="1605" relation="include">
+        </childnode>
+        <childnode refid="1617" relation="include">
+        </childnode>
+        <childnode refid="1620" relation="include">
+        </childnode>
+        <childnode refid="1622" relation="include">
         </childnode>
       </node>
       <node id="1603">
         <label>assert.h</label>
-      </node>
-      <node id="1616">
-        <label>sphinxbase/agc.h</label>
-        <link refid="agc_8h"/>
-        <childnode refid="1607" relation="include">
-        </childnode>
-        <childnode refid="1608" relation="include">
-        </childnode>
-        <childnode refid="1610" relation="include">
-        </childnode>
       </node>
       <node id="1618">
         <label>stdlib.h</label>
@@ -66,58 +68,12 @@
         <childnode refid="1608" relation="include">
         </childnode>
       </node>
+      <node id="1607">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
+      </node>
       <node id="1614">
         <label>limits.h</label>
-      </node>
-      <node id="1602">
-        <label>src/libsphinxbase/feat/lda.c</label>
-        <link refid="lda_8c"/>
-        <childnode refid="1603" relation="include">
-        </childnode>
-        <childnode refid="1604" relation="include">
-        </childnode>
-        <childnode refid="1605" relation="include">
-        </childnode>
-        <childnode refid="1617" relation="include">
-        </childnode>
-        <childnode refid="1620" relation="include">
-        </childnode>
-        <childnode refid="1622" relation="include">
-        </childnode>
-      </node>
-      <node id="1611">
-        <label>sphinxbase/cmd_ln.h</label>
-        <link refid="cmd__ln_8h"/>
-        <childnode refid="1606" relation="include">
-        </childnode>
-        <childnode refid="1612" relation="include">
-        </childnode>
-        <childnode refid="1607" relation="include">
-        </childnode>
-        <childnode refid="1608" relation="include">
-        </childnode>
-      </node>
-      <node id="1609">
-        <label>sphinx_config.h</label>
-      </node>
-      <node id="1604">
-        <label>string.h</label>
-      </node>
-      <node id="1605">
-        <label>sphinxbase/feat.h</label>
-        <link refid="feat_8h"/>
-        <childnode refid="1606" relation="include">
-        </childnode>
-        <childnode refid="1607" relation="include">
-        </childnode>
-        <childnode refid="1608" relation="include">
-        </childnode>
-        <childnode refid="1610" relation="include">
-        </childnode>
-        <childnode refid="1615" relation="include">
-        </childnode>
-        <childnode refid="1616" relation="include">
-        </childnode>
       </node>
       <node id="1620">
         <label>sphinxbase/bio.h</label>
@@ -133,6 +89,9 @@
         <childnode refid="1621" relation="include">
         </childnode>
       </node>
+      <node id="1609">
+        <label>sphinx_config.h</label>
+      </node>
       <node id="1622">
         <label>sphinxbase/err.h</label>
         <link refid="err_8h"/>
@@ -145,6 +104,31 @@
         <childnode refid="1623" relation="include">
         </childnode>
         <childnode refid="1607" relation="include">
+        </childnode>
+      </node>
+      <node id="1604">
+        <label>string.h</label>
+      </node>
+      <node id="1611">
+        <label>sphinxbase/cmd_ln.h</label>
+        <link refid="cmd__ln_8h"/>
+        <childnode refid="1606" relation="include">
+        </childnode>
+        <childnode refid="1612" relation="include">
+        </childnode>
+        <childnode refid="1607" relation="include">
+        </childnode>
+        <childnode refid="1608" relation="include">
+        </childnode>
+      </node>
+      <node id="1616">
+        <label>sphinxbase/agc.h</label>
+        <link refid="agc_8h"/>
+        <childnode refid="1607" relation="include">
+        </childnode>
+        <childnode refid="1608" relation="include">
+        </childnode>
+        <childnode refid="1610" relation="include">
         </childnode>
       </node>
       <node id="1610">
@@ -161,17 +145,33 @@
         <label>sphinxbase/byteorder.h</label>
         <link refid="byteorder_8h_source"/>
       </node>
+      <node id="1615">
+        <label>sphinxbase/cmn.h</label>
+        <link refid="cmn_8h"/>
+        <childnode refid="1607" relation="include">
+        </childnode>
+        <childnode refid="1608" relation="include">
+        </childnode>
+        <childnode refid="1610" relation="include">
+        </childnode>
+      </node>
       <node id="1606">
         <label>stdio.h</label>
       </node>
-      <node id="1613">
-        <label>sphinxbase/fixpoint.h</label>
-        <link refid="fixpoint_8h_source"/>
-        <childnode refid="1614" relation="include">
+      <node id="1605">
+        <label>sphinxbase/feat.h</label>
+        <link refid="feat_8h"/>
+        <childnode refid="1606" relation="include">
         </childnode>
         <childnode refid="1607" relation="include">
         </childnode>
         <childnode refid="1608" relation="include">
+        </childnode>
+        <childnode refid="1610" relation="include">
+        </childnode>
+        <childnode refid="1615" relation="include">
+        </childnode>
+        <childnode refid="1616" relation="include">
         </childnode>
       </node>
     </incdepgraph>

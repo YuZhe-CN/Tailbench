@@ -16,22 +16,8 @@
       <node id="2484">
         <label>sys/stat.h</label>
       </node>
-      <node id="2473">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
-      </node>
       <node id="2472">
         <label>stdarg.h</label>
-      </node>
-      <node id="2471">
-        <label>sphinxbase/strfuncs.h</label>
-        <link refid="strfuncs_8h"/>
-        <childnode refid="2472" relation="include">
-        </childnode>
-        <childnode refid="2473" relation="include">
-        </childnode>
-        <childnode refid="2474" relation="include">
-        </childnode>
       </node>
       <node id="2469">
         <label>stdlib.h</label>
@@ -46,64 +32,6 @@
         <label>sphinxbase/prim_type.h</label>
         <link refid="prim__type_8h"/>
         <childnode refid="2475" relation="include">
-        </childnode>
-      </node>
-      <node id="2477">
-        <label>sphinxbase/ckd_alloc.h</label>
-        <link refid="ckd__alloc_8h"/>
-        <childnode refid="2469" relation="include">
-        </childnode>
-        <childnode refid="2478" relation="include">
-        </childnode>
-        <childnode refid="2473" relation="include">
-        </childnode>
-        <childnode refid="2474" relation="include">
-        </childnode>
-      </node>
-      <node id="2476">
-        <label>sphinxbase/cmd_ln.h</label>
-        <link refid="cmd__ln_8h"/>
-        <childnode refid="2468" relation="include">
-        </childnode>
-        <childnode refid="2472" relation="include">
-        </childnode>
-        <childnode refid="2473" relation="include">
-        </childnode>
-        <childnode refid="2474" relation="include">
-        </childnode>
-      </node>
-      <node id="2475">
-        <label>sphinx_config.h</label>
-      </node>
-      <node id="2470">
-        <label>string.h</label>
-      </node>
-      <node id="2481">
-        <label>sphinxbase/bio.h</label>
-        <link refid="bio_8h"/>
-        <childnode refid="2468" relation="include">
-        </childnode>
-        <childnode refid="2472" relation="include">
-        </childnode>
-        <childnode refid="2473" relation="include">
-        </childnode>
-        <childnode refid="2474" relation="include">
-        </childnode>
-        <childnode refid="2482" relation="include">
-        </childnode>
-      </node>
-      <node id="2479">
-        <label>sphinxbase/err.h</label>
-        <link refid="err_8h"/>
-        <childnode refid="2472" relation="include">
-        </childnode>
-        <childnode refid="2468" relation="include">
-        </childnode>
-        <childnode refid="2469" relation="include">
-        </childnode>
-        <childnode refid="2480" relation="include">
-        </childnode>
-        <childnode refid="2473" relation="include">
         </childnode>
       </node>
       <node id="2467">
@@ -130,9 +58,65 @@
         <childnode refid="2483" relation="include">
         </childnode>
       </node>
-      <node id="2482">
-        <label>sphinxbase/byteorder.h</label>
-        <link refid="byteorder_8h_source"/>
+      <node id="2477">
+        <label>sphinxbase/ckd_alloc.h</label>
+        <link refid="ckd__alloc_8h"/>
+        <childnode refid="2469" relation="include">
+        </childnode>
+        <childnode refid="2478" relation="include">
+        </childnode>
+        <childnode refid="2473" relation="include">
+        </childnode>
+        <childnode refid="2474" relation="include">
+        </childnode>
+      </node>
+      <node id="2473">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
+      </node>
+      <node id="2481">
+        <label>sphinxbase/bio.h</label>
+        <link refid="bio_8h"/>
+        <childnode refid="2468" relation="include">
+        </childnode>
+        <childnode refid="2472" relation="include">
+        </childnode>
+        <childnode refid="2473" relation="include">
+        </childnode>
+        <childnode refid="2474" relation="include">
+        </childnode>
+        <childnode refid="2482" relation="include">
+        </childnode>
+      </node>
+      <node id="2475">
+        <label>sphinx_config.h</label>
+      </node>
+      <node id="2479">
+        <label>sphinxbase/err.h</label>
+        <link refid="err_8h"/>
+        <childnode refid="2472" relation="include">
+        </childnode>
+        <childnode refid="2468" relation="include">
+        </childnode>
+        <childnode refid="2469" relation="include">
+        </childnode>
+        <childnode refid="2480" relation="include">
+        </childnode>
+        <childnode refid="2473" relation="include">
+        </childnode>
+      </node>
+      <node id="2471">
+        <label>sphinxbase/strfuncs.h</label>
+        <link refid="strfuncs_8h"/>
+        <childnode refid="2472" relation="include">
+        </childnode>
+        <childnode refid="2473" relation="include">
+        </childnode>
+        <childnode refid="2474" relation="include">
+        </childnode>
+      </node>
+      <node id="2470">
+        <label>string.h</label>
       </node>
       <node id="2483">
         <label>sphinxbase/pio.h</label>
@@ -145,6 +129,22 @@
         </childnode>
         <childnode refid="2474" relation="include">
         </childnode>
+      </node>
+      <node id="2476">
+        <label>sphinxbase/cmd_ln.h</label>
+        <link refid="cmd__ln_8h"/>
+        <childnode refid="2468" relation="include">
+        </childnode>
+        <childnode refid="2472" relation="include">
+        </childnode>
+        <childnode refid="2473" relation="include">
+        </childnode>
+        <childnode refid="2474" relation="include">
+        </childnode>
+      </node>
+      <node id="2482">
+        <label>sphinxbase/byteorder.h</label>
+        <link refid="byteorder_8h_source"/>
       </node>
       <node id="2468">
         <label>stdio.h</label>

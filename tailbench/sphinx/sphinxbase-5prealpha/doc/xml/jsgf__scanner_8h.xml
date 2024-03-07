@@ -15,6 +15,9 @@
       <node id="1755">
         <label>errno.h</label>
       </node>
+      <node id="1754">
+        <label>string.h</label>
+      </node>
       <node id="1752">
         <label>src/libsphinxbase/lm/jsgf_scanner.h</label>
         <link refid="jsgf__scanner_8h"/>
@@ -26,9 +29,6 @@
         </childnode>
         <childnode refid="1756" relation="include">
         </childnode>
-      </node>
-      <node id="1754">
-        <label>string.h</label>
       </node>
       <node id="1753">
         <label>stdio.h</label>

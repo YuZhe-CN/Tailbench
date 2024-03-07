@@ -14,16 +14,6 @@
     <includes local="no">jack/jack.h</includes>
     <includes local="no">jack/ringbuffer.h</includes>
     <incdepgraph>
-      <node id="1108">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
-      </node>
-      <node id="1110">
-        <label>jack/ringbuffer.h</label>
-      </node>
-      <node id="1100">
-        <label>stdlib.h</label>
-      </node>
       <node id="1097">
         <label>src/libsphinxad/ad_jack.c</label>
         <link refid="ad__jack_8c"/>
@@ -50,6 +40,22 @@
         <childnode refid="1110" relation="include">
         </childnode>
       </node>
+      <node id="1110">
+        <label>jack/ringbuffer.h</label>
+      </node>
+      <node id="1100">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1107">
+        <label>ad.h</label>
+        <link refid="ad_8h"/>
+        <childnode refid="1106" relation="include">
+        </childnode>
+        <childnode refid="1108" relation="include">
+        </childnode>
+        <childnode refid="1105" relation="include">
+        </childnode>
+      </node>
       <node id="1102">
         <label>errno.h</label>
       </node>
@@ -62,6 +68,10 @@
         <childnode refid="1106" relation="include">
         </childnode>
       </node>
+      <node id="1108">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
+      </node>
       <node id="1104">
         <label>limits.h</label>
       </node>
@@ -73,16 +83,6 @@
       </node>
       <node id="1103">
         <label>unistd.h</label>
-      </node>
-      <node id="1107">
-        <label>ad.h</label>
-        <link refid="ad_8h"/>
-        <childnode refid="1106" relation="include">
-        </childnode>
-        <childnode refid="1108" relation="include">
-        </childnode>
-        <childnode refid="1105" relation="include">
-        </childnode>
       </node>
       <node id="1109">
         <label>jack/jack.h</label>

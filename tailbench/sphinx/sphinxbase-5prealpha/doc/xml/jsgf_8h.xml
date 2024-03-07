@@ -11,50 +11,8 @@
     <includedby refid="jsgf__internal_8h" local="no">src/libsphinxbase/lm/jsgf_internal.h</includedby>
     <includedby refid="main_8c" local="no">src/sphinx_jsgf2fsg/main.c</includedby>
     <incdepgraph>
-      <node id="654">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
-      </node>
       <node id="664">
         <label>stdarg.h</label>
-      </node>
-      <node id="665">
-        <label>sphinxbase/bitvec.h</label>
-        <link refid="bitvec_8h"/>
-        <childnode refid="661" relation="include">
-        </childnode>
-        <childnode refid="654" relation="include">
-        </childnode>
-        <childnode refid="656" relation="include">
-        </childnode>
-        <childnode refid="666" relation="include">
-        </childnode>
-      </node>
-      <node id="659">
-        <label>stdlib.h</label>
-      </node>
-      <node id="667">
-        <label>setjmp.h</label>
-      </node>
-      <node id="655">
-        <label>sphinxbase/hash_table.h</label>
-        <link refid="hash__table_8h"/>
-        <childnode refid="654" relation="include">
-        </childnode>
-        <childnode refid="656" relation="include">
-        </childnode>
-        <childnode refid="658" relation="include">
-        </childnode>
-      </node>
-      <node id="668">
-        <label>sphinxbase/listelem_alloc.h</label>
-        <link refid="listelem__alloc_8h"/>
-        <childnode refid="659" relation="include">
-        </childnode>
-        <childnode refid="654" relation="include">
-        </childnode>
-        <childnode refid="656" relation="include">
-        </childnode>
       </node>
       <node id="652">
         <label>include/sphinxbase/jsgf.h</label>
@@ -70,10 +28,28 @@
         <childnode refid="662" relation="include">
         </childnode>
       </node>
+      <node id="659">
+        <label>stdlib.h</label>
+      </node>
+      <node id="667">
+        <label>setjmp.h</label>
+      </node>
       <node id="656">
         <label>sphinxbase/prim_type.h</label>
         <link refid="prim__type_8h"/>
         <childnode refid="657" relation="include">
+        </childnode>
+      </node>
+      <node id="665">
+        <label>sphinxbase/bitvec.h</label>
+        <link refid="bitvec_8h"/>
+        <childnode refid="661" relation="include">
+        </childnode>
+        <childnode refid="654" relation="include">
+        </childnode>
+        <childnode refid="656" relation="include">
+        </childnode>
+        <childnode refid="666" relation="include">
         </childnode>
       </node>
       <node id="666">
@@ -82,6 +58,28 @@
         <childnode refid="659" relation="include">
         </childnode>
         <childnode refid="667" relation="include">
+        </childnode>
+        <childnode refid="654" relation="include">
+        </childnode>
+        <childnode refid="656" relation="include">
+        </childnode>
+      </node>
+      <node id="654">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
+      </node>
+      <node id="657">
+        <label>sphinx_config.h</label>
+      </node>
+      <node id="661">
+        <label>string.h</label>
+      </node>
+      <node id="663">
+        <label>sphinxbase/cmd_ln.h</label>
+        <link refid="cmd__ln_8h"/>
+        <childnode refid="653" relation="include">
+        </childnode>
+        <childnode refid="664" relation="include">
         </childnode>
         <childnode refid="654" relation="include">
         </childnode>
@@ -98,36 +96,15 @@
         <childnode refid="663" relation="include">
         </childnode>
       </node>
-      <node id="663">
-        <label>sphinxbase/cmd_ln.h</label>
-        <link refid="cmd__ln_8h"/>
-        <childnode refid="653" relation="include">
-        </childnode>
-        <childnode refid="664" relation="include">
-        </childnode>
-        <childnode refid="654" relation="include">
-        </childnode>
-        <childnode refid="656" relation="include">
-        </childnode>
-      </node>
-      <node id="657">
-        <label>sphinx_config.h</label>
-      </node>
-      <node id="658">
-        <label>sphinxbase/glist.h</label>
-        <link refid="glist_8h"/>
+      <node id="668">
+        <label>sphinxbase/listelem_alloc.h</label>
+        <link refid="listelem__alloc_8h"/>
         <childnode refid="659" relation="include">
         </childnode>
         <childnode refid="654" relation="include">
         </childnode>
         <childnode refid="656" relation="include">
         </childnode>
-      </node>
-      <node id="661">
-        <label>string.h</label>
-      </node>
-      <node id="653">
-        <label>stdio.h</label>
       </node>
       <node id="660">
         <label>sphinxbase/fsg_model.h</label>
@@ -151,18 +128,31 @@
         <childnode refid="654" relation="include">
         </childnode>
       </node>
-    </incdepgraph>
-    <invincdepgraph>
-      <node id="671">
-        <label>src/libsphinxbase/lm/jsgf_internal.h</label>
-        <link refid="jsgf__internal_8h"/>
-        <childnode refid="670" relation="include">
+      <node id="658">
+        <label>sphinxbase/glist.h</label>
+        <link refid="glist_8h"/>
+        <childnode refid="659" relation="include">
         </childnode>
-        <childnode refid="672" relation="include">
+        <childnode refid="654" relation="include">
         </childnode>
-        <childnode refid="673" relation="include">
+        <childnode refid="656" relation="include">
         </childnode>
       </node>
+      <node id="655">
+        <label>sphinxbase/hash_table.h</label>
+        <link refid="hash__table_8h"/>
+        <childnode refid="654" relation="include">
+        </childnode>
+        <childnode refid="656" relation="include">
+        </childnode>
+        <childnode refid="658" relation="include">
+        </childnode>
+      </node>
+      <node id="653">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
       <node id="669">
         <label>include/sphinxbase/jsgf.h</label>
         <link refid="jsgf_8h"/>
@@ -184,6 +174,16 @@
       <node id="672">
         <label>src/libsphinxbase/lm/jsgf_parser.c</label>
         <link refid="jsgf__parser_8c_source"/>
+      </node>
+      <node id="671">
+        <label>src/libsphinxbase/lm/jsgf_internal.h</label>
+        <link refid="jsgf__internal_8h"/>
+        <childnode refid="670" relation="include">
+        </childnode>
+        <childnode refid="672" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
       </node>
       <node id="670">
         <label>src/libsphinxbase/lm/jsgf.c</label>

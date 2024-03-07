@@ -8,15 +8,27 @@
     <includes local="no">assert.h</includes>
     <includes refid="filename_8h" local="yes">sphinxbase/filename.h</includes>
     <incdepgraph>
-      <node id="2202">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
-      </node>
       <node id="2200">
         <label>assert.h</label>
       </node>
       <node id="2198">
         <label>stdlib.h</label>
+      </node>
+      <node id="2203">
+        <label>sphinxbase/prim_type.h</label>
+        <link refid="prim__type_8h"/>
+        <childnode refid="2204" relation="include">
+        </childnode>
+      </node>
+      <node id="2202">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
+      </node>
+      <node id="2204">
+        <label>sphinx_config.h</label>
+      </node>
+      <node id="2199">
+        <label>string.h</label>
       </node>
       <node id="2196">
         <label>src/libsphinxbase/util/filename.c</label>
@@ -39,18 +51,6 @@
         </childnode>
         <childnode refid="2203" relation="include">
         </childnode>
-      </node>
-      <node id="2203">
-        <label>sphinxbase/prim_type.h</label>
-        <link refid="prim__type_8h"/>
-        <childnode refid="2204" relation="include">
-        </childnode>
-      </node>
-      <node id="2204">
-        <label>sphinx_config.h</label>
-      </node>
-      <node id="2199">
-        <label>string.h</label>
       </node>
       <node id="2197">
         <label>stdio.h</label>

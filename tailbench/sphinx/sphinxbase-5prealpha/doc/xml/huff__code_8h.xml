@@ -8,12 +8,14 @@
     <includes refid="cmd__ln_8h" local="no">sphinxbase/cmd_ln.h</includes>
     <includedby refid="huff__code_8c" local="yes">src/libsphinxbase/util/huff_code.c</includedby>
     <incdepgraph>
-      <node id="645">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
-      </node>
       <node id="649">
         <label>stdarg.h</label>
+      </node>
+      <node id="646">
+        <label>sphinxbase/prim_type.h</label>
+        <link refid="prim__type_8h"/>
+        <childnode refid="647" relation="include">
+        </childnode>
       </node>
       <node id="643">
         <label>include/sphinxbase/huff_code.h</label>
@@ -27,11 +29,12 @@
         <childnode refid="648" relation="include">
         </childnode>
       </node>
-      <node id="646">
-        <label>sphinxbase/prim_type.h</label>
-        <link refid="prim__type_8h"/>
-        <childnode refid="647" relation="include">
-        </childnode>
+      <node id="645">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
+      </node>
+      <node id="647">
+        <label>sphinx_config.h</label>
       </node>
       <node id="648">
         <label>sphinxbase/cmd_ln.h</label>
@@ -44,9 +47,6 @@
         </childnode>
         <childnode refid="646" relation="include">
         </childnode>
-      </node>
-      <node id="647">
-        <label>sphinx_config.h</label>
       </node>
       <node id="644">
         <label>stdio.h</label>

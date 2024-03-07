@@ -18,51 +18,23 @@
       <node id="49">
         <label>sphinxbase/ngram_model.h</label>
       </node>
-      <node id="50">
-        <label>ps_mllr.h</label>
-        <link refid="ps__mllr_8h"/>
-        <childnode refid="48" relation="include">
+      <node id="51">
+        <label>ps_search.h</label>
+        <link refid="ps__search_8h"/>
+        <childnode refid="52" relation="include">
         </childnode>
         <childnode refid="49" relation="include">
-        </childnode>
-        <childnode refid="45" relation="include">
         </childnode>
       </node>
-      <node id="47">
-        <label>ps_lattice.h</label>
-        <link refid="ps__lattice_8h"/>
-        <childnode refid="48" relation="include">
-        </childnode>
-        <childnode refid="49" relation="include">
-        </childnode>
-        <childnode refid="45" relation="include">
-        </childnode>
+      <node id="45">
+        <label>pocketsphinx_export.h</label>
+        <link refid="pocketsphinx__export_8h_source"/>
       </node>
       <node id="41">
         <label>sphinxbase/cmd_ln.h</label>
       </node>
       <node id="43">
         <label>sphinxbase/fe.h</label>
-      </node>
-      <node id="45">
-        <label>pocketsphinx_export.h</label>
-        <link refid="pocketsphinx__export_8h_source"/>
-      </node>
-      <node id="44">
-        <label>sphinxbase/feat.h</label>
-      </node>
-      <node id="48">
-        <label>sphinxbase/prim_type.h</label>
-      </node>
-      <node id="46">
-        <label>cmdln_macro.h</label>
-        <link refid="cmdln__macro_8h_source"/>
-        <childnode refid="41" relation="include">
-        </childnode>
-        <childnode refid="44" relation="include">
-        </childnode>
-        <childnode refid="43" relation="include">
-        </childnode>
       </node>
       <node id="39">
         <label>include/pocketsphinx.h</label>
@@ -88,12 +60,30 @@
         <childnode refid="51" relation="include">
         </childnode>
       </node>
-      <node id="51">
-        <label>ps_search.h</label>
-        <link refid="ps__search_8h"/>
-        <childnode refid="52" relation="include">
+      <node id="50">
+        <label>ps_mllr.h</label>
+        <link refid="ps__mllr_8h"/>
+        <childnode refid="48" relation="include">
         </childnode>
         <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>sphinxbase/feat.h</label>
+      </node>
+      <node id="48">
+        <label>sphinxbase/prim_type.h</label>
+      </node>
+      <node id="46">
+        <label>cmdln_macro.h</label>
+        <link refid="cmdln__macro_8h_source"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
         </childnode>
       </node>
       <node id="52">
@@ -102,63 +92,27 @@
       <node id="42">
         <label>sphinxbase/logmath.h</label>
       </node>
+      <node id="47">
+        <label>ps_lattice.h</label>
+        <link refid="ps__lattice_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
       <node id="40">
         <label>stdio.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="71">
-        <label>src/libpocketsphinx/fsg_search.c</label>
-        <link refid="fsg__search_8c_source"/>
-      </node>
-      <node id="66">
-        <label>src/libpocketsphinx/allphone_search.c</label>
-        <link refid="allphone__search_8c_source"/>
-      </node>
-      <node id="67">
-        <label>src/libpocketsphinx/allphone_search.h</label>
-        <link refid="allphone__search_8h_source"/>
-        <childnode refid="66" relation="include">
-        </childnode>
-        <childnode refid="68" relation="include">
-        </childnode>
-      </node>
-      <node id="68">
-        <label>src/libpocketsphinx/pocketsphinx.c</label>
-        <link refid="pocketsphinx_8c_source"/>
-      </node>
       <node id="69">
         <label>src/libpocketsphinx/fsg_search_internal.h</label>
         <link refid="fsg__search__internal_8h_source"/>
         <childnode refid="70" relation="include">
         </childnode>
         <childnode refid="71" relation="include">
-        </childnode>
-        <childnode refid="68" relation="include">
-        </childnode>
-      </node>
-      <node id="57">
-        <label>src/libpocketsphinx/acmod.c</label>
-        <link refid="acmod_8c"/>
-      </node>
-      <node id="82">
-        <label>src/libpocketsphinx/ps_lattice.c</label>
-        <link refid="ps__lattice_8c"/>
-      </node>
-      <node id="70">
-        <label>src/libpocketsphinx/fsg_history.c</label>
-        <link refid="fsg__history_8c_source"/>
-      </node>
-      <node id="84">
-        <label>src/libpocketsphinx/phone_loop_search.c</label>
-        <link refid="phone__loop__search_8c_source"/>
-      </node>
-      <node id="83">
-        <label>src/libpocketsphinx/phone_loop_search.h</label>
-        <link refid="phone__loop__search_8h"/>
-        <childnode refid="79" relation="include">
-        </childnode>
-        <childnode refid="84" relation="include">
         </childnode>
         <childnode refid="68" relation="include">
         </childnode>
@@ -173,6 +127,78 @@
         <childnode refid="73" relation="include">
         </childnode>
         <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>include/pocketsphinx.h</label>
+        <link refid="pocketsphinx_8h"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>src/libpocketsphinx/pocketsphinx.c</label>
+        <link refid="pocketsphinx_8c_source"/>
+      </node>
+      <node id="62">
+        <label>src/libpocketsphinx/ms_mgau.c</label>
+        <link refid="ms__mgau_8c_source"/>
+      </node>
+      <node id="71">
+        <label>src/libpocketsphinx/fsg_search.c</label>
+        <link refid="fsg__search_8c_source"/>
+      </node>
+      <node id="70">
+        <label>src/libpocketsphinx/fsg_history.c</label>
+        <link refid="fsg__history_8c_source"/>
+      </node>
+      <node id="61">
+        <label>src/libpocketsphinx/ms_mgau.h</label>
+        <link refid="ms__mgau_8h"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>src/libpocketsphinx/kws_search.c</label>
+        <link refid="kws__search_8c_source"/>
+      </node>
+      <node id="74">
+        <label>src/libpocketsphinx/kws_search.h</label>
+        <link refid="kws__search_8h_source"/>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>src/libpocketsphinx/state_align_search.c</label>
+        <link refid="state__align__search_8c"/>
+      </node>
+      <node id="65">
+        <label>src/libpocketsphinx/ms_gauden.c</label>
+        <link refid="ms__gauden_8c_source"/>
+      </node>
+      <node id="85">
+        <label>src/libpocketsphinx/state_align_search.h</label>
+        <link refid="state__align__search_8h"/>
+        <childnode refid="86" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>src/libpocketsphinx/ms_gauden.h</label>
+        <link refid="ms__gauden_8h"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
         </childnode>
       </node>
       <node id="76">
@@ -195,14 +221,34 @@
         <childnode refid="82" relation="include">
         </childnode>
       </node>
-      <node id="86">
-        <label>src/libpocketsphinx/state_align_search.c</label>
-        <link refid="state__align__search_8c"/>
+      <node id="84">
+        <label>src/libpocketsphinx/phone_loop_search.c</label>
+        <link refid="phone__loop__search_8c_source"/>
       </node>
-      <node id="85">
-        <label>src/libpocketsphinx/state_align_search.h</label>
-        <link refid="state__align__search_8h"/>
-        <childnode refid="86" relation="include">
+      <node id="83">
+        <label>src/libpocketsphinx/phone_loop_search.h</label>
+        <link refid="phone__loop__search_8h"/>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>src/libpocketsphinx/acmod.c</label>
+        <link refid="acmod_8c"/>
+      </node>
+      <node id="66">
+        <label>src/libpocketsphinx/allphone_search.c</label>
+        <link refid="allphone__search_8c_source"/>
+      </node>
+      <node id="67">
+        <label>src/libpocketsphinx/allphone_search.h</label>
+        <link refid="allphone__search_8h_source"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
         </childnode>
       </node>
       <node id="79">
@@ -231,56 +277,6 @@
         <childnode refid="60" relation="include">
         </childnode>
       </node>
-      <node id="64">
-        <label>src/libpocketsphinx/ms_senone.c</label>
-        <link refid="ms__senone_8c_source"/>
-      </node>
-      <node id="63">
-        <label>src/libpocketsphinx/ms_senone.h</label>
-        <link refid="ms__senone_8h"/>
-        <childnode refid="61" relation="include">
-        </childnode>
-        <childnode refid="64" relation="include">
-        </childnode>
-      </node>
-      <node id="58">
-        <label>src/libpocketsphinx/s2_semi_mgau.c</label>
-        <link refid="s2__semi__mgau_8c_source"/>
-      </node>
-      <node id="56">
-        <label>src/libpocketsphinx/s2_semi_mgau.h</label>
-        <link refid="s2__semi__mgau_8h_source"/>
-        <childnode refid="57" relation="include">
-        </childnode>
-        <childnode refid="58" relation="include">
-        </childnode>
-      </node>
-      <node id="65">
-        <label>src/libpocketsphinx/ms_gauden.c</label>
-        <link refid="ms__gauden_8c_source"/>
-      </node>
-      <node id="55">
-        <label>src/libpocketsphinx/ms_gauden.h</label>
-        <link refid="ms__gauden_8h"/>
-        <childnode refid="56" relation="include">
-        </childnode>
-        <childnode refid="59" relation="include">
-        </childnode>
-        <childnode refid="61" relation="include">
-        </childnode>
-        <childnode refid="63" relation="include">
-        </childnode>
-        <childnode refid="65" relation="include">
-        </childnode>
-      </node>
-      <node id="53">
-        <label>include/pocketsphinx.h</label>
-        <link refid="pocketsphinx_8h"/>
-        <childnode refid="54" relation="include">
-        </childnode>
-        <childnode refid="68" relation="include">
-        </childnode>
-      </node>
       <node id="81">
         <label>src/libpocketsphinx/ngram_search_fwdflat.c</label>
         <link refid="ngram__search__fwdflat_8c"/>
@@ -293,16 +289,16 @@
         <childnode refid="68" relation="include">
         </childnode>
       </node>
-      <node id="75">
-        <label>src/libpocketsphinx/kws_search.c</label>
-        <link refid="kws__search_8c_source"/>
+      <node id="64">
+        <label>src/libpocketsphinx/ms_senone.c</label>
+        <link refid="ms__senone_8c_source"/>
       </node>
-      <node id="74">
-        <label>src/libpocketsphinx/kws_search.h</label>
-        <link refid="kws__search_8h_source"/>
-        <childnode refid="75" relation="include">
+      <node id="63">
+        <label>src/libpocketsphinx/ms_senone.h</label>
+        <link refid="ms__senone_8h"/>
+        <childnode refid="61" relation="include">
         </childnode>
-        <childnode refid="68" relation="include">
+        <childnode refid="64" relation="include">
         </childnode>
       </node>
       <node id="54">
@@ -337,16 +333,20 @@
         <childnode refid="85" relation="include">
         </childnode>
       </node>
-      <node id="62">
-        <label>src/libpocketsphinx/ms_mgau.c</label>
-        <link refid="ms__mgau_8c_source"/>
+      <node id="82">
+        <label>src/libpocketsphinx/ps_lattice.c</label>
+        <link refid="ps__lattice_8c"/>
       </node>
-      <node id="61">
-        <label>src/libpocketsphinx/ms_mgau.h</label>
-        <link refid="ms__mgau_8h"/>
+      <node id="58">
+        <label>src/libpocketsphinx/s2_semi_mgau.c</label>
+        <link refid="s2__semi__mgau_8c_source"/>
+      </node>
+      <node id="56">
+        <label>src/libpocketsphinx/s2_semi_mgau.h</label>
+        <link refid="s2__semi__mgau_8h_source"/>
         <childnode refid="57" relation="include">
         </childnode>
-        <childnode refid="62" relation="include">
+        <childnode refid="58" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

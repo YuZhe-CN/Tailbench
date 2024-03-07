@@ -1,0 +1,65 @@
+...patience...
+...found 2898 targets...
+...updating 57 targets...
+gcc.archive phrase-extract/pcfg-common/bin/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/libpcfg_common.a
+common.copy /home/tailbench/moses/lib/libpcfg_common.a
+gcc.link moses-chart-cmd/bin/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/moses_chart
+common.copy /home/tailbench/moses/bin/moses_chart
+gcc.link moses-cmd/bin/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/moses_integrated
+common.copy /home/tailbench/moses/bin/moses_integrated
+gcc.link moses-cmd/bin/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/moses_server_networked
+gcc.link moses-cmd/bin/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/moses_client_networked
+common.copy /home/tailbench/moses/bin/moses_client_networked
+common.copy /home/tailbench/moses/bin/moses_server_networked
+gcc.link OnDiskPt/bin/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/CreateOnDiskPt
+common.copy /home/tailbench/moses/bin/CreateOnDiskPt
+gcc.link OnDiskPt/bin/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/queryOnDiskPt
+gcc.link mert/bin/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/mert
+gcc.link misc/bin/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/processPhraseTable
+common.copy /home/tailbench/moses/bin/processPhraseTable
+common.copy mert/mert
+common.copy /home/tailbench/moses/bin/mert
+common.copy /home/tailbench/moses/bin/queryOnDiskPt
+gcc.link misc/bin/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/processLexicalTable
+gcc.link misc/bin/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/queryPhraseTable
+common.copy /home/tailbench/moses/bin/queryPhraseTable
+common.copy /home/tailbench/moses/bin/processLexicalTable
+gcc.link misc/bin/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/queryLexicalTable
+gcc.link phrase-extract/bin/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/statistics
+gcc.link phrase-extract/bin/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/relax-parse
+common.copy /home/tailbench/moses/bin/statistics
+common.copy /home/tailbench/moses/bin/relax-parse
+gcc.link phrase-extract/bin/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/extract-rules
+gcc.link phrase-extract/bin/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/extract
+common.copy /home/tailbench/moses/bin/extract-rules
+common.copy /home/tailbench/moses/bin/extract
+gcc.link phrase-extract/bin/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/extract-lex
+gcc.link phrase-extract/bin/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/consolidate-reverse
+gcc.link phrase-extract/bin/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/consolidate
+gcc.link phrase-extract/bin/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/consolidate-direct
+gcc.link phrase-extract/bin/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/score
+gcc.link phrase-extract/bin/ScoreFeatureTest.test/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/ScoreFeatureTest
+testing.capture-output phrase-extract/bin/ScoreFeatureTest.test/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/ScoreFeatureTest.run
+common.copy /home/tailbench/moses/bin/consolidate
+gcc.link phrase-extract/extract-ghkm/bin/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/extract-ghkm
+**passed** phrase-extract/bin/ScoreFeatureTest.test/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/ScoreFeatureTest.test
+common.copy /home/tailbench/moses/bin/consolidate-direct
+common.copy /home/tailbench/moses/bin/consolidate-reverse
+common.copy /home/tailbench/moses/bin/extract-lex
+common.copy /home/tailbench/moses/bin/score
+common.copy /home/tailbench/moses/bin/extract-ghkm
+common.copy /home/tailbench/moses/bin/queryLexicalTable
+gcc.link mira/bin/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/mira
+common.copy /home/tailbench/moses/bin/mira
+gcc.link moses/bin/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/moses_test
+gcc.link phrase-extract/pcfg-extract/bin/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/pcfg-extract
+common.copy /home/tailbench/moses/bin/pcfg-extract
+testing.unit-test moses/bin/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/moses_test.passed
+Running 25 test cases...
+core=() c=-0.1 b=1.4 a=0
+core=() a=1.2
+
+*** No errors detected
+gcc.link phrase-extract/pcfg-score/bin/gcc-7/release/cpp98-on/debug-symbols-on/link-static/threading-multi/pcfg-score
+common.copy /home/tailbench/moses/bin/pcfg-score
+...updated 57 targets...

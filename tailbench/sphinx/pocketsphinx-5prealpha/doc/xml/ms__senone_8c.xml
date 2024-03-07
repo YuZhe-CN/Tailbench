@@ -14,6 +14,83 @@
       <node id="1367">
         <label>sphinxbase/hash_table.h</label>
       </node>
+      <node id="1375">
+        <label>ps_search.h</label>
+        <link refid="ps__search_8h"/>
+        <childnode refid="1376" relation="include">
+        </childnode>
+        <childnode refid="1373" relation="include">
+        </childnode>
+      </node>
+      <node id="1354">
+        <label>assert.h</label>
+      </node>
+      <node id="1370">
+        <label>pocketsphinx_export.h</label>
+        <link refid="pocketsphinx__export_8h_source"/>
+      </node>
+      <node id="1388">
+        <label>float.h</label>
+      </node>
+      <node id="1389">
+        <label>dict2pid.h</label>
+        <link refid="dict2pid_8h"/>
+        <childnode refid="1353" relation="include">
+        </childnode>
+        <childnode refid="1360" relation="include">
+        </childnode>
+        <childnode refid="1378" relation="include">
+        </childnode>
+        <childnode refid="1387" relation="include">
+        </childnode>
+        <childnode refid="1379" relation="include">
+        </childnode>
+        <childnode refid="1386" relation="include">
+        </childnode>
+      </node>
+      <node id="1359">
+        <label>sphinxbase/cmd_ln.h</label>
+      </node>
+      <node id="1366">
+        <label>sphinxbase/fe.h</label>
+      </node>
+      <node id="1369">
+        <label>pocketsphinx.h</label>
+        <link refid="pocketsphinx_8h"/>
+        <childnode refid="1353" relation="include">
+        </childnode>
+        <childnode refid="1359" relation="include">
+        </childnode>
+        <childnode refid="1360" relation="include">
+        </childnode>
+        <childnode refid="1366" relation="include">
+        </childnode>
+        <childnode refid="1362" relation="include">
+        </childnode>
+        <childnode refid="1370" relation="include">
+        </childnode>
+        <childnode refid="1371" relation="include">
+        </childnode>
+        <childnode refid="1372" relation="include">
+        </childnode>
+        <childnode refid="1374" relation="include">
+        </childnode>
+        <childnode refid="1375" relation="include">
+        </childnode>
+      </node>
+      <node id="1384">
+        <label>sphinxbase/fixpoint.h</label>
+      </node>
+      <node id="1374">
+        <label>ps_mllr.h</label>
+        <link refid="ps__mllr_8h"/>
+        <childnode refid="1364" relation="include">
+        </childnode>
+        <childnode refid="1373" relation="include">
+        </childnode>
+        <childnode refid="1370" relation="include">
+        </childnode>
+      </node>
       <node id="1386">
         <label>dict.h</label>
         <link refid="dict_8h"/>
@@ -26,45 +103,45 @@
         <childnode refid="1370" relation="include">
         </childnode>
       </node>
-      <node id="1354">
-        <label>assert.h</label>
+      <node id="1380">
+        <label>sphinxbase/mmio.h</label>
       </node>
-      <node id="1387">
-        <label>s3types.h</label>
-        <link refid="s3types_8h"/>
-        <childnode refid="1388" relation="include">
+      <node id="1361">
+        <label>ms_gauden.h</label>
+        <link refid="ms__gauden_8h"/>
+        <childnode refid="1362" relation="include">
         </childnode>
-        <childnode refid="1354" relation="include">
+        <childnode refid="1360" relation="include">
         </childnode>
-        <childnode refid="1364" relation="include">
+        <childnode refid="1359" relation="include">
         </childnode>
-        <childnode refid="1357" relation="include">
+        <childnode refid="1363" relation="include">
         </childnode>
-        <childnode refid="1358" relation="include">
+        <childnode refid="1365" relation="include">
+        </childnode>
+        <childnode refid="1383" relation="include">
         </childnode>
       </node>
-      <node id="1374">
-        <label>ps_mllr.h</label>
-        <link refid="ps__mllr_8h"/>
-        <childnode refid="1364" relation="include">
+      <node id="1379">
+        <label>bin_mdef.h</label>
+        <link refid="bin__mdef_8h"/>
+        <childnode refid="1380" relation="include">
         </childnode>
-        <childnode refid="1373" relation="include">
+        <childnode refid="1359" relation="include">
         </childnode>
         <childnode refid="1370" relation="include">
         </childnode>
+        <childnode refid="1381" relation="include">
+        </childnode>
       </node>
-      <node id="1388">
-        <label>float.h</label>
+      <node id="1358">
+        <label>sphinxbase/ckd_alloc.h</label>
       </node>
-      <node id="1372">
-        <label>ps_lattice.h</label>
-        <link refid="ps__lattice_8h"/>
-        <childnode refid="1364" relation="include">
-        </childnode>
-        <childnode refid="1373" relation="include">
-        </childnode>
-        <childnode refid="1370" relation="include">
-        </childnode>
+      <node id="1385">
+        <label>sphinxbase/listelem_alloc.h</label>
+      </node>
+      <node id="1355">
+        <label>sphinxbase/bio.h</label>
       </node>
       <node id="1382">
         <label>tmat.h</label>
@@ -74,18 +151,14 @@
         <childnode refid="1360" relation="include">
         </childnode>
       </node>
-      <node id="1359">
-        <label>sphinxbase/cmd_ln.h</label>
+      <node id="1362">
+        <label>sphinxbase/feat.h</label>
       </node>
-      <node id="1366">
-        <label>sphinxbase/fe.h</label>
+      <node id="1352">
+        <label>string.h</label>
       </node>
-      <node id="1384">
-        <label>sphinxbase/fixpoint.h</label>
-      </node>
-      <node id="1370">
-        <label>pocketsphinx_export.h</label>
-        <link refid="pocketsphinx__export_8h_source"/>
+      <node id="1364">
+        <label>sphinxbase/prim_type.h</label>
       </node>
       <node id="1377">
         <label>acmod.h</label>
@@ -115,17 +188,22 @@
         <childnode refid="1383" relation="include">
         </childnode>
       </node>
-      <node id="1380">
-        <label>sphinxbase/mmio.h</label>
+      <node id="1387">
+        <label>s3types.h</label>
+        <link refid="s3types_8h"/>
+        <childnode refid="1388" relation="include">
+        </childnode>
+        <childnode refid="1354" relation="include">
+        </childnode>
+        <childnode refid="1364" relation="include">
+        </childnode>
+        <childnode refid="1357" relation="include">
+        </childnode>
+        <childnode refid="1358" relation="include">
+        </childnode>
       </node>
-      <node id="1358">
-        <label>sphinxbase/ckd_alloc.h</label>
-      </node>
-      <node id="1385">
-        <label>sphinxbase/listelem_alloc.h</label>
-      </node>
-      <node id="1355">
-        <label>sphinxbase/bio.h</label>
+      <node id="1378">
+        <label>sphinxbase/bitvec.h</label>
       </node>
       <node id="1381">
         <label>mdef.h</label>
@@ -135,30 +213,8 @@
         <childnode refid="1367" relation="include">
         </childnode>
       </node>
-      <node id="1362">
-        <label>sphinxbase/feat.h</label>
-      </node>
-      <node id="1352">
-        <label>string.h</label>
-      </node>
-      <node id="1389">
-        <label>dict2pid.h</label>
-        <link refid="dict2pid_8h"/>
-        <childnode refid="1353" relation="include">
-        </childnode>
-        <childnode refid="1360" relation="include">
-        </childnode>
-        <childnode refid="1378" relation="include">
-        </childnode>
-        <childnode refid="1387" relation="include">
-        </childnode>
-        <childnode refid="1379" relation="include">
-        </childnode>
-        <childnode refid="1386" relation="include">
-        </childnode>
-      </node>
-      <node id="1364">
-        <label>sphinxbase/prim_type.h</label>
+      <node id="1357">
+        <label>sphinxbase/err.h</label>
       </node>
       <node id="1371">
         <label>cmdln_macro.h</label>
@@ -170,20 +226,19 @@
         <childnode refid="1366" relation="include">
         </childnode>
       </node>
-      <node id="1383">
-        <label>hmm.h</label>
-        <link refid="hmm_8h"/>
+      <node id="1376">
+        <label>sphinxbase/fsg_model.h</label>
+      </node>
+      <node id="1363">
+        <label>vector.h</label>
+        <link refid="vector_8h_source"/>
         <childnode refid="1353" relation="include">
         </childnode>
-        <childnode refid="1384" relation="include">
-        </childnode>
-        <childnode refid="1385" relation="include">
-        </childnode>
-        <childnode refid="1379" relation="include">
+        <childnode refid="1364" relation="include">
         </childnode>
       </node>
-      <node id="1378">
-        <label>sphinxbase/bitvec.h</label>
+      <node id="1360">
+        <label>sphinxbase/logmath.h</label>
       </node>
       <node id="1351">
         <label>src/libpocketsphinx/ms_senone.c</label>
@@ -215,65 +270,18 @@
         <childnode refid="1379" relation="include">
         </childnode>
       </node>
-      <node id="1361">
-        <label>ms_gauden.h</label>
-        <link refid="ms__gauden_8h"/>
-        <childnode refid="1362" relation="include">
-        </childnode>
-        <childnode refid="1360" relation="include">
-        </childnode>
-        <childnode refid="1359" relation="include">
-        </childnode>
-        <childnode refid="1363" relation="include">
-        </childnode>
-        <childnode refid="1365" relation="include">
-        </childnode>
-        <childnode refid="1383" relation="include">
-        </childnode>
-      </node>
-      <node id="1369">
-        <label>pocketsphinx.h</label>
-        <link refid="pocketsphinx_8h"/>
-        <childnode refid="1353" relation="include">
-        </childnode>
-        <childnode refid="1359" relation="include">
-        </childnode>
-        <childnode refid="1360" relation="include">
-        </childnode>
-        <childnode refid="1366" relation="include">
-        </childnode>
-        <childnode refid="1362" relation="include">
-        </childnode>
-        <childnode refid="1370" relation="include">
-        </childnode>
-        <childnode refid="1371" relation="include">
-        </childnode>
-        <childnode refid="1372" relation="include">
-        </childnode>
-        <childnode refid="1374" relation="include">
-        </childnode>
-        <childnode refid="1375" relation="include">
-        </childnode>
-      </node>
-      <node id="1379">
-        <label>bin_mdef.h</label>
-        <link refid="bin__mdef_8h"/>
-        <childnode refid="1380" relation="include">
-        </childnode>
-        <childnode refid="1359" relation="include">
-        </childnode>
-        <childnode refid="1370" relation="include">
-        </childnode>
-        <childnode refid="1381" relation="include">
-        </childnode>
-      </node>
-      <node id="1375">
-        <label>ps_search.h</label>
-        <link refid="ps__search_8h"/>
-        <childnode refid="1376" relation="include">
+      <node id="1372">
+        <label>ps_lattice.h</label>
+        <link refid="ps__lattice_8h"/>
+        <childnode refid="1364" relation="include">
         </childnode>
         <childnode refid="1373" relation="include">
         </childnode>
+        <childnode refid="1370" relation="include">
+        </childnode>
+      </node>
+      <node id="1368">
+        <label>sphinxbase/profile.h</label>
       </node>
       <node id="1365">
         <label>pocketsphinx_internal.h</label>
@@ -299,28 +307,20 @@
         <childnode refid="1389" relation="include">
         </childnode>
       </node>
-      <node id="1357">
-        <label>sphinxbase/err.h</label>
-      </node>
-      <node id="1376">
-        <label>sphinxbase/fsg_model.h</label>
-      </node>
-      <node id="1360">
-        <label>sphinxbase/logmath.h</label>
-      </node>
-      <node id="1363">
-        <label>vector.h</label>
-        <link refid="vector_8h_source"/>
-        <childnode refid="1353" relation="include">
-        </childnode>
-        <childnode refid="1364" relation="include">
-        </childnode>
-      </node>
-      <node id="1368">
-        <label>sphinxbase/profile.h</label>
-      </node>
       <node id="1353">
         <label>stdio.h</label>
+      </node>
+      <node id="1383">
+        <label>hmm.h</label>
+        <link refid="hmm_8h"/>
+        <childnode refid="1353" relation="include">
+        </childnode>
+        <childnode refid="1384" relation="include">
+        </childnode>
+        <childnode refid="1385" relation="include">
+        </childnode>
+        <childnode refid="1379" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
       <sectiondef kind="define">

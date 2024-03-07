@@ -6,15 +6,15 @@
     <includes refid="prim__type_8h" local="no">sphinxbase/prim_type.h</includes>
     <includedby refid="matrix_8c" local="yes">src/libsphinxbase/util/matrix.c</includedby>
     <incdepgraph>
-      <node id="723">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
-      </node>
       <node id="724">
         <label>sphinxbase/prim_type.h</label>
         <link refid="prim__type_8h"/>
         <childnode refid="725" relation="include">
         </childnode>
+      </node>
+      <node id="723">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
       </node>
       <node id="725">
         <label>sphinx_config.h</label>
@@ -29,15 +29,15 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="727">
-        <label>src/libsphinxbase/util/matrix.c</label>
-        <link refid="matrix_8c_source"/>
-      </node>
       <node id="726">
         <label>include/sphinxbase/matrix.h</label>
         <link refid="matrix_8h"/>
         <childnode refid="727" relation="include">
         </childnode>
+      </node>
+      <node id="727">
+        <label>src/libsphinxbase/util/matrix.c</label>
+        <link refid="matrix_8c_source"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="func">

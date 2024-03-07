@@ -4,15 +4,15 @@
     <compoundname>slapack_lite.c</compoundname>
     <includes refid="f2c_8h" local="yes">sphinxbase/f2c.h</includes>
     <incdepgraph>
-      <node id="2412">
-        <label>sphinxbase/f2c.h</label>
-        <link refid="f2c_8h_source"/>
-      </node>
       <node id="2411">
         <label>src/libsphinxbase/util/slapack_lite.c</label>
         <link refid="slapack__lite_8c"/>
         <childnode refid="2412" relation="include">
         </childnode>
+      </node>
+      <node id="2412">
+        <label>sphinxbase/f2c.h</label>
+        <link refid="f2c_8h_source"/>
       </node>
     </incdepgraph>
       <sectiondef kind="define">

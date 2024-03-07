@@ -51,10 +51,6 @@
     <includedby refid="sphinx__lm__convert_8c" local="no">src/sphinx_lmtools/sphinx_lm_convert.c</includedby>
     <includedby refid="sphinx__lm__eval_8c" local="no">src/sphinx_lmtools/sphinx_lm_eval.c</includedby>
     <incdepgraph>
-      <node id="232">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
-      </node>
       <node id="230">
         <label>stdlib.h</label>
       </node>
@@ -79,88 +75,34 @@
         <childnode refid="233" relation="include">
         </childnode>
       </node>
+      <node id="232">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
+      </node>
       <node id="234">
         <label>sphinx_config.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="265">
-        <label>src/libsphinxbase/util/dtoa.c</label>
-        <link refid="dtoa_8c_source"/>
+      <node id="255">
+        <label>src/libsphinxbase/feat/lda.c</label>
+        <link refid="lda_8c_source"/>
+      </node>
+      <node id="268">
+        <label>src/libsphinxbase/util/hash_table.c</label>
+        <link refid="hash__table_8c_source"/>
+      </node>
+      <node id="254">
+        <label>src/libsphinxbase/feat/feat.c</label>
+        <link refid="feat_8c_source"/>
       </node>
       <node id="262">
         <label>src/libsphinxbase/util/bio.c</label>
         <link refid="bio_8c_source"/>
       </node>
-      <node id="244">
-        <label>src/libsphinxbase/lm/fsg_model.c</label>
-        <link refid="fsg__model_8c_source"/>
-      </node>
-      <node id="274">
-        <label>src/libsphinxbase/util/mmio.c</label>
-        <link refid="mmio_8c_source"/>
-      </node>
-      <node id="236">
-        <label>include/sphinxbase/bitvec.h</label>
-        <link refid="bitvec_8h"/>
-        <childnode refid="237" relation="include">
-        </childnode>
-        <childnode refid="245" relation="include">
-        </childnode>
-      </node>
-      <node id="240">
-        <label>src/libsphinxbase/lm/jsgf_internal.h</label>
-        <link refid="jsgf__internal_8h"/>
-        <childnode refid="239" relation="include">
-        </childnode>
-        <childnode refid="241" relation="include">
-        </childnode>
-        <childnode refid="242" relation="include">
-        </childnode>
-      </node>
       <node id="284">
         <label>src/sphinx_lmtools/sphinx_lm_convert.c</label>
         <link refid="sphinx__lm__convert_8c"/>
-      </node>
-      <node id="258">
-        <label>src/libsphinxbase/lm/ngram_model.c</label>
-        <link refid="ngram__model_8c_source"/>
-      </node>
-      <node id="251">
-        <label>src/libsphinxbase/feat/agc.c</label>
-        <link refid="agc_8c_source"/>
-      </node>
-      <node id="247">
-        <label>src/libsphinxbase/fe/fe_noise.c</label>
-        <link refid="fe__noise_8c_source"/>
-      </node>
-      <node id="275">
-        <label>src/libsphinxbase/util/pio.c</label>
-        <link refid="pio_8c_source"/>
-      </node>
-      <node id="270">
-        <label>src/libsphinxbase/util/huff_code.c</label>
-        <link refid="huff__code_8c_source"/>
-      </node>
-      <node id="266">
-        <label>src/libsphinxbase/util/err.c</label>
-        <link refid="err_8c"/>
-      </node>
-      <node id="252">
-        <label>src/libsphinxbase/feat/cmn.c</label>
-        <link refid="cmn_8c_source"/>
-      </node>
-      <node id="267">
-        <label>src/libsphinxbase/util/glist.c</label>
-        <link refid="glist_8c_source"/>
-      </node>
-      <node id="280">
-        <label>src/sphinx_adtools/cont_seg.c</label>
-        <link refid="cont__seg_8c_source"/>
-      </node>
-      <node id="248">
-        <label>src/libsphinxbase/fe/fe_prespch_buf.c</label>
-        <link refid="fe__prespch__buf_8c_source"/>
       </node>
       <node id="238">
         <label>include/sphinxbase/jsgf.h</label>
@@ -172,25 +114,65 @@
         <childnode refid="243" relation="include">
         </childnode>
       </node>
-      <node id="279">
-        <label>src/libsphinxbase/util/strfuncs.c</label>
-        <link refid="strfuncs_8c_source"/>
+      <node id="256">
+        <label>src/libsphinxbase/lm/lm_trie.c</label>
+        <link refid="lm__trie_8c_source"/>
       </node>
-      <node id="263">
-        <label>src/libsphinxbase/util/ckd_alloc.c</label>
-        <link refid="ckd__alloc_8c_source"/>
+      <node id="265">
+        <label>src/libsphinxbase/util/dtoa.c</label>
+        <link refid="dtoa_8c_source"/>
+      </node>
+      <node id="243">
+        <label>src/sphinx_jsgf2fsg/main.c</label>
+        <link refid="main_8c_source"/>
+      </node>
+      <node id="275">
+        <label>src/libsphinxbase/util/pio.c</label>
+        <link refid="pio_8c_source"/>
+      </node>
+      <node id="246">
+        <label>src/libsphinxbase/fe/fe_interface.c</label>
+        <link refid="fe__interface_8c_source"/>
+      </node>
+      <node id="278">
+        <label>src/libsphinxbase/util/sbthread.c</label>
+        <link refid="sbthread_8c"/>
       </node>
       <node id="271">
         <label>src/libsphinxbase/util/listelem_alloc.c</label>
         <link refid="listelem__alloc_8c_source"/>
       </node>
-      <node id="260">
-        <label>src/libsphinxbase/lm/ngram_model_trie.c</label>
-        <link refid="ngram__model__trie_8c_source"/>
+      <node id="252">
+        <label>src/libsphinxbase/feat/cmn.c</label>
+        <link refid="cmn_8c_source"/>
       </node>
-      <node id="243">
-        <label>src/sphinx_jsgf2fsg/main.c</label>
-        <link refid="main_8c_source"/>
+      <node id="247">
+        <label>src/libsphinxbase/fe/fe_noise.c</label>
+        <link refid="fe__noise_8c_source"/>
+      </node>
+      <node id="257">
+        <label>src/libsphinxbase/lm/lm_trie_quant.c</label>
+        <link refid="lm__trie__quant_8c_source"/>
+      </node>
+      <node id="283">
+        <label>src/sphinx_fe/sphinx_fe.c</label>
+        <link refid="sphinx__fe_8c_source"/>
+      </node>
+      <node id="270">
+        <label>src/libsphinxbase/util/huff_code.c</label>
+        <link refid="huff__code_8c_source"/>
+      </node>
+      <node id="282">
+        <label>src/sphinx_cepview/main_cepview.c</label>
+        <link refid="main__cepview_8c"/>
+      </node>
+      <node id="236">
+        <label>include/sphinxbase/bitvec.h</label>
+        <link refid="bitvec_8h"/>
+        <childnode refid="237" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
+        </childnode>
       </node>
       <node id="235">
         <label>include/sphinxbase/ckd_alloc.h</label>
@@ -284,101 +266,45 @@
         <childnode refid="285" relation="include">
         </childnode>
       </node>
+      <node id="281">
+        <label>src/sphinx_adtools/sphinx_pitch.c</label>
+        <link refid="sphinx__pitch_8c_source"/>
+      </node>
+      <node id="248">
+        <label>src/libsphinxbase/fe/fe_prespch_buf.c</label>
+        <link refid="fe__prespch__buf_8c_source"/>
+      </node>
+      <node id="258">
+        <label>src/libsphinxbase/lm/ngram_model.c</label>
+        <link refid="ngram__model_8c_source"/>
+      </node>
+      <node id="279">
+        <label>src/libsphinxbase/util/strfuncs.c</label>
+        <link refid="strfuncs_8c_source"/>
+      </node>
       <node id="276">
         <label>src/libsphinxbase/util/priority_queue.c</label>
         <link refid="priority__queue_8c_source"/>
       </node>
-      <node id="250">
-        <label>src/libsphinxbase/fe/yin.c</label>
-        <link refid="yin_8c"/>
-      </node>
-      <node id="255">
-        <label>src/libsphinxbase/feat/lda.c</label>
-        <link refid="lda_8c_source"/>
-      </node>
-      <node id="242">
-        <label>src/libsphinxbase/lm/jsgf_scanner.c</label>
-        <link refid="jsgf__scanner_8c_source"/>
-      </node>
-      <node id="259">
-        <label>src/libsphinxbase/lm/ngram_model_set.c</label>
-        <link refid="ngram__model__set_8c"/>
-      </node>
-      <node id="273">
-        <label>src/libsphinxbase/util/matrix.c</label>
-        <link refid="matrix_8c_source"/>
-      </node>
-      <node id="283">
-        <label>src/sphinx_fe/sphinx_fe.c</label>
-        <link refid="sphinx__fe_8c_source"/>
-      </node>
-      <node id="249">
-        <label>src/libsphinxbase/fe/fe_sigproc.c</label>
-        <link refid="fe__sigproc_8c_source"/>
-      </node>
-      <node id="268">
-        <label>src/libsphinxbase/util/hash_table.c</label>
-        <link refid="hash__table_8c_source"/>
-      </node>
-      <node id="257">
-        <label>src/libsphinxbase/lm/lm_trie_quant.c</label>
-        <link refid="lm__trie__quant_8c_source"/>
-      </node>
-      <node id="278">
-        <label>src/libsphinxbase/util/sbthread.c</label>
-        <link refid="sbthread_8c"/>
-      </node>
-      <node id="246">
-        <label>src/libsphinxbase/fe/fe_interface.c</label>
-        <link refid="fe__interface_8c_source"/>
-      </node>
-      <node id="277">
-        <label>src/libsphinxbase/util/profile.c</label>
-        <link refid="profile_8c_source"/>
-      </node>
-      <node id="282">
-        <label>src/sphinx_cepview/main_cepview.c</label>
-        <link refid="main__cepview_8c"/>
-      </node>
-      <node id="256">
-        <label>src/libsphinxbase/lm/lm_trie.c</label>
-        <link refid="lm__trie_8c_source"/>
-      </node>
-      <node id="241">
-        <label>src/libsphinxbase/lm/jsgf_parser.c</label>
-        <link refid="jsgf__parser_8c_source"/>
-      </node>
-      <node id="272">
-        <label>src/libsphinxbase/util/logmath.c</label>
-        <link refid="logmath_8c_source"/>
+      <node id="245">
+        <label>src/libsphinxbase/util/bitvec.c</label>
+        <link refid="bitvec_8c_source"/>
       </node>
       <node id="285">
         <label>src/sphinx_lmtools/sphinx_lm_eval.c</label>
         <link refid="sphinx__lm__eval_8c"/>
       </node>
-      <node id="269">
-        <label>src/libsphinxbase/util/heap.c</label>
-        <link refid="heap_8c_source"/>
+      <node id="251">
+        <label>src/libsphinxbase/feat/agc.c</label>
+        <link refid="agc_8c_source"/>
       </node>
-      <node id="264">
-        <label>src/libsphinxbase/util/cmd_ln.c</label>
-        <link refid="cmd__ln_8c_source"/>
+      <node id="274">
+        <label>src/libsphinxbase/util/mmio.c</label>
+        <link refid="mmio_8c_source"/>
       </node>
-      <node id="281">
-        <label>src/sphinx_adtools/sphinx_pitch.c</label>
-        <link refid="sphinx__pitch_8c_source"/>
-      </node>
-      <node id="254">
-        <label>src/libsphinxbase/feat/feat.c</label>
-        <link refid="feat_8c_source"/>
-      </node>
-      <node id="253">
-        <label>src/libsphinxbase/feat/cmn_prior.c</label>
-        <link refid="cmn__prior_8c_source"/>
-      </node>
-      <node id="239">
-        <label>src/libsphinxbase/lm/jsgf.c</label>
-        <link refid="jsgf_8c"/>
+      <node id="266">
+        <label>src/libsphinxbase/util/err.c</label>
+        <link refid="err_8c"/>
       </node>
       <node id="237">
         <label>include/sphinxbase/fsg_model.h</label>
@@ -392,13 +318,87 @@
         <childnode refid="243" relation="include">
         </childnode>
       </node>
-      <node id="245">
-        <label>src/libsphinxbase/util/bitvec.c</label>
-        <link refid="bitvec_8c_source"/>
+      <node id="267">
+        <label>src/libsphinxbase/util/glist.c</label>
+        <link refid="glist_8c_source"/>
+      </node>
+      <node id="242">
+        <label>src/libsphinxbase/lm/jsgf_scanner.c</label>
+        <link refid="jsgf__scanner_8c_source"/>
+      </node>
+      <node id="259">
+        <label>src/libsphinxbase/lm/ngram_model_set.c</label>
+        <link refid="ngram__model__set_8c"/>
+      </node>
+      <node id="241">
+        <label>src/libsphinxbase/lm/jsgf_parser.c</label>
+        <link refid="jsgf__parser_8c_source"/>
+      </node>
+      <node id="264">
+        <label>src/libsphinxbase/util/cmd_ln.c</label>
+        <link refid="cmd__ln_8c_source"/>
+      </node>
+      <node id="277">
+        <label>src/libsphinxbase/util/profile.c</label>
+        <link refid="profile_8c_source"/>
+      </node>
+      <node id="249">
+        <label>src/libsphinxbase/fe/fe_sigproc.c</label>
+        <link refid="fe__sigproc_8c_source"/>
+      </node>
+      <node id="272">
+        <label>src/libsphinxbase/util/logmath.c</label>
+        <link refid="logmath_8c_source"/>
+      </node>
+      <node id="269">
+        <label>src/libsphinxbase/util/heap.c</label>
+        <link refid="heap_8c_source"/>
+      </node>
+      <node id="240">
+        <label>src/libsphinxbase/lm/jsgf_internal.h</label>
+        <link refid="jsgf__internal_8h"/>
+        <childnode refid="239" relation="include">
+        </childnode>
+        <childnode refid="241" relation="include">
+        </childnode>
+        <childnode refid="242" relation="include">
+        </childnode>
+      </node>
+      <node id="253">
+        <label>src/libsphinxbase/feat/cmn_prior.c</label>
+        <link refid="cmn__prior_8c_source"/>
+      </node>
+      <node id="263">
+        <label>src/libsphinxbase/util/ckd_alloc.c</label>
+        <link refid="ckd__alloc_8c_source"/>
+      </node>
+      <node id="280">
+        <label>src/sphinx_adtools/cont_seg.c</label>
+        <link refid="cont__seg_8c_source"/>
+      </node>
+      <node id="244">
+        <label>src/libsphinxbase/lm/fsg_model.c</label>
+        <link refid="fsg__model_8c_source"/>
       </node>
       <node id="261">
         <label>src/libsphinxbase/lm/ngrams_raw.c</label>
         <link refid="ngrams__raw_8c_source"/>
+      </node>
+      <node id="260">
+        <label>src/libsphinxbase/lm/ngram_model_trie.c</label>
+        <link refid="ngram__model__trie_8c_source"/>
+      </node>
+      <node id="250">
+        <label>src/libsphinxbase/fe/yin.c</label>
+        <link refid="yin_8c"/>
+      </node>
+      <node id="273">
+        <label>src/libsphinxbase/util/matrix.c</label>
+        <link refid="matrix_8c_source"/>
+      </node>
+      <node id="239">
+        <label>src/libsphinxbase/lm/jsgf.c</label>
+        <link refid="jsgf_8c"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="define">

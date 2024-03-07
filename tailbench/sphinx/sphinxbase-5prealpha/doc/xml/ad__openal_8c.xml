@@ -12,18 +12,28 @@
       <node id="1120">
         <label>al.h</label>
       </node>
-      <node id="1118">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
-      </node>
       <node id="1114">
         <label>stdlib.h</label>
+      </node>
+      <node id="1116">
+        <label>ad.h</label>
+        <link refid="ad_8h"/>
+        <childnode refid="1117" relation="include">
+        </childnode>
+        <childnode refid="1118" relation="include">
+        </childnode>
+        <childnode refid="1119" relation="include">
+        </childnode>
       </node>
       <node id="1119">
         <label>sphinxbase/prim_type.h</label>
         <link refid="prim__type_8h"/>
         <childnode refid="1117" relation="include">
         </childnode>
+      </node>
+      <node id="1118">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
       </node>
       <node id="1117">
         <label>sphinx_config.h</label>
@@ -45,16 +55,6 @@
         <childnode refid="1120" relation="include">
         </childnode>
         <childnode refid="1121" relation="include">
-        </childnode>
-      </node>
-      <node id="1116">
-        <label>ad.h</label>
-        <link refid="ad_8h"/>
-        <childnode refid="1117" relation="include">
-        </childnode>
-        <childnode refid="1118" relation="include">
-        </childnode>
-        <childnode refid="1119" relation="include">
         </childnode>
       </node>
       <node id="1113">

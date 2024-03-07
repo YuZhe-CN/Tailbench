@@ -9,9 +9,15 @@
     <includes local="no">stdio.h</includes>
     <includes local="no">string.h</includes>
     <incdepgraph>
-      <node id="1514">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
+      <node id="1515">
+        <label>sphinxbase/fixpoint.h</label>
+        <link refid="fixpoint_8h_source"/>
+        <childnode refid="1516" relation="include">
+        </childnode>
+        <childnode refid="1514" relation="include">
+        </childnode>
+        <childnode refid="1509" relation="include">
+        </childnode>
       </node>
       <node id="1512">
         <label>stdlib.h</label>
@@ -37,8 +43,29 @@
         <childnode refid="1509" relation="include">
         </childnode>
       </node>
+      <node id="1514">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
+      </node>
       <node id="1516">
         <label>limits.h</label>
+      </node>
+      <node id="1517">
+        <label>sphinxbase/yin.h</label>
+        <link refid="yin_8h"/>
+        <childnode refid="1514" relation="include">
+        </childnode>
+        <childnode refid="1509" relation="include">
+        </childnode>
+      </node>
+      <node id="1510">
+        <label>sphinx_config.h</label>
+      </node>
+      <node id="1519">
+        <label>string.h</label>
+      </node>
+      <node id="1518">
+        <label>stdio.h</label>
       </node>
       <node id="1508">
         <label>src/libsphinxbase/fe/yin.c</label>
@@ -54,33 +81,6 @@
         <childnode refid="1518" relation="include">
         </childnode>
         <childnode refid="1519" relation="include">
-        </childnode>
-      </node>
-      <node id="1510">
-        <label>sphinx_config.h</label>
-      </node>
-      <node id="1519">
-        <label>string.h</label>
-      </node>
-      <node id="1517">
-        <label>sphinxbase/yin.h</label>
-        <link refid="yin_8h"/>
-        <childnode refid="1514" relation="include">
-        </childnode>
-        <childnode refid="1509" relation="include">
-        </childnode>
-      </node>
-      <node id="1518">
-        <label>stdio.h</label>
-      </node>
-      <node id="1515">
-        <label>sphinxbase/fixpoint.h</label>
-        <link refid="fixpoint_8h_source"/>
-        <childnode refid="1516" relation="include">
-        </childnode>
-        <childnode refid="1514" relation="include">
-        </childnode>
-        <childnode refid="1509" relation="include">
         </childnode>
       </node>
     </incdepgraph>

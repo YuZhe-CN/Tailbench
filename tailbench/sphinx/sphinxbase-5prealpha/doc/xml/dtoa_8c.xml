@@ -9,6 +9,12 @@
     <includes refid="ckd__alloc_8h" local="no">sphinxbase/ckd_alloc.h</includes>
     <includes refid="prim__type_8h" local="no">sphinxbase/prim_type.h</includes>
     <incdepgraph>
+      <node id="2165">
+        <label>assert.h</label>
+      </node>
+      <node id="2168">
+        <label>stdlib.h</label>
+      </node>
       <node id="2162">
         <label>src/libsphinxbase/util/dtoa.c</label>
         <link refid="dtoa_8c"/>
@@ -24,16 +30,6 @@
         </childnode>
         <childnode refid="2171" relation="include">
         </childnode>
-      </node>
-      <node id="2170">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
-      </node>
-      <node id="2165">
-        <label>assert.h</label>
-      </node>
-      <node id="2168">
-        <label>stdlib.h</label>
       </node>
       <node id="2169">
         <label>setjmp.h</label>
@@ -58,6 +54,10 @@
         </childnode>
         <childnode refid="2171" relation="include">
         </childnode>
+      </node>
+      <node id="2170">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
       </node>
       <node id="2172">
         <label>sphinx_config.h</label>

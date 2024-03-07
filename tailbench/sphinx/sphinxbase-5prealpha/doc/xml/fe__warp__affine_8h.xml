@@ -6,18 +6,18 @@
     <includedby refid="fe__warp_8c" local="yes">src/libsphinxbase/fe/fe_warp.c</includedby>
     <includedby refid="fe__warp__affine_8c" local="yes">src/libsphinxbase/fe/fe_warp_affine.c</includedby>
     <incdepgraph>
-      <node id="1410">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
+      <node id="1416">
+        <label>sphinxbase/fixpoint.h</label>
+        <link refid="fixpoint_8h_source"/>
+        <childnode refid="1417" relation="include">
+        </childnode>
+        <childnode refid="1410" relation="include">
+        </childnode>
+        <childnode refid="1414" relation="include">
+        </childnode>
       </node>
       <node id="1413">
         <label>stdarg.h</label>
-      </node>
-      <node id="1408">
-        <label>src/libsphinxbase/fe/fe_warp_affine.h</label>
-        <link refid="fe__warp__affine_8h"/>
-        <childnode refid="1409" relation="include">
-        </childnode>
       </node>
       <node id="1414">
         <label>sphinxbase/prim_type.h</label>
@@ -25,8 +25,15 @@
         <childnode refid="1415" relation="include">
         </childnode>
       </node>
+      <node id="1410">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
+      </node>
       <node id="1417">
         <label>limits.h</label>
+      </node>
+      <node id="1415">
+        <label>sphinx_config.h</label>
       </node>
       <node id="1411">
         <label>sphinxbase/cmd_ln.h</label>
@@ -40,8 +47,11 @@
         <childnode refid="1414" relation="include">
         </childnode>
       </node>
-      <node id="1415">
-        <label>sphinx_config.h</label>
+      <node id="1408">
+        <label>src/libsphinxbase/fe/fe_warp_affine.h</label>
+        <link refid="fe__warp__affine_8h"/>
+        <childnode refid="1409" relation="include">
+        </childnode>
       </node>
       <node id="1409">
         <label>sphinxbase/fe.h</label>
@@ -56,18 +66,12 @@
       <node id="1412">
         <label>stdio.h</label>
       </node>
-      <node id="1416">
-        <label>sphinxbase/fixpoint.h</label>
-        <link refid="fixpoint_8h_source"/>
-        <childnode refid="1417" relation="include">
-        </childnode>
-        <childnode refid="1410" relation="include">
-        </childnode>
-        <childnode refid="1414" relation="include">
-        </childnode>
-      </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="1419">
+        <label>src/libsphinxbase/fe/fe_warp.c</label>
+        <link refid="fe__warp_8c_source"/>
+      </node>
       <node id="1420">
         <label>src/libsphinxbase/fe/fe_warp_affine.c</label>
         <link refid="fe__warp__affine_8c_source"/>
@@ -79,10 +83,6 @@
         </childnode>
         <childnode refid="1420" relation="include">
         </childnode>
-      </node>
-      <node id="1419">
-        <label>src/libsphinxbase/fe/fe_warp.c</label>
-        <link refid="fe__warp_8c_source"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="func">

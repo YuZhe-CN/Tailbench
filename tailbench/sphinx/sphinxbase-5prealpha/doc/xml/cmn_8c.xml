@@ -11,22 +11,18 @@
     <includes refid="err_8h" local="yes">sphinxbase/err.h</includes>
     <includes refid="cmn_8h" local="yes">sphinxbase/cmn.h</includes>
     <incdepgraph>
-      <node id="1547">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
-      </node>
-      <node id="1551">
-        <label>stdarg.h</label>
-      </node>
-      <node id="1553">
-        <label>sphinxbase/cmn.h</label>
-        <link refid="cmn_8h"/>
+      <node id="1556">
+        <label>sphinxbase/fixpoint.h</label>
+        <link refid="fixpoint_8h_source"/>
+        <childnode refid="1557" relation="include">
+        </childnode>
         <childnode refid="1547" relation="include">
         </childnode>
         <childnode refid="1548" relation="include">
         </childnode>
-        <childnode refid="1554" relation="include">
-        </childnode>
+      </node>
+      <node id="1551">
+        <label>stdarg.h</label>
       </node>
       <node id="1543">
         <label>assert.h</label>
@@ -36,6 +32,9 @@
       </node>
       <node id="1546">
         <label>setjmp.h</label>
+      </node>
+      <node id="1552">
+        <label>errno.h</label>
       </node>
       <node id="1539">
         <label>src/libsphinxbase/feat/cmn.c</label>
@@ -57,9 +56,6 @@
         <childnode refid="1553" relation="include">
         </childnode>
       </node>
-      <node id="1552">
-        <label>errno.h</label>
-      </node>
       <node id="1548">
         <label>sphinxbase/prim_type.h</label>
         <link refid="prim__type_8h"/>
@@ -78,26 +74,15 @@
         <childnode refid="1548" relation="include">
         </childnode>
       </node>
+      <node id="1547">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
+      </node>
       <node id="1557">
         <label>limits.h</label>
       </node>
-      <node id="1555">
-        <label>sphinxbase/cmd_ln.h</label>
-        <link refid="cmd__ln_8h"/>
-        <childnode refid="1540" relation="include">
-        </childnode>
-        <childnode refid="1551" relation="include">
-        </childnode>
-        <childnode refid="1547" relation="include">
-        </childnode>
-        <childnode refid="1548" relation="include">
-        </childnode>
-      </node>
       <node id="1549">
         <label>sphinx_config.h</label>
-      </node>
-      <node id="1542">
-        <label>string.h</label>
       </node>
       <node id="1550">
         <label>sphinxbase/err.h</label>
@@ -113,6 +98,21 @@
         <childnode refid="1547" relation="include">
         </childnode>
       </node>
+      <node id="1542">
+        <label>string.h</label>
+      </node>
+      <node id="1555">
+        <label>sphinxbase/cmd_ln.h</label>
+        <link refid="cmd__ln_8h"/>
+        <childnode refid="1540" relation="include">
+        </childnode>
+        <childnode refid="1551" relation="include">
+        </childnode>
+        <childnode refid="1547" relation="include">
+        </childnode>
+        <childnode refid="1548" relation="include">
+        </childnode>
+      </node>
       <node id="1544">
         <label>math.h</label>
       </node>
@@ -126,18 +126,18 @@
         <childnode refid="1556" relation="include">
         </childnode>
       </node>
-      <node id="1540">
-        <label>stdio.h</label>
-      </node>
-      <node id="1556">
-        <label>sphinxbase/fixpoint.h</label>
-        <link refid="fixpoint_8h_source"/>
-        <childnode refid="1557" relation="include">
-        </childnode>
+      <node id="1553">
+        <label>sphinxbase/cmn.h</label>
+        <link refid="cmn_8h"/>
         <childnode refid="1547" relation="include">
         </childnode>
         <childnode refid="1548" relation="include">
         </childnode>
+        <childnode refid="1554" relation="include">
+        </childnode>
+      </node>
+      <node id="1540">
+        <label>stdio.h</label>
       </node>
     </incdepgraph>
       <sectiondef kind="var">

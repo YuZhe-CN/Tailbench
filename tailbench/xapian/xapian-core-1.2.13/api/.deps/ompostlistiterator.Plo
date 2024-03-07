@@ -34,7 +34,8 @@ api/ompostlistiterator.lo: api/ompostlistiterator.cc \
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/c++/7/exception /usr/include/c++/7/bits/exception.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar2.h /usr/include/c++/7/exception \
+ /usr/include/c++/7/bits/exception.h \
  /usr/include/c++/7/bits/char_traits.h \
  /usr/include/c++/7/bits/stl_algobase.h \
  /usr/include/c++/7/bits/functexcept.h \
@@ -199,6 +200,8 @@ include/xapian/postingiterator.h:
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
 
 /usr/include/c++/7/exception:
 

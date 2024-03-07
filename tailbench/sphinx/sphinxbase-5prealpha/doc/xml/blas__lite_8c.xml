@@ -4,15 +4,15 @@
     <compoundname>blas_lite.c</compoundname>
     <includes refid="f2c_8h" local="yes">sphinxbase/f2c.h</includes>
     <incdepgraph>
-      <node id="2114">
-        <label>sphinxbase/f2c.h</label>
-        <link refid="f2c_8h_source"/>
-      </node>
       <node id="2113">
         <label>src/libsphinxbase/util/blas_lite.c</label>
         <link refid="blas__lite_8c"/>
         <childnode refid="2114" relation="include">
         </childnode>
+      </node>
+      <node id="2114">
+        <label>sphinxbase/f2c.h</label>
+        <link refid="f2c_8h_source"/>
       </node>
     </incdepgraph>
       <sectiondef kind="define">

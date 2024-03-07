@@ -11,21 +11,27 @@
     <includes refid="ckd__alloc_8h" local="yes">sphinxbase/ckd_alloc.h</includes>
     <includes refid="case_8h" local="yes">sphinxbase/case.h</includes>
     <incdepgraph>
-      <node id="2229">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
-      </node>
       <node id="2234">
         <label>stdarg.h</label>
       </node>
-      <node id="2238">
-        <label>sphinxbase/case.h</label>
-        <link refid="case_8h"/>
+      <node id="2223">
+        <label>src/libsphinxbase/util/hash_table.c</label>
+        <link refid="hash__table_8c"/>
+        <childnode refid="2224" relation="include">
+        </childnode>
+        <childnode refid="2225" relation="include">
+        </childnode>
         <childnode refid="2226" relation="include">
         </childnode>
-        <childnode refid="2230" relation="include">
+        <childnode refid="2227" relation="include">
         </childnode>
-        <childnode refid="2229" relation="include">
+        <childnode refid="2228" relation="include">
+        </childnode>
+        <childnode refid="2233" relation="include">
+        </childnode>
+        <childnode refid="2236" relation="include">
+        </childnode>
+        <childnode refid="2238" relation="include">
         </childnode>
       </node>
       <node id="2227">
@@ -36,16 +42,6 @@
       </node>
       <node id="2237">
         <label>setjmp.h</label>
-      </node>
-      <node id="2228">
-        <label>sphinxbase/hash_table.h</label>
-        <link refid="hash__table_8h"/>
-        <childnode refid="2229" relation="include">
-        </childnode>
-        <childnode refid="2230" relation="include">
-        </childnode>
-        <childnode refid="2232" relation="include">
-        </childnode>
       </node>
       <node id="2235">
         <label>errno.h</label>
@@ -68,41 +64,12 @@
         <childnode refid="2230" relation="include">
         </childnode>
       </node>
+      <node id="2229">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
+      </node>
       <node id="2231">
         <label>sphinx_config.h</label>
-      </node>
-      <node id="2232">
-        <label>sphinxbase/glist.h</label>
-        <link refid="glist_8h"/>
-        <childnode refid="2225" relation="include">
-        </childnode>
-        <childnode refid="2229" relation="include">
-        </childnode>
-        <childnode refid="2230" relation="include">
-        </childnode>
-      </node>
-      <node id="2226">
-        <label>string.h</label>
-      </node>
-      <node id="2223">
-        <label>src/libsphinxbase/util/hash_table.c</label>
-        <link refid="hash__table_8c"/>
-        <childnode refid="2224" relation="include">
-        </childnode>
-        <childnode refid="2225" relation="include">
-        </childnode>
-        <childnode refid="2226" relation="include">
-        </childnode>
-        <childnode refid="2227" relation="include">
-        </childnode>
-        <childnode refid="2228" relation="include">
-        </childnode>
-        <childnode refid="2233" relation="include">
-        </childnode>
-        <childnode refid="2236" relation="include">
-        </childnode>
-        <childnode refid="2238" relation="include">
-        </childnode>
       </node>
       <node id="2233">
         <label>sphinxbase/err.h</label>
@@ -114,6 +81,39 @@
         <childnode refid="2225" relation="include">
         </childnode>
         <childnode refid="2235" relation="include">
+        </childnode>
+        <childnode refid="2229" relation="include">
+        </childnode>
+      </node>
+      <node id="2226">
+        <label>string.h</label>
+      </node>
+      <node id="2232">
+        <label>sphinxbase/glist.h</label>
+        <link refid="glist_8h"/>
+        <childnode refid="2225" relation="include">
+        </childnode>
+        <childnode refid="2229" relation="include">
+        </childnode>
+        <childnode refid="2230" relation="include">
+        </childnode>
+      </node>
+      <node id="2228">
+        <label>sphinxbase/hash_table.h</label>
+        <link refid="hash__table_8h"/>
+        <childnode refid="2229" relation="include">
+        </childnode>
+        <childnode refid="2230" relation="include">
+        </childnode>
+        <childnode refid="2232" relation="include">
+        </childnode>
+      </node>
+      <node id="2238">
+        <label>sphinxbase/case.h</label>
+        <link refid="case_8h"/>
+        <childnode refid="2226" relation="include">
+        </childnode>
+        <childnode refid="2230" relation="include">
         </childnode>
         <childnode refid="2229" relation="include">
         </childnode>

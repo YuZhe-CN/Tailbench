@@ -8,25 +8,17 @@
     <includedby refid="pocketsphinx_8c" local="yes">src/libpocketsphinx/pocketsphinx.c</includedby>
     <includedby refid="ps__lattice_8c" local="yes">src/libpocketsphinx/ps_lattice.c</includedby>
     <invincdepgraph>
-      <node id="1951">
-        <label>src/libpocketsphinx/fsg_search.c</label>
-        <link refid="fsg__search_8c_source"/>
-      </node>
       <node id="1954">
         <label>src/libpocketsphinx/pocketsphinx.c</label>
         <link refid="pocketsphinx_8c_source"/>
       </node>
-      <node id="1955">
-        <label>src/libpocketsphinx/ps_lattice.c</label>
-        <link refid="ps__lattice_8c"/>
+      <node id="1951">
+        <label>src/libpocketsphinx/fsg_search.c</label>
+        <link refid="fsg__search_8c_source"/>
       </node>
       <node id="1952">
         <label>src/libpocketsphinx/ngram_search.c</label>
         <link refid="ngram__search_8c"/>
-      </node>
-      <node id="1953">
-        <label>src/libpocketsphinx/ngram_search_fwdflat.c</label>
-        <link refid="ngram__search__fwdflat_8c"/>
       </node>
       <node id="1950">
         <label>src/libpocketsphinx/ps_lattice_internal.h</label>
@@ -41,6 +33,14 @@
         </childnode>
         <childnode refid="1955" relation="include">
         </childnode>
+      </node>
+      <node id="1953">
+        <label>src/libpocketsphinx/ngram_search_fwdflat.c</label>
+        <link refid="ngram__search__fwdflat_8c"/>
+      </node>
+      <node id="1955">
+        <label>src/libpocketsphinx/ps_lattice.c</label>
+        <link refid="ps__lattice_8c"/>
       </node>
     </invincdepgraph>
     <innerclass refid="structlatlink__list__s" prot="public">latlink_list_s</innerclass>

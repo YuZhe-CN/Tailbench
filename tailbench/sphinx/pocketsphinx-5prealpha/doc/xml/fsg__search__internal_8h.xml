@@ -19,16 +19,12 @@
       <node id="858">
         <label>sphinxbase/hash_table.h</label>
       </node>
-      <node id="880">
-        <label>dict.h</label>
-        <link refid="dict_8h"/>
-        <childnode refid="858" relation="include">
+      <node id="869">
+        <label>ps_search.h</label>
+        <link refid="ps__search_8h"/>
+        <childnode refid="854" relation="include">
         </childnode>
-        <childnode refid="881" relation="include">
-        </childnode>
-        <childnode refid="873" relation="include">
-        </childnode>
-        <childnode refid="863" relation="include">
+        <childnode refid="867" relation="include">
         </childnode>
       </node>
       <node id="851">
@@ -52,19 +48,61 @@
       <node id="883">
         <label>assert.h</label>
       </node>
-      <node id="881">
-        <label>s3types.h</label>
-        <link refid="s3types_8h"/>
-        <childnode refid="882" relation="include">
+      <node id="863">
+        <label>pocketsphinx_export.h</label>
+        <link refid="pocketsphinx__export_8h_source"/>
+      </node>
+      <node id="882">
+        <label>float.h</label>
+      </node>
+      <node id="885">
+        <label>dict2pid.h</label>
+        <link refid="dict2pid_8h"/>
+        <childnode refid="862" relation="include">
         </childnode>
-        <childnode refid="883" relation="include">
+        <childnode refid="859" relation="include">
         </childnode>
-        <childnode refid="866" relation="include">
+        <childnode refid="871" relation="include">
         </childnode>
-        <childnode refid="872" relation="include">
+        <childnode refid="881" relation="include">
         </childnode>
-        <childnode refid="884" relation="include">
+        <childnode refid="873" relation="include">
         </childnode>
+        <childnode refid="880" relation="include">
+        </childnode>
+      </node>
+      <node id="853">
+        <label>sphinxbase/cmd_ln.h</label>
+      </node>
+      <node id="856">
+        <label>sphinxbase/fe.h</label>
+      </node>
+      <node id="861">
+        <label>pocketsphinx.h</label>
+        <link refid="pocketsphinx_8h"/>
+        <childnode refid="862" relation="include">
+        </childnode>
+        <childnode refid="853" relation="include">
+        </childnode>
+        <childnode refid="859" relation="include">
+        </childnode>
+        <childnode refid="856" relation="include">
+        </childnode>
+        <childnode refid="857" relation="include">
+        </childnode>
+        <childnode refid="863" relation="include">
+        </childnode>
+        <childnode refid="864" relation="include">
+        </childnode>
+        <childnode refid="865" relation="include">
+        </childnode>
+        <childnode refid="868" relation="include">
+        </childnode>
+        <childnode refid="869" relation="include">
+        </childnode>
+      </node>
+      <node id="878">
+        <label>sphinxbase/fixpoint.h</label>
       </node>
       <node id="868">
         <label>ps_mllr.h</label>
@@ -76,17 +114,57 @@
         <childnode refid="863" relation="include">
         </childnode>
       </node>
-      <node id="882">
-        <label>float.h</label>
-      </node>
-      <node id="865">
-        <label>ps_lattice.h</label>
-        <link refid="ps__lattice_8h"/>
+      <node id="886">
+        <label>fsg_history.h</label>
+        <link refid="fsg__history_8h_source"/>
         <childnode refid="866" relation="include">
         </childnode>
-        <childnode refid="867" relation="include">
+        <childnode refid="854" relation="include">
+        </childnode>
+        <childnode refid="887" relation="include">
+        </childnode>
+        <childnode refid="888" relation="include">
+        </childnode>
+        <childnode refid="880" relation="include">
+        </childnode>
+      </node>
+      <node id="880">
+        <label>dict.h</label>
+        <link refid="dict_8h"/>
+        <childnode refid="858" relation="include">
+        </childnode>
+        <childnode refid="881" relation="include">
+        </childnode>
+        <childnode refid="873" relation="include">
         </childnode>
         <childnode refid="863" relation="include">
+        </childnode>
+      </node>
+      <node id="874">
+        <label>sphinxbase/mmio.h</label>
+      </node>
+      <node id="873">
+        <label>bin_mdef.h</label>
+        <link refid="bin__mdef_8h"/>
+        <childnode refid="874" relation="include">
+        </childnode>
+        <childnode refid="853" relation="include">
+        </childnode>
+        <childnode refid="863" relation="include">
+        </childnode>
+        <childnode refid="875" relation="include">
+        </childnode>
+      </node>
+      <node id="884">
+        <label>sphinxbase/ckd_alloc.h</label>
+      </node>
+      <node id="879">
+        <label>sphinxbase/listelem_alloc.h</label>
+      </node>
+      <node id="887">
+        <label>blkarray_list.h</label>
+        <link refid="blkarray__list_8h_source"/>
+        <childnode refid="866" relation="include">
         </childnode>
       </node>
       <node id="876">
@@ -97,18 +175,11 @@
         <childnode refid="859" relation="include">
         </childnode>
       </node>
-      <node id="853">
-        <label>sphinxbase/cmd_ln.h</label>
+      <node id="857">
+        <label>sphinxbase/feat.h</label>
       </node>
-      <node id="856">
-        <label>sphinxbase/fe.h</label>
-      </node>
-      <node id="878">
-        <label>sphinxbase/fixpoint.h</label>
-      </node>
-      <node id="863">
-        <label>pocketsphinx_export.h</label>
-        <link refid="pocketsphinx__export_8h_source"/>
+      <node id="866">
+        <label>sphinxbase/prim_type.h</label>
       </node>
       <node id="870">
         <label>acmod.h</label>
@@ -138,34 +209,22 @@
         <childnode refid="877" relation="include">
         </childnode>
       </node>
-      <node id="874">
-        <label>sphinxbase/mmio.h</label>
-      </node>
-      <node id="887">
-        <label>blkarray_list.h</label>
-        <link refid="blkarray__list_8h_source"/>
+      <node id="881">
+        <label>s3types.h</label>
+        <link refid="s3types_8h"/>
+        <childnode refid="882" relation="include">
+        </childnode>
+        <childnode refid="883" relation="include">
+        </childnode>
         <childnode refid="866" relation="include">
         </childnode>
-      </node>
-      <node id="886">
-        <label>fsg_history.h</label>
-        <link refid="fsg__history_8h_source"/>
-        <childnode refid="866" relation="include">
+        <childnode refid="872" relation="include">
         </childnode>
-        <childnode refid="854" relation="include">
-        </childnode>
-        <childnode refid="887" relation="include">
-        </childnode>
-        <childnode refid="888" relation="include">
-        </childnode>
-        <childnode refid="880" relation="include">
+        <childnode refid="884" relation="include">
         </childnode>
       </node>
-      <node id="884">
-        <label>sphinxbase/ckd_alloc.h</label>
-      </node>
-      <node id="879">
-        <label>sphinxbase/listelem_alloc.h</label>
+      <node id="871">
+        <label>sphinxbase/bitvec.h</label>
       </node>
       <node id="875">
         <label>mdef.h</label>
@@ -175,27 +234,22 @@
         <childnode refid="858" relation="include">
         </childnode>
       </node>
-      <node id="857">
-        <label>sphinxbase/feat.h</label>
-      </node>
-      <node id="885">
-        <label>dict2pid.h</label>
-        <link refid="dict2pid_8h"/>
-        <childnode refid="862" relation="include">
+      <node id="888">
+        <label>fsg_lextree.h</label>
+        <link refid="fsg__lextree_8h_source"/>
+        <childnode refid="853" relation="include">
         </childnode>
-        <childnode refid="859" relation="include">
+        <childnode refid="854" relation="include">
         </childnode>
-        <childnode refid="871" relation="include">
-        </childnode>
-        <childnode refid="881" relation="include">
-        </childnode>
-        <childnode refid="873" relation="include">
+        <childnode refid="877" relation="include">
         </childnode>
         <childnode refid="880" relation="include">
         </childnode>
+        <childnode refid="885" relation="include">
+        </childnode>
       </node>
-      <node id="866">
-        <label>sphinxbase/prim_type.h</label>
+      <node id="872">
+        <label>sphinxbase/err.h</label>
       </node>
       <node id="864">
         <label>cmdln_macro.h</label>
@@ -207,64 +261,24 @@
         <childnode refid="856" relation="include">
         </childnode>
       </node>
-      <node id="877">
-        <label>hmm.h</label>
-        <link refid="hmm_8h"/>
-        <childnode refid="862" relation="include">
-        </childnode>
-        <childnode refid="878" relation="include">
-        </childnode>
-        <childnode refid="879" relation="include">
-        </childnode>
-        <childnode refid="873" relation="include">
-        </childnode>
+      <node id="854">
+        <label>sphinxbase/fsg_model.h</label>
       </node>
-      <node id="871">
-        <label>sphinxbase/bitvec.h</label>
+      <node id="859">
+        <label>sphinxbase/logmath.h</label>
       </node>
-      <node id="861">
-        <label>pocketsphinx.h</label>
-        <link refid="pocketsphinx_8h"/>
-        <childnode refid="862" relation="include">
-        </childnode>
-        <childnode refid="853" relation="include">
-        </childnode>
-        <childnode refid="859" relation="include">
-        </childnode>
-        <childnode refid="856" relation="include">
-        </childnode>
-        <childnode refid="857" relation="include">
-        </childnode>
-        <childnode refid="863" relation="include">
-        </childnode>
-        <childnode refid="864" relation="include">
-        </childnode>
-        <childnode refid="865" relation="include">
-        </childnode>
-        <childnode refid="868" relation="include">
-        </childnode>
-        <childnode refid="869" relation="include">
-        </childnode>
-      </node>
-      <node id="873">
-        <label>bin_mdef.h</label>
-        <link refid="bin__mdef_8h"/>
-        <childnode refid="874" relation="include">
-        </childnode>
-        <childnode refid="853" relation="include">
-        </childnode>
-        <childnode refid="863" relation="include">
-        </childnode>
-        <childnode refid="875" relation="include">
-        </childnode>
-      </node>
-      <node id="869">
-        <label>ps_search.h</label>
-        <link refid="ps__search_8h"/>
-        <childnode refid="854" relation="include">
+      <node id="865">
+        <label>ps_lattice.h</label>
+        <link refid="ps__lattice_8h"/>
+        <childnode refid="866" relation="include">
         </childnode>
         <childnode refid="867" relation="include">
         </childnode>
+        <childnode refid="863" relation="include">
+        </childnode>
+      </node>
+      <node id="860">
+        <label>sphinxbase/profile.h</label>
       </node>
       <node id="855">
         <label>pocketsphinx_internal.h</label>
@@ -290,48 +304,26 @@
         <childnode refid="885" relation="include">
         </childnode>
       </node>
-      <node id="872">
-        <label>sphinxbase/err.h</label>
-      </node>
-      <node id="888">
-        <label>fsg_lextree.h</label>
-        <link refid="fsg__lextree_8h_source"/>
-        <childnode refid="853" relation="include">
-        </childnode>
-        <childnode refid="854" relation="include">
-        </childnode>
-        <childnode refid="877" relation="include">
-        </childnode>
-        <childnode refid="880" relation="include">
-        </childnode>
-        <childnode refid="885" relation="include">
-        </childnode>
-      </node>
-      <node id="854">
-        <label>sphinxbase/fsg_model.h</label>
-      </node>
-      <node id="859">
-        <label>sphinxbase/logmath.h</label>
-      </node>
-      <node id="860">
-        <label>sphinxbase/profile.h</label>
-      </node>
       <node id="862">
         <label>stdio.h</label>
       </node>
       <node id="852">
         <label>sphinxbase/glist.h</label>
       </node>
+      <node id="877">
+        <label>hmm.h</label>
+        <link refid="hmm_8h"/>
+        <childnode refid="862" relation="include">
+        </childnode>
+        <childnode refid="878" relation="include">
+        </childnode>
+        <childnode refid="879" relation="include">
+        </childnode>
+        <childnode refid="873" relation="include">
+        </childnode>
+      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="891">
-        <label>src/libpocketsphinx/fsg_search.c</label>
-        <link refid="fsg__search_8c_source"/>
-      </node>
-      <node id="892">
-        <label>src/libpocketsphinx/pocketsphinx.c</label>
-        <link refid="pocketsphinx_8c_source"/>
-      </node>
       <node id="889">
         <label>src/libpocketsphinx/fsg_search_internal.h</label>
         <link refid="fsg__search__internal_8h"/>
@@ -341,6 +333,14 @@
         </childnode>
         <childnode refid="892" relation="include">
         </childnode>
+      </node>
+      <node id="892">
+        <label>src/libpocketsphinx/pocketsphinx.c</label>
+        <link refid="pocketsphinx_8c_source"/>
+      </node>
+      <node id="891">
+        <label>src/libpocketsphinx/fsg_search.c</label>
+        <link refid="fsg__search_8c_source"/>
       </node>
       <node id="890">
         <label>src/libpocketsphinx/fsg_history.c</label>

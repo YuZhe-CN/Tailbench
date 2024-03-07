@@ -8,6 +8,28 @@
     <includedby refid="slamch_8c" local="yes">src/libsphinxbase/util/slamch.c</includedby>
     <includedby refid="slapack__lite_8c" local="yes">src/libsphinxbase/util/slapack_lite.c</includedby>
     <invincdepgraph>
+      <node id="436">
+        <label>src/libsphinxbase/util/slamch.c</label>
+        <link refid="slamch_8c_source"/>
+      </node>
+      <node id="435">
+        <label>src/libsphinxbase/util/f2c_lite.c</label>
+        <link refid="f2c__lite_8c_source"/>
+      </node>
+      <node id="437">
+        <label>src/libsphinxbase/util/slapack_lite.c</label>
+        <link refid="slapack__lite_8c_source"/>
+      </node>
+      <node id="432">
+        <label>include/sphinxbase/clapack_lite.h</label>
+        <link refid="clapack__lite_8h_source"/>
+        <childnode refid="433" relation="include">
+        </childnode>
+      </node>
+      <node id="434">
+        <label>src/libsphinxbase/util/blas_lite.c</label>
+        <link refid="blas__lite_8c_source"/>
+      </node>
       <node id="431">
         <label>include/sphinxbase/f2c.h</label>
         <link refid="f2c_8h"/>
@@ -22,31 +44,9 @@
         <childnode refid="437" relation="include">
         </childnode>
       </node>
-      <node id="435">
-        <label>src/libsphinxbase/util/f2c_lite.c</label>
-        <link refid="f2c__lite_8c_source"/>
-      </node>
-      <node id="436">
-        <label>src/libsphinxbase/util/slamch.c</label>
-        <link refid="slamch_8c_source"/>
-      </node>
       <node id="433">
         <label>src/libsphinxbase/util/matrix.c</label>
         <link refid="matrix_8c_source"/>
-      </node>
-      <node id="434">
-        <label>src/libsphinxbase/util/blas_lite.c</label>
-        <link refid="blas__lite_8c_source"/>
-      </node>
-      <node id="432">
-        <label>include/sphinxbase/clapack_lite.h</label>
-        <link refid="clapack__lite_8h_source"/>
-        <childnode refid="433" relation="include">
-        </childnode>
-      </node>
-      <node id="437">
-        <label>src/libsphinxbase/util/slapack_lite.c</label>
-        <link refid="slapack__lite_8c_source"/>
       </node>
     </invincdepgraph>
     <innerclass refid="structcomplex" prot="public">complex</innerclass>

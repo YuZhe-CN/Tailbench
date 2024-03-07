@@ -6,18 +6,18 @@
     <includedby refid="fe__internal_8h" local="yes">src/libsphinxbase/fe/fe_internal.h</includedby>
     <includedby refid="fe__prespch__buf_8c" local="yes">src/libsphinxbase/fe/fe_prespch_buf.c</includedby>
     <incdepgraph>
-      <node id="1272">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
+      <node id="1278">
+        <label>sphinxbase/fixpoint.h</label>
+        <link refid="fixpoint_8h_source"/>
+        <childnode refid="1279" relation="include">
+        </childnode>
+        <childnode refid="1272" relation="include">
+        </childnode>
+        <childnode refid="1276" relation="include">
+        </childnode>
       </node>
       <node id="1275">
         <label>stdarg.h</label>
-      </node>
-      <node id="1270">
-        <label>src/libsphinxbase/fe/fe_prespch_buf.h</label>
-        <link refid="fe__prespch__buf_8h"/>
-        <childnode refid="1271" relation="include">
-        </childnode>
       </node>
       <node id="1276">
         <label>sphinxbase/prim_type.h</label>
@@ -25,8 +25,21 @@
         <childnode refid="1277" relation="include">
         </childnode>
       </node>
+      <node id="1272">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
+      </node>
       <node id="1279">
         <label>limits.h</label>
+      </node>
+      <node id="1270">
+        <label>src/libsphinxbase/fe/fe_prespch_buf.h</label>
+        <link refid="fe__prespch__buf_8h"/>
+        <childnode refid="1271" relation="include">
+        </childnode>
+      </node>
+      <node id="1277">
+        <label>sphinx_config.h</label>
       </node>
       <node id="1273">
         <label>sphinxbase/cmd_ln.h</label>
@@ -39,9 +52,6 @@
         </childnode>
         <childnode refid="1276" relation="include">
         </childnode>
-      </node>
-      <node id="1277">
-        <label>sphinx_config.h</label>
       </node>
       <node id="1271">
         <label>sphinxbase/fe.h</label>
@@ -56,53 +66,27 @@
       <node id="1274">
         <label>stdio.h</label>
       </node>
-      <node id="1278">
-        <label>sphinxbase/fixpoint.h</label>
-        <link refid="fixpoint_8h_source"/>
-        <childnode refid="1279" relation="include">
-        </childnode>
-        <childnode refid="1272" relation="include">
-        </childnode>
-        <childnode refid="1276" relation="include">
-        </childnode>
-      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="1286">
-        <label>src/libsphinxbase/fe/fe_warp_affine.c</label>
-        <link refid="fe__warp__affine_8c_source"/>
+      <node id="1287">
+        <label>src/libsphinxbase/fe/fe_warp_inverse_linear.c</label>
+        <link refid="fe__warp__inverse__linear_8c_source"/>
       </node>
       <node id="1290">
         <label>src/libsphinxbase/fe/fixlog.c</label>
         <link refid="fixlog_8c_source"/>
       </node>
-      <node id="1289">
-        <label>src/libsphinxbase/fe/fe_noise.c</label>
-        <link refid="fe__noise_8c_source"/>
-      </node>
-      <node id="1291">
-        <label>src/libsphinxbase/fe/fe_prespch_buf.c</label>
-        <link refid="fe__prespch__buf_8c_source"/>
-      </node>
-      <node id="1280">
-        <label>src/libsphinxbase/fe/fe_prespch_buf.h</label>
-        <link refid="fe__prespch__buf_8h"/>
-        <childnode refid="1281" relation="include">
-        </childnode>
-        <childnode refid="1291" relation="include">
-        </childnode>
-      </node>
-      <node id="1287">
-        <label>src/libsphinxbase/fe/fe_warp_inverse_linear.c</label>
-        <link refid="fe__warp__inverse__linear_8c_source"/>
-      </node>
-      <node id="1284">
-        <label>src/libsphinxbase/fe/fe_sigproc.c</label>
-        <link refid="fe__sigproc_8c_source"/>
+      <node id="1288">
+        <label>src/libsphinxbase/fe/fe_warp_piecewise_linear.c</label>
+        <link refid="fe__warp__piecewise__linear_8c_source"/>
       </node>
       <node id="1282">
         <label>src/libsphinxbase/fe/fe_interface.c</label>
         <link refid="fe__interface_8c_source"/>
+      </node>
+      <node id="1289">
+        <label>src/libsphinxbase/fe/fe_noise.c</label>
+        <link refid="fe__noise_8c_source"/>
       </node>
       <node id="1281">
         <label>src/libsphinxbase/fe/fe_internal.h</label>
@@ -118,9 +102,17 @@
         <childnode refid="1290" relation="include">
         </childnode>
       </node>
-      <node id="1288">
-        <label>src/libsphinxbase/fe/fe_warp_piecewise_linear.c</label>
-        <link refid="fe__warp__piecewise__linear_8c_source"/>
+      <node id="1291">
+        <label>src/libsphinxbase/fe/fe_prespch_buf.c</label>
+        <link refid="fe__prespch__buf_8c_source"/>
+      </node>
+      <node id="1280">
+        <label>src/libsphinxbase/fe/fe_prespch_buf.h</label>
+        <link refid="fe__prespch__buf_8h"/>
+        <childnode refid="1281" relation="include">
+        </childnode>
+        <childnode refid="1291" relation="include">
+        </childnode>
       </node>
       <node id="1285">
         <label>src/libsphinxbase/fe/fe_warp.c</label>
@@ -141,6 +133,14 @@
         </childnode>
         <childnode refid="1288" relation="include">
         </childnode>
+      </node>
+      <node id="1286">
+        <label>src/libsphinxbase/fe/fe_warp_affine.c</label>
+        <link refid="fe__warp__affine_8c_source"/>
+      </node>
+      <node id="1284">
+        <label>src/libsphinxbase/fe/fe_sigproc.c</label>
+        <link refid="fe__sigproc_8c_source"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="typedef">

@@ -32,6 +32,7 @@ tbench.jar: tbench/tbench.class tbench_jni.cpp
 	# make the corresponding changes to tbench_jni.cpp
 	$(JDK_PATH)/bin/javah tbench.tbench
 	$(CXX) $(CXXFLAGS) -I $(JDK_PATH)/include -I $(JDK_PATH)/include/linux \
+		-I /usr/lib/jvm/java-8-openjdk-amd64/include \
 		-c tbench_jni.cpp -o tbench_jni.o
 	$(JDK_PATH)/bin/jar cf $@ $<
 

@@ -9,9 +9,11 @@
     <includes refid="err_8h" local="yes">sphinxbase/err.h</includes>
     <includes refid="ckd__alloc_8h" local="yes">sphinxbase/ckd_alloc.h</includes>
     <incdepgraph>
-      <node id="2083">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
+      <node id="2082">
+        <label>stdarg.h</label>
+      </node>
+      <node id="2080">
+        <label>assert.h</label>
       </node>
       <node id="2077">
         <label>src/libsphinxbase/util/bio.c</label>
@@ -28,12 +30,6 @@
         </childnode>
         <childnode refid="2090" relation="include">
         </childnode>
-      </node>
-      <node id="2082">
-        <label>stdarg.h</label>
-      </node>
-      <node id="2080">
-        <label>assert.h</label>
       </node>
       <node id="2088">
         <label>stdlib.h</label>
@@ -62,11 +58,12 @@
         <childnode refid="2084" relation="include">
         </childnode>
       </node>
+      <node id="2083">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
+      </node>
       <node id="2085">
         <label>sphinx_config.h</label>
-      </node>
-      <node id="2079">
-        <label>string.h</label>
       </node>
       <node id="2081">
         <label>sphinxbase/bio.h</label>
@@ -95,6 +92,9 @@
         </childnode>
         <childnode refid="2083" relation="include">
         </childnode>
+      </node>
+      <node id="2079">
+        <label>string.h</label>
       </node>
       <node id="2086">
         <label>sphinxbase/byteorder.h</label>

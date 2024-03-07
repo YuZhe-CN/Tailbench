@@ -9,20 +9,6 @@
     <includes local="no">pthread.h</includes>
     <includes local="no">sys/time.h</includes>
     <incdepgraph>
-      <node id="2393">
-        <label>sphinxbase/sbthread.h</label>
-        <link refid="sbthread_8h"/>
-        <childnode refid="2394" relation="include">
-        </childnode>
-        <childnode refid="2395" relation="include">
-        </childnode>
-        <childnode refid="2396" relation="include">
-        </childnode>
-      </node>
-      <node id="2395">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
-      </node>
       <node id="2398">
         <label>stdarg.h</label>
       </node>
@@ -31,6 +17,22 @@
       </node>
       <node id="2402">
         <label>setjmp.h</label>
+      </node>
+      <node id="2391">
+        <label>src/libsphinxbase/util/sbthread.c</label>
+        <link refid="sbthread_8c"/>
+        <childnode refid="2392" relation="include">
+        </childnode>
+        <childnode refid="2393" relation="include">
+        </childnode>
+        <childnode refid="2400" relation="include">
+        </childnode>
+        <childnode refid="2403" relation="include">
+        </childnode>
+        <childnode refid="2405" relation="include">
+        </childnode>
+        <childnode refid="2406" relation="include">
+        </childnode>
       </node>
       <node id="2404">
         <label>errno.h</label>
@@ -53,42 +55,15 @@
         <childnode refid="2399" relation="include">
         </childnode>
       </node>
-      <node id="2396">
-        <label>sphinxbase/cmd_ln.h</label>
-        <link refid="cmd__ln_8h"/>
-        <childnode refid="2397" relation="include">
-        </childnode>
-        <childnode refid="2398" relation="include">
-        </childnode>
-        <childnode refid="2395" relation="include">
-        </childnode>
-        <childnode refid="2399" relation="include">
-        </childnode>
+      <node id="2395">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
       </node>
       <node id="2394">
         <label>sphinx_config.h</label>
       </node>
       <node id="2405">
         <label>pthread.h</label>
-      </node>
-      <node id="2392">
-        <label>string.h</label>
-      </node>
-      <node id="2391">
-        <label>src/libsphinxbase/util/sbthread.c</label>
-        <link refid="sbthread_8c"/>
-        <childnode refid="2392" relation="include">
-        </childnode>
-        <childnode refid="2393" relation="include">
-        </childnode>
-        <childnode refid="2400" relation="include">
-        </childnode>
-        <childnode refid="2403" relation="include">
-        </childnode>
-        <childnode refid="2405" relation="include">
-        </childnode>
-        <childnode refid="2406" relation="include">
-        </childnode>
       </node>
       <node id="2403">
         <label>sphinxbase/err.h</label>
@@ -104,8 +79,33 @@
         <childnode refid="2395" relation="include">
         </childnode>
       </node>
+      <node id="2392">
+        <label>string.h</label>
+      </node>
+      <node id="2396">
+        <label>sphinxbase/cmd_ln.h</label>
+        <link refid="cmd__ln_8h"/>
+        <childnode refid="2397" relation="include">
+        </childnode>
+        <childnode refid="2398" relation="include">
+        </childnode>
+        <childnode refid="2395" relation="include">
+        </childnode>
+        <childnode refid="2399" relation="include">
+        </childnode>
+      </node>
       <node id="2406">
         <label>sys/time.h</label>
+      </node>
+      <node id="2393">
+        <label>sphinxbase/sbthread.h</label>
+        <link refid="sbthread_8h"/>
+        <childnode refid="2394" relation="include">
+        </childnode>
+        <childnode refid="2395" relation="include">
+        </childnode>
+        <childnode refid="2396" relation="include">
+        </childnode>
       </node>
       <node id="2397">
         <label>stdio.h</label>

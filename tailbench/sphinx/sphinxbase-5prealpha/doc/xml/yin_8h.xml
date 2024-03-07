@@ -7,18 +7,15 @@
     <includedby refid="yin_8c" local="yes">src/libsphinxbase/fe/yin.c</includedby>
     <includedby refid="sphinx__pitch_8c" local="no">src/sphinx_adtools/sphinx_pitch.c</includedby>
     <incdepgraph>
-      <node id="1068">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
-      </node>
       <node id="1069">
         <label>sphinxbase/prim_type.h</label>
         <link refid="prim__type_8h"/>
         <childnode refid="1070" relation="include">
         </childnode>
       </node>
-      <node id="1070">
-        <label>sphinx_config.h</label>
+      <node id="1068">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
       </node>
       <node id="1067">
         <label>include/sphinxbase/yin.h</label>
@@ -28,11 +25,14 @@
         <childnode refid="1069" relation="include">
         </childnode>
       </node>
+      <node id="1070">
+        <label>sphinx_config.h</label>
+      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="1072">
-        <label>src/libsphinxbase/fe/yin.c</label>
-        <link refid="yin_8c"/>
+      <node id="1073">
+        <label>src/sphinx_adtools/sphinx_pitch.c</label>
+        <link refid="sphinx__pitch_8c_source"/>
       </node>
       <node id="1071">
         <label>include/sphinxbase/yin.h</label>
@@ -42,9 +42,9 @@
         <childnode refid="1073" relation="include">
         </childnode>
       </node>
-      <node id="1073">
-        <label>src/sphinx_adtools/sphinx_pitch.c</label>
-        <link refid="sphinx__pitch_8c_source"/>
+      <node id="1072">
+        <label>src/libsphinxbase/fe/yin.c</label>
+        <link refid="yin_8c"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="typedef">

@@ -9,18 +9,26 @@
     <includedby refid="ad__oss_8c" local="no">src/libsphinxad/ad_oss.c</includedby>
     <includedby refid="ad__pulse_8c" local="no">src/libsphinxad/ad_pulse.c</includedby>
     <incdepgraph>
+      <node id="7">
+        <label>sphinx_config.h</label>
+        <link refid="wince_2sphinx__config_8h_source"/>
+      </node>
       <node id="6">
         <label>include/wince/config.h</label>
         <link refid="wince_2config_8h"/>
         <childnode refid="7" relation="include">
         </childnode>
       </node>
-      <node id="7">
-        <label>sphinx_config.h</label>
-        <link refid="wince_2sphinx__config_8h_source"/>
-      </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="10">
+        <label>src/libsphinxad/ad_base.c</label>
+        <link refid="ad__base_8c_source"/>
+      </node>
+      <node id="13">
+        <label>src/libsphinxad/ad_pulse.c</label>
+        <link refid="ad__pulse_8c_source"/>
+      </node>
       <node id="9">
         <label>src/libsphinxad/ad_alsa.c</label>
         <link refid="ad__alsa_8c_source"/>
@@ -39,21 +47,13 @@
         <childnode refid="13" relation="include">
         </childnode>
       </node>
-      <node id="12">
-        <label>src/libsphinxad/ad_oss.c</label>
-        <link refid="ad__oss_8c_source"/>
-      </node>
-      <node id="13">
-        <label>src/libsphinxad/ad_pulse.c</label>
-        <link refid="ad__pulse_8c_source"/>
-      </node>
-      <node id="10">
-        <label>src/libsphinxad/ad_base.c</label>
-        <link refid="ad__base_8c_source"/>
-      </node>
       <node id="11">
         <label>src/libsphinxad/ad_openal.c</label>
         <link refid="ad__openal_8c_source"/>
+      </node>
+      <node id="12">
+        <label>src/libsphinxad/ad_oss.c</label>
+        <link refid="ad__oss_8c_source"/>
       </node>
     </invincdepgraph>
     <briefdescription>

@@ -11,33 +11,37 @@
     <includedby refid="sphinx__pitch_8c" local="no">src/sphinx_adtools/sphinx_pitch.c</includedby>
     <includedby refid="sphinx__fe_8c" local="no">src/sphinx_fe/sphinx_fe.c</includedby>
     <invincdepgraph>
+      <node id="208">
+        <label>src/libsphinxbase/feat/lda.c</label>
+        <link refid="lda_8c_source"/>
+      </node>
+      <node id="207">
+        <label>src/libsphinxbase/feat/feat.c</label>
+        <link refid="feat_8c_source"/>
+      </node>
       <node id="209">
         <label>src/libsphinxbase/util/bio.c</label>
         <link refid="bio_8c_source"/>
       </node>
-      <node id="216">
-        <label>src/libsphinxbase/util/huff_code.c</label>
-        <link refid="huff__code_8c_source"/>
-      </node>
-      <node id="214">
-        <label>src/libsphinxbase/lm/ngram_model_trie.c</label>
-        <link refid="ngram__model__trie_8c_source"/>
-      </node>
-      <node id="208">
-        <label>src/libsphinxbase/feat/lda.c</label>
-        <link refid="lda_8c_source"/>
+      <node id="212">
+        <label>src/libsphinxbase/fe/fe_interface.c</label>
+        <link refid="fe__interface_8c_source"/>
       </node>
       <node id="218">
         <label>src/sphinx_fe/sphinx_fe.c</label>
         <link refid="sphinx__fe_8c_source"/>
       </node>
-      <node id="213">
-        <label>src/libsphinxbase/fe/fe_sigproc.c</label>
-        <link refid="fe__sigproc_8c_source"/>
+      <node id="216">
+        <label>src/libsphinxbase/util/huff_code.c</label>
+        <link refid="huff__code_8c_source"/>
       </node>
-      <node id="212">
-        <label>src/libsphinxbase/fe/fe_interface.c</label>
-        <link refid="fe__interface_8c_source"/>
+      <node id="211">
+        <label>src/sphinx_cepview/main_cepview.c</label>
+        <link refid="main__cepview_8c"/>
+      </node>
+      <node id="217">
+        <label>src/sphinx_adtools/sphinx_pitch.c</label>
+        <link refid="sphinx__pitch_8c_source"/>
       </node>
       <node id="206">
         <label>include/sphinxbase/bio.h</label>
@@ -53,9 +57,9 @@
         <childnode refid="211" relation="include">
         </childnode>
       </node>
-      <node id="211">
-        <label>src/sphinx_cepview/main_cepview.c</label>
-        <link refid="main__cepview_8c"/>
+      <node id="213">
+        <label>src/libsphinxbase/fe/fe_sigproc.c</label>
+        <link refid="fe__sigproc_8c_source"/>
       </node>
       <node id="210">
         <label>src/libsphinxbase/util/logmath.c</label>
@@ -81,17 +85,13 @@
         <childnode refid="218" relation="include">
         </childnode>
       </node>
-      <node id="217">
-        <label>src/sphinx_adtools/sphinx_pitch.c</label>
-        <link refid="sphinx__pitch_8c_source"/>
-      </node>
-      <node id="207">
-        <label>src/libsphinxbase/feat/feat.c</label>
-        <link refid="feat_8c_source"/>
-      </node>
       <node id="215">
         <label>src/libsphinxbase/lm/ngrams_raw.c</label>
         <link refid="ngrams__raw_8c_source"/>
+      </node>
+      <node id="214">
+        <label>src/libsphinxbase/lm/ngram_model_trie.c</label>
+        <link refid="ngram__model__trie_8c_source"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="define">

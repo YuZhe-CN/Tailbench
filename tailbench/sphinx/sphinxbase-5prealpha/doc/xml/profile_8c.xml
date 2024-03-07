@@ -9,12 +9,18 @@
     <includes refid="err_8h" local="yes">sphinxbase/err.h</includes>
     <includes refid="ckd__alloc_8h" local="yes">sphinxbase/ckd_alloc.h</includes>
     <incdepgraph>
-      <node id="2382">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
-      </node>
       <node id="2386">
         <label>stdarg.h</label>
+      </node>
+      <node id="2381">
+        <label>sphinxbase/profile.h</label>
+        <link refid="profile_8h"/>
+        <childnode refid="2378" relation="include">
+        </childnode>
+        <childnode refid="2382" relation="include">
+        </childnode>
+        <childnode refid="2383" relation="include">
+        </childnode>
       </node>
       <node id="2379">
         <label>stdlib.h</label>
@@ -43,8 +49,26 @@
         <childnode refid="2383" relation="include">
         </childnode>
       </node>
+      <node id="2382">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
+      </node>
       <node id="2384">
         <label>sphinx_config.h</label>
+      </node>
+      <node id="2385">
+        <label>sphinxbase/err.h</label>
+        <link refid="err_8h"/>
+        <childnode refid="2386" relation="include">
+        </childnode>
+        <childnode refid="2378" relation="include">
+        </childnode>
+        <childnode refid="2379" relation="include">
+        </childnode>
+        <childnode refid="2387" relation="include">
+        </childnode>
+        <childnode refid="2382" relation="include">
+        </childnode>
       </node>
       <node id="2380">
         <label>string.h</label>
@@ -63,30 +87,6 @@
         <childnode refid="2385" relation="include">
         </childnode>
         <childnode refid="2388" relation="include">
-        </childnode>
-      </node>
-      <node id="2385">
-        <label>sphinxbase/err.h</label>
-        <link refid="err_8h"/>
-        <childnode refid="2386" relation="include">
-        </childnode>
-        <childnode refid="2378" relation="include">
-        </childnode>
-        <childnode refid="2379" relation="include">
-        </childnode>
-        <childnode refid="2387" relation="include">
-        </childnode>
-        <childnode refid="2382" relation="include">
-        </childnode>
-      </node>
-      <node id="2381">
-        <label>sphinxbase/profile.h</label>
-        <link refid="profile_8h"/>
-        <childnode refid="2378" relation="include">
-        </childnode>
-        <childnode refid="2382" relation="include">
-        </childnode>
-        <childnode refid="2383" relation="include">
         </childnode>
       </node>
       <node id="2378">

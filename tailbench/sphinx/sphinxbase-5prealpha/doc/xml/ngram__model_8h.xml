@@ -13,12 +13,43 @@
     <includedby refid="sphinx__lm__convert_8c" local="no">src/sphinx_lmtools/sphinx_lm_convert.c</includedby>
     <includedby refid="sphinx__lm__eval_8c" local="no">src/sphinx_lmtools/sphinx_lm_eval.c</includedby>
     <incdepgraph>
+      <node id="749">
+        <label>stdarg.h</label>
+      </node>
+      <node id="751">
+        <label>sphinxbase/prim_type.h</label>
+        <link refid="prim__type_8h"/>
+        <childnode refid="752" relation="include">
+        </childnode>
+      </node>
       <node id="750">
         <label>sphinxbase/sphinxbase_export.h</label>
         <link refid="sphinxbase__export_8h_source"/>
       </node>
-      <node id="749">
-        <label>stdarg.h</label>
+      <node id="752">
+        <label>sphinx_config.h</label>
+      </node>
+      <node id="753">
+        <label>sphinxbase/cmd_ln.h</label>
+        <link refid="cmd__ln_8h"/>
+        <childnode refid="754" relation="include">
+        </childnode>
+        <childnode refid="749" relation="include">
+        </childnode>
+        <childnode refid="750" relation="include">
+        </childnode>
+        <childnode refid="751" relation="include">
+        </childnode>
+      </node>
+      <node id="755">
+        <label>sphinxbase/logmath.h</label>
+        <link refid="logmath_8h"/>
+        <childnode refid="750" relation="include">
+        </childnode>
+        <childnode refid="751" relation="include">
+        </childnode>
+        <childnode refid="753" relation="include">
+        </childnode>
       </node>
       <node id="748">
         <label>include/sphinxbase/ngram_model.h</label>
@@ -42,37 +73,6 @@
         <childnode refid="750" relation="include">
         </childnode>
       </node>
-      <node id="751">
-        <label>sphinxbase/prim_type.h</label>
-        <link refid="prim__type_8h"/>
-        <childnode refid="752" relation="include">
-        </childnode>
-      </node>
-      <node id="755">
-        <label>sphinxbase/logmath.h</label>
-        <link refid="logmath_8h"/>
-        <childnode refid="750" relation="include">
-        </childnode>
-        <childnode refid="751" relation="include">
-        </childnode>
-        <childnode refid="753" relation="include">
-        </childnode>
-      </node>
-      <node id="753">
-        <label>sphinxbase/cmd_ln.h</label>
-        <link refid="cmd__ln_8h"/>
-        <childnode refid="754" relation="include">
-        </childnode>
-        <childnode refid="749" relation="include">
-        </childnode>
-        <childnode refid="750" relation="include">
-        </childnode>
-        <childnode refid="751" relation="include">
-        </childnode>
-      </node>
-      <node id="752">
-        <label>sphinx_config.h</label>
-      </node>
       <node id="754">
         <label>stdio.h</label>
       </node>
@@ -81,48 +81,6 @@
       <node id="768">
         <label>src/sphinx_lmtools/sphinx_lm_convert.c</label>
         <link refid="sphinx__lm__convert_8c"/>
-      </node>
-      <node id="757">
-        <label>include/sphinxbase/ngram_model.h</label>
-        <link refid="ngram__model_8h"/>
-        <childnode refid="758" relation="include">
-        </childnode>
-        <childnode refid="762" relation="include">
-        </childnode>
-        <childnode refid="768" relation="include">
-        </childnode>
-        <childnode refid="769" relation="include">
-        </childnode>
-      </node>
-      <node id="762">
-        <label>src/libsphinxbase/lm/ngram_model.c</label>
-        <link refid="ngram__model_8c_source"/>
-      </node>
-      <node id="763">
-        <label>src/libsphinxbase/lm/ngram_model_trie.c</label>
-        <link refid="ngram__model__trie_8c_source"/>
-      </node>
-      <node id="761">
-        <label>src/libsphinxbase/lm/ngram_model_trie.h</label>
-        <link refid="ngram__model__trie_8h_source"/>
-        <childnode refid="762" relation="include">
-        </childnode>
-        <childnode refid="763" relation="include">
-        </childnode>
-      </node>
-      <node id="766">
-        <label>src/libsphinxbase/lm/ngram_model_set.c</label>
-        <link refid="ngram__model__set_8c"/>
-      </node>
-      <node id="765">
-        <label>src/libsphinxbase/lm/ngram_model_set.h</label>
-        <link refid="ngram__model__set_8h"/>
-        <childnode refid="766" relation="include">
-        </childnode>
-      </node>
-      <node id="764">
-        <label>src/libsphinxbase/lm/lm_trie_quant.c</label>
-        <link refid="lm__trie__quant_8c_source"/>
       </node>
       <node id="760">
         <label>src/libsphinxbase/lm/lm_trie.c</label>
@@ -136,9 +94,39 @@
         <childnode refid="761" relation="include">
         </childnode>
       </node>
+      <node id="764">
+        <label>src/libsphinxbase/lm/lm_trie_quant.c</label>
+        <link refid="lm__trie__quant_8c_source"/>
+      </node>
+      <node id="762">
+        <label>src/libsphinxbase/lm/ngram_model.c</label>
+        <link refid="ngram__model_8c_source"/>
+      </node>
       <node id="769">
         <label>src/sphinx_lmtools/sphinx_lm_eval.c</label>
         <link refid="sphinx__lm__eval_8c"/>
+      </node>
+      <node id="757">
+        <label>include/sphinxbase/ngram_model.h</label>
+        <link refid="ngram__model_8h"/>
+        <childnode refid="758" relation="include">
+        </childnode>
+        <childnode refid="762" relation="include">
+        </childnode>
+        <childnode refid="768" relation="include">
+        </childnode>
+        <childnode refid="769" relation="include">
+        </childnode>
+      </node>
+      <node id="766">
+        <label>src/libsphinxbase/lm/ngram_model_set.c</label>
+        <link refid="ngram__model__set_8c"/>
+      </node>
+      <node id="765">
+        <label>src/libsphinxbase/lm/ngram_model_set.h</label>
+        <link refid="ngram__model__set_8h"/>
+        <childnode refid="766" relation="include">
+        </childnode>
       </node>
       <node id="758">
         <label>src/libsphinxbase/lm/ngram_model_internal.h</label>
@@ -159,6 +147,18 @@
       <node id="767">
         <label>src/libsphinxbase/lm/ngrams_raw.c</label>
         <link refid="ngrams__raw_8c_source"/>
+      </node>
+      <node id="763">
+        <label>src/libsphinxbase/lm/ngram_model_trie.c</label>
+        <link refid="ngram__model__trie_8c_source"/>
+      </node>
+      <node id="761">
+        <label>src/libsphinxbase/lm/ngram_model_trie.h</label>
+        <link refid="ngram__model__trie_8h_source"/>
+        <childnode refid="762" relation="include">
+        </childnode>
+        <childnode refid="763" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
       <sectiondef kind="define">

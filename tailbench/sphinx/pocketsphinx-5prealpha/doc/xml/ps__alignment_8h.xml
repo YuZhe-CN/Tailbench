@@ -11,74 +11,15 @@
       <node id="1899">
         <label>sphinxbase/hash_table.h</label>
       </node>
-      <node id="1900">
-        <label>dict.h</label>
-        <link refid="dict_8h"/>
-        <childnode refid="1899" relation="include">
-        </childnode>
-        <childnode refid="1889" relation="include">
-        </childnode>
-        <childnode refid="1894" relation="include">
-        </childnode>
-        <childnode refid="1897" relation="include">
-        </childnode>
-      </node>
       <node id="1891">
         <label>assert.h</label>
-      </node>
-      <node id="1889">
-        <label>s3types.h</label>
-        <link refid="s3types_8h"/>
-        <childnode refid="1890" relation="include">
-        </childnode>
-        <childnode refid="1891" relation="include">
-        </childnode>
-        <childnode refid="1884" relation="include">
-        </childnode>
-        <childnode refid="1892" relation="include">
-        </childnode>
-        <childnode refid="1893" relation="include">
-        </childnode>
-      </node>
-      <node id="1890">
-        <label>float.h</label>
-      </node>
-      <node id="1896">
-        <label>sphinxbase/cmd_ln.h</label>
-      </node>
-      <node id="1883">
-        <label>src/libpocketsphinx/ps_alignment.h</label>
-        <link refid="ps__alignment_8h"/>
-        <childnode refid="1884" relation="include">
-        </childnode>
-        <childnode refid="1885" relation="include">
-        </childnode>
-        <childnode refid="1901" relation="include">
-        </childnode>
-      </node>
-      <node id="1902">
-        <label>sphinxbase/fixpoint.h</label>
       </node>
       <node id="1897">
         <label>pocketsphinx_export.h</label>
         <link refid="pocketsphinx__export_8h_source"/>
       </node>
-      <node id="1895">
-        <label>sphinxbase/mmio.h</label>
-      </node>
-      <node id="1893">
-        <label>sphinxbase/ckd_alloc.h</label>
-      </node>
-      <node id="1903">
-        <label>sphinxbase/listelem_alloc.h</label>
-      </node>
-      <node id="1898">
-        <label>mdef.h</label>
-        <link refid="mdef_8h"/>
-        <childnode refid="1886" relation="include">
-        </childnode>
-        <childnode refid="1899" relation="include">
-        </childnode>
+      <node id="1890">
+        <label>float.h</label>
       </node>
       <node id="1885">
         <label>dict2pid.h</label>
@@ -96,23 +37,26 @@
         <childnode refid="1900" relation="include">
         </childnode>
       </node>
-      <node id="1884">
-        <label>sphinxbase/prim_type.h</label>
+      <node id="1896">
+        <label>sphinxbase/cmd_ln.h</label>
       </node>
-      <node id="1901">
-        <label>hmm.h</label>
-        <link refid="hmm_8h"/>
-        <childnode refid="1886" relation="include">
+      <node id="1902">
+        <label>sphinxbase/fixpoint.h</label>
+      </node>
+      <node id="1900">
+        <label>dict.h</label>
+        <link refid="dict_8h"/>
+        <childnode refid="1899" relation="include">
         </childnode>
-        <childnode refid="1902" relation="include">
-        </childnode>
-        <childnode refid="1903" relation="include">
+        <childnode refid="1889" relation="include">
         </childnode>
         <childnode refid="1894" relation="include">
         </childnode>
+        <childnode refid="1897" relation="include">
+        </childnode>
       </node>
-      <node id="1888">
-        <label>sphinxbase/bitvec.h</label>
+      <node id="1895">
+        <label>sphinxbase/mmio.h</label>
       </node>
       <node id="1894">
         <label>bin_mdef.h</label>
@@ -126,17 +70,83 @@
         <childnode refid="1898" relation="include">
         </childnode>
       </node>
+      <node id="1893">
+        <label>sphinxbase/ckd_alloc.h</label>
+      </node>
+      <node id="1903">
+        <label>sphinxbase/listelem_alloc.h</label>
+      </node>
+      <node id="1884">
+        <label>sphinxbase/prim_type.h</label>
+      </node>
+      <node id="1889">
+        <label>s3types.h</label>
+        <link refid="s3types_8h"/>
+        <childnode refid="1890" relation="include">
+        </childnode>
+        <childnode refid="1891" relation="include">
+        </childnode>
+        <childnode refid="1884" relation="include">
+        </childnode>
+        <childnode refid="1892" relation="include">
+        </childnode>
+        <childnode refid="1893" relation="include">
+        </childnode>
+      </node>
+      <node id="1888">
+        <label>sphinxbase/bitvec.h</label>
+      </node>
+      <node id="1898">
+        <label>mdef.h</label>
+        <link refid="mdef_8h"/>
+        <childnode refid="1886" relation="include">
+        </childnode>
+        <childnode refid="1899" relation="include">
+        </childnode>
+      </node>
       <node id="1892">
         <label>sphinxbase/err.h</label>
       </node>
       <node id="1887">
         <label>sphinxbase/logmath.h</label>
       </node>
+      <node id="1883">
+        <label>src/libpocketsphinx/ps_alignment.h</label>
+        <link refid="ps__alignment_8h"/>
+        <childnode refid="1884" relation="include">
+        </childnode>
+        <childnode refid="1885" relation="include">
+        </childnode>
+        <childnode refid="1901" relation="include">
+        </childnode>
+      </node>
       <node id="1886">
         <label>stdio.h</label>
       </node>
+      <node id="1901">
+        <label>hmm.h</label>
+        <link refid="hmm_8h"/>
+        <childnode refid="1886" relation="include">
+        </childnode>
+        <childnode refid="1902" relation="include">
+        </childnode>
+        <childnode refid="1903" relation="include">
+        </childnode>
+        <childnode refid="1894" relation="include">
+        </childnode>
+      </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="1907">
+        <label>src/libpocketsphinx/state_align_search.c</label>
+        <link refid="state__align__search_8c"/>
+      </node>
+      <node id="1906">
+        <label>src/libpocketsphinx/state_align_search.h</label>
+        <link refid="state__align__search_8h"/>
+        <childnode refid="1907" relation="include">
+        </childnode>
+      </node>
       <node id="1905">
         <label>src/libpocketsphinx/ps_alignment.c</label>
         <link refid="ps__alignment_8c"/>
@@ -147,16 +157,6 @@
         <childnode refid="1905" relation="include">
         </childnode>
         <childnode refid="1906" relation="include">
-        </childnode>
-      </node>
-      <node id="1907">
-        <label>src/libpocketsphinx/state_align_search.c</label>
-        <link refid="state__align__search_8c"/>
-      </node>
-      <node id="1906">
-        <label>src/libpocketsphinx/state_align_search.h</label>
-        <link refid="state__align__search_8h"/>
-        <childnode refid="1907" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

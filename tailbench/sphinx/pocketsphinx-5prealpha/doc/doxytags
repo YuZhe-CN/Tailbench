@@ -2,7 +2,7 @@
 <tagfile>
   <compound kind="file">
     <name>pocketsphinx.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/include/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/include/</path>
     <filename>pocketsphinx_8h</filename>
     <includes id="ps__lattice_8h" name="ps_lattice.h" local="no" imported="no">ps_lattice.h</includes>
     <includes id="ps__mllr_8h" name="ps_mllr.h" local="no" imported="no">ps_mllr.h</includes>
@@ -332,7 +332,7 @@
   </compound>
   <compound kind="file">
     <name>ps_lattice.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/include/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/include/</path>
     <filename>ps__lattice_8h</filename>
     <member kind="typedef">
       <type>struct ps_lattice_s</type>
@@ -610,7 +610,7 @@
   </compound>
   <compound kind="file">
     <name>ps_mllr.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/include/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/include/</path>
     <filename>ps__mllr_8h</filename>
     <member kind="typedef">
       <type>struct ps_mllr_s</type>
@@ -643,7 +643,7 @@
   </compound>
   <compound kind="file">
     <name>ps_search.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/include/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/include/</path>
     <filename>ps__search_8h</filename>
     <member kind="typedef">
       <type>struct ps_search_iter_s</type>
@@ -788,7 +788,7 @@
   </compound>
   <compound kind="file">
     <name>acmod.c</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>acmod_8c</filename>
     <includes id="acmod_8h" name="acmod.h" local="yes" imported="no">acmod.h</includes>
     <includes id="ptm__mgau_8h" name="ptm_mgau.h" local="yes" imported="no">ptm_mgau.h</includes>
@@ -992,7 +992,7 @@
   </compound>
   <compound kind="file">
     <name>acmod.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>acmod_8h</filename>
     <includes id="ps__mllr_8h" name="ps_mllr.h" local="yes" imported="no">ps_mllr.h</includes>
     <includes id="bin__mdef_8h" name="bin_mdef.h" local="yes" imported="no">bin_mdef.h</includes>
@@ -1260,7 +1260,7 @@
   </compound>
   <compound kind="file">
     <name>bin_mdef.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>bin__mdef_8h</filename>
     <includes id="mdef_8h" name="mdef.h" local="yes" imported="no">mdef.h</includes>
     <class kind="struct">mdef_entry_s</class>
@@ -1381,7 +1381,7 @@
   </compound>
   <compound kind="file">
     <name>dict.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>dict_8h</filename>
     <includes id="s3types_8h" name="s3types.h" local="yes" imported="no">s3types.h</includes>
     <includes id="bin__mdef_8h" name="bin_mdef.h" local="yes" imported="no">bin_mdef.h</includes>
@@ -1488,7 +1488,7 @@
   </compound>
   <compound kind="file">
     <name>dict2pid.c</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>dict2pid_8c</filename>
     <includes id="dict2pid_8h" name="dict2pid.h" local="yes" imported="no">dict2pid.h</includes>
     <includes id="hmm_8h" name="hmm.h" local="yes" imported="no">hmm.h</includes>
@@ -1565,7 +1565,7 @@
   </compound>
   <compound kind="file">
     <name>dict2pid.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>dict2pid_8h</filename>
     <includes id="s3types_8h" name="s3types.h" local="yes" imported="no">s3types.h</includes>
     <includes id="bin__mdef_8h" name="bin_mdef.h" local="yes" imported="no">bin_mdef.h</includes>
@@ -1645,7 +1645,7 @@
   </compound>
   <compound kind="file">
     <name>fsg_lextree.c</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>fsg__lextree_8c</filename>
     <class kind="struct">fsg_glist_linklist_t</class>
     <member kind="function">
@@ -1693,7 +1693,7 @@
   </compound>
   <compound kind="file">
     <name>hmm.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>hmm_8h</filename>
     <includes id="bin__mdef_8h" name="bin_mdef.h" local="yes" imported="no">bin_mdef.h</includes>
     <class kind="struct">hmm_context_s</class>
@@ -1848,7 +1848,7 @@
   </compound>
   <compound kind="file">
     <name>mdef.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>mdef_8h</filename>
     <class kind="struct">ciphone_t</class>
     <class kind="struct">phone_t</class>
@@ -2007,7 +2007,7 @@
   </compound>
   <compound kind="file">
     <name>ms_gauden.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>ms__gauden_8h</filename>
     <includes id="pocketsphinx__internal_8h" name="pocketsphinx_internal.h" local="yes" imported="no">pocketsphinx_internal.h</includes>
     <includes id="hmm_8h" name="hmm.h" local="yes" imported="no">hmm.h</includes>
@@ -2058,7 +2058,7 @@
   </compound>
   <compound kind="file">
     <name>ms_mgau.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>ms__mgau_8h</filename>
     <includes id="acmod_8h" name="acmod.h" local="yes" imported="no">acmod.h</includes>
     <includes id="bin__mdef_8h" name="bin_mdef.h" local="yes" imported="no">bin_mdef.h</includes>
@@ -2068,7 +2068,7 @@
   </compound>
   <compound kind="file">
     <name>ms_senone.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>ms__senone_8h</filename>
     <includes id="ms__gauden_8h" name="ms_gauden.h" local="yes" imported="no">ms_gauden.h</includes>
     <includes id="bin__mdef_8h" name="bin_mdef.h" local="yes" imported="no">bin_mdef.h</includes>
@@ -2104,7 +2104,7 @@
   </compound>
   <compound kind="file">
     <name>ngram_search.c</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>ngram__search_8c</filename>
     <includes id="pocketsphinx__internal_8h" name="pocketsphinx_internal.h" local="yes" imported="no">pocketsphinx_internal.h</includes>
     <includes id="ps__lattice__internal_8h" name="ps_lattice_internal.h" local="yes" imported="no">ps_lattice_internal.h</includes>
@@ -2191,7 +2191,7 @@
   </compound>
   <compound kind="file">
     <name>ngram_search.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>ngram__search_8h</filename>
     <includes id="pocketsphinx__internal_8h" name="pocketsphinx_internal.h" local="yes" imported="no">pocketsphinx_internal.h</includes>
     <includes id="hmm_8h" name="hmm.h" local="yes" imported="no">hmm.h</includes>
@@ -2327,7 +2327,7 @@
   </compound>
   <compound kind="file">
     <name>ngram_search_fwdflat.c</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>ngram__search__fwdflat_8c</filename>
     <includes id="ngram__search_8h" name="ngram_search.h" local="yes" imported="no">ngram_search.h</includes>
     <includes id="ps__lattice__internal_8h" name="ps_lattice_internal.h" local="yes" imported="no">ps_lattice_internal.h</includes>
@@ -2376,7 +2376,7 @@
   </compound>
   <compound kind="file">
     <name>ngram_search_fwdflat.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>ngram__search__fwdflat_8h</filename>
     <includes id="ngram__search_8h" name="ngram_search.h" local="yes" imported="no">ngram_search.h</includes>
     <member kind="function">
@@ -2424,7 +2424,7 @@
   </compound>
   <compound kind="file">
     <name>ngram_search_fwdtree.c</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>ngram__search__fwdtree_8c</filename>
     <includes id="ngram__search__fwdtree_8h" name="ngram_search_fwdtree.h" local="yes" imported="no">ngram_search_fwdtree.h</includes>
     <includes id="phone__loop__search_8h" name="phone_loop_search.h" local="yes" imported="no">phone_loop_search.h</includes>
@@ -2473,7 +2473,7 @@
   </compound>
   <compound kind="file">
     <name>ngram_search_fwdtree.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>ngram__search__fwdtree_8h</filename>
     <includes id="ngram__search_8h" name="ngram_search.h" local="yes" imported="no">ngram_search.h</includes>
     <member kind="function">
@@ -2521,7 +2521,7 @@
   </compound>
   <compound kind="file">
     <name>phone_loop_search.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>phone__loop__search_8h</filename>
     <includes id="pocketsphinx__internal_8h" name="pocketsphinx_internal.h" local="yes" imported="no">pocketsphinx_internal.h</includes>
     <includes id="hmm_8h" name="hmm.h" local="yes" imported="no">hmm.h</includes>
@@ -2537,7 +2537,7 @@
   </compound>
   <compound kind="file">
     <name>pocketsphinx_internal.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>pocketsphinx__internal_8h</filename>
     <includes id="pocketsphinx_8h" name="pocketsphinx.h" local="yes" imported="no">pocketsphinx.h</includes>
     <includes id="acmod_8h" name="acmod.h" local="yes" imported="no">acmod.h</includes>
@@ -2587,7 +2587,7 @@
   </compound>
   <compound kind="file">
     <name>ps_alignment.c</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>ps__alignment_8c</filename>
     <includes id="ps__alignment_8h" name="ps_alignment.h" local="yes" imported="no">ps_alignment.h</includes>
     <member kind="function">
@@ -2726,7 +2726,7 @@
   </compound>
   <compound kind="file">
     <name>ps_alignment.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>ps__alignment_8h</filename>
     <includes id="dict2pid_8h" name="dict2pid.h" local="yes" imported="no">dict2pid.h</includes>
     <includes id="hmm_8h" name="hmm.h" local="yes" imported="no">hmm.h</includes>
@@ -2870,7 +2870,7 @@
   </compound>
   <compound kind="file">
     <name>ps_lattice.c</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>ps__lattice_8c</filename>
     <includes id="pocketsphinx__internal_8h" name="pocketsphinx_internal.h" local="yes" imported="no">pocketsphinx_internal.h</includes>
     <includes id="ps__lattice__internal_8h" name="ps_lattice_internal.h" local="yes" imported="no">ps_lattice_internal.h</includes>
@@ -3215,7 +3215,7 @@
   </compound>
   <compound kind="file">
     <name>ps_lattice_internal.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>ps__lattice__internal_8h</filename>
     <class kind="struct">latlink_list_s</class>
     <class kind="struct">ps_lattice_s</class>
@@ -3361,7 +3361,7 @@
   </compound>
   <compound kind="file">
     <name>ps_mllr.c</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>ps__mllr_8c</filename>
     <includes id="acmod_8h" name="acmod.h" local="yes" imported="no">acmod.h</includes>
     <member kind="function">
@@ -3388,7 +3388,7 @@
   </compound>
   <compound kind="file">
     <name>ptm_mgau.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>ptm__mgau_8h</filename>
     <includes id="acmod_8h" name="acmod.h" local="yes" imported="no">acmod.h</includes>
     <includes id="hmm_8h" name="hmm.h" local="yes" imported="no">hmm.h</includes>
@@ -3407,7 +3407,7 @@
   </compound>
   <compound kind="file">
     <name>s3types.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>s3types_8h</filename>
     <member kind="define">
       <type>#define</type>
@@ -3454,13 +3454,13 @@
   </compound>
   <compound kind="file">
     <name>state_align_search.c</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>state__align__search_8c</filename>
     <includes id="state__align__search_8h" name="state_align_search.h" local="yes" imported="no">state_align_search.h</includes>
   </compound>
   <compound kind="file">
     <name>state_align_search.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>state__align__search_8h</filename>
     <includes id="pocketsphinx__internal_8h" name="pocketsphinx_internal.h" local="yes" imported="no">pocketsphinx_internal.h</includes>
     <includes id="ps__alignment_8h" name="ps_alignment.h" local="yes" imported="no">ps_alignment.h</includes>
@@ -3470,7 +3470,7 @@
   </compound>
   <compound kind="file">
     <name>tied_mgau_common.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>tied__mgau__common_8h</filename>
     <member kind="define">
       <type>#define</type>
@@ -3503,7 +3503,7 @@
   </compound>
   <compound kind="file">
     <name>tmat.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
+    <path>/home/tailbench/sphinx/pocketsphinx-5prealpha/src/libpocketsphinx/</path>
     <filename>tmat_8h</filename>
     <class kind="struct">tmat_t</class>
     <member kind="function">

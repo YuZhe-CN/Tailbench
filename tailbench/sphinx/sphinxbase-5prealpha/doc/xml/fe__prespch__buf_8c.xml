@@ -9,9 +9,15 @@
     <includes refid="err_8h" local="yes">sphinxbase/err.h</includes>
     <includes refid="fe__prespch__buf_8h" local="yes">fe_prespch_buf.h</includes>
     <incdepgraph>
-      <node id="1258">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
+      <node id="1267">
+        <label>sphinxbase/fixpoint.h</label>
+        <link refid="fixpoint_8h_source"/>
+        <childnode refid="1268" relation="include">
+        </childnode>
+        <childnode refid="1258" relation="include">
+        </childnode>
+        <childnode refid="1259" relation="include">
+        </childnode>
       </node>
       <node id="1262">
         <label>stdarg.h</label>
@@ -27,6 +33,31 @@
       </node>
       <node id="1263">
         <label>errno.h</label>
+      </node>
+      <node id="1259">
+        <label>sphinxbase/prim_type.h</label>
+        <link refid="prim__type_8h"/>
+        <childnode refid="1260" relation="include">
+        </childnode>
+      </node>
+      <node id="1255">
+        <label>sphinxbase/ckd_alloc.h</label>
+        <link refid="ckd__alloc_8h"/>
+        <childnode refid="1256" relation="include">
+        </childnode>
+        <childnode refid="1257" relation="include">
+        </childnode>
+        <childnode refid="1258" relation="include">
+        </childnode>
+        <childnode refid="1259" relation="include">
+        </childnode>
+      </node>
+      <node id="1258">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
+      </node>
+      <node id="1268">
+        <label>limits.h</label>
       </node>
       <node id="1251">
         <label>src/libsphinxbase/fe/fe_prespch_buf.c</label>
@@ -50,44 +81,8 @@
         <childnode refid="1265" relation="include">
         </childnode>
       </node>
-      <node id="1259">
-        <label>sphinxbase/prim_type.h</label>
-        <link refid="prim__type_8h"/>
-        <childnode refid="1260" relation="include">
-        </childnode>
-      </node>
-      <node id="1255">
-        <label>sphinxbase/ckd_alloc.h</label>
-        <link refid="ckd__alloc_8h"/>
-        <childnode refid="1256" relation="include">
-        </childnode>
-        <childnode refid="1257" relation="include">
-        </childnode>
-        <childnode refid="1258" relation="include">
-        </childnode>
-        <childnode refid="1259" relation="include">
-        </childnode>
-      </node>
-      <node id="1268">
-        <label>limits.h</label>
-      </node>
-      <node id="1266">
-        <label>sphinxbase/cmd_ln.h</label>
-        <link refid="cmd__ln_8h"/>
-        <childnode refid="1252" relation="include">
-        </childnode>
-        <childnode refid="1262" relation="include">
-        </childnode>
-        <childnode refid="1258" relation="include">
-        </childnode>
-        <childnode refid="1259" relation="include">
-        </childnode>
-      </node>
       <node id="1260">
         <label>sphinx_config.h</label>
-      </node>
-      <node id="1253">
-        <label>string.h</label>
       </node>
       <node id="1261">
         <label>sphinxbase/err.h</label>
@@ -103,6 +98,21 @@
         <childnode refid="1258" relation="include">
         </childnode>
       </node>
+      <node id="1253">
+        <label>string.h</label>
+      </node>
+      <node id="1266">
+        <label>sphinxbase/cmd_ln.h</label>
+        <link refid="cmd__ln_8h"/>
+        <childnode refid="1252" relation="include">
+        </childnode>
+        <childnode refid="1262" relation="include">
+        </childnode>
+        <childnode refid="1258" relation="include">
+        </childnode>
+        <childnode refid="1259" relation="include">
+        </childnode>
+      </node>
       <node id="1265">
         <label>sphinxbase/fe.h</label>
         <link refid="fe_8h_source"/>
@@ -115,16 +125,6 @@
       </node>
       <node id="1252">
         <label>stdio.h</label>
-      </node>
-      <node id="1267">
-        <label>sphinxbase/fixpoint.h</label>
-        <link refid="fixpoint_8h_source"/>
-        <childnode refid="1268" relation="include">
-        </childnode>
-        <childnode refid="1258" relation="include">
-        </childnode>
-        <childnode refid="1259" relation="include">
-        </childnode>
       </node>
     </incdepgraph>
     <innerclass refid="structprespch__buf__s" prot="public">prespch_buf_s</innerclass>

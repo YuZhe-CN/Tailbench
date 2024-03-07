@@ -19,28 +19,18 @@
     <includedby refid="sphinx__fe_8c" local="no">src/sphinx_fe/sphinx_fe.c</includedby>
     <includedby refid="main_8c" local="no">src/sphinx_jsgf2fsg/main.c</includedby>
     <incdepgraph>
-      <node id="605">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
-      </node>
       <node id="609">
         <label>stdlib.h</label>
-      </node>
-      <node id="604">
-        <label>include/sphinxbase/hash_table.h</label>
-        <link refid="hash__table_8h"/>
-        <childnode refid="605" relation="include">
-        </childnode>
-        <childnode refid="606" relation="include">
-        </childnode>
-        <childnode refid="608" relation="include">
-        </childnode>
       </node>
       <node id="606">
         <label>sphinxbase/prim_type.h</label>
         <link refid="prim__type_8h"/>
         <childnode refid="607" relation="include">
         </childnode>
+      </node>
+      <node id="605">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
       </node>
       <node id="607">
         <label>sphinx_config.h</label>
@@ -55,11 +45,107 @@
         <childnode refid="606" relation="include">
         </childnode>
       </node>
+      <node id="604">
+        <label>include/sphinxbase/hash_table.h</label>
+        <link refid="hash__table_8h"/>
+        <childnode refid="605" relation="include">
+        </childnode>
+        <childnode refid="606" relation="include">
+        </childnode>
+        <childnode refid="608" relation="include">
+        </childnode>
+      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="618">
-        <label>src/libsphinxbase/lm/fsg_model.c</label>
-        <link refid="fsg__model_8c_source"/>
+      <node id="632">
+        <label>src/libsphinxbase/util/hash_table.c</label>
+        <link refid="hash__table_8c_source"/>
+      </node>
+      <node id="612">
+        <label>include/sphinxbase/jsgf.h</label>
+        <link refid="jsgf_8h"/>
+        <childnode refid="613" relation="include">
+        </childnode>
+        <childnode refid="614" relation="include">
+        </childnode>
+        <childnode refid="617" relation="include">
+        </childnode>
+      </node>
+      <node id="621">
+        <label>src/libsphinxbase/lm/lm_trie.c</label>
+        <link refid="lm__trie_8c_source"/>
+      </node>
+      <node id="620">
+        <label>src/libsphinxbase/lm/lm_trie.h</label>
+        <link refid="lm__trie_8h_source"/>
+        <childnode refid="621" relation="include">
+        </childnode>
+        <childnode refid="622" relation="include">
+        </childnode>
+      </node>
+      <node id="617">
+        <label>src/sphinx_jsgf2fsg/main.c</label>
+        <link refid="main_8c_source"/>
+      </node>
+      <node id="625">
+        <label>src/libsphinxbase/lm/lm_trie_quant.c</label>
+        <link refid="lm__trie__quant_8c_source"/>
+      </node>
+      <node id="634">
+        <label>src/sphinx_fe/sphinx_fe.c</label>
+        <link refid="sphinx__fe_8c_source"/>
+      </node>
+      <node id="630">
+        <label>src/libsphinxbase/lm/lm_trie_quant.h</label>
+        <link refid="lm__trie__quant_8h_source"/>
+        <childnode refid="620" relation="include">
+        </childnode>
+        <childnode refid="621" relation="include">
+        </childnode>
+        <childnode refid="625" relation="include">
+        </childnode>
+      </node>
+      <node id="633">
+        <label>src/libsphinxbase/util/huff_code.c</label>
+        <link refid="huff__code_8c_source"/>
+      </node>
+      <node id="623">
+        <label>src/libsphinxbase/lm/ngram_model.c</label>
+        <link refid="ngram__model_8c_source"/>
+      </node>
+      <node id="611">
+        <label>include/sphinxbase/fsg_model.h</label>
+        <link refid="fsg__model_8h_source"/>
+        <childnode refid="612" relation="include">
+        </childnode>
+        <childnode refid="618" relation="include">
+        </childnode>
+        <childnode refid="614" relation="include">
+        </childnode>
+        <childnode refid="617" relation="include">
+        </childnode>
+      </node>
+      <node id="616">
+        <label>src/libsphinxbase/lm/jsgf_scanner.c</label>
+        <link refid="jsgf__scanner_8c_source"/>
+      </node>
+      <node id="627">
+        <label>src/libsphinxbase/lm/ngram_model_set.c</label>
+        <link refid="ngram__model__set_8c"/>
+      </node>
+      <node id="626">
+        <label>src/libsphinxbase/lm/ngram_model_set.h</label>
+        <link refid="ngram__model__set_8h"/>
+        <childnode refid="627" relation="include">
+        </childnode>
+      </node>
+      <node id="615">
+        <label>src/libsphinxbase/lm/jsgf_parser.c</label>
+        <link refid="jsgf__parser_8c_source"/>
+      </node>
+      <node id="631">
+        <label>src/libsphinxbase/util/cmd_ln.c</label>
+        <link refid="cmd__ln_8c_source"/>
       </node>
       <node id="614">
         <label>src/libsphinxbase/lm/jsgf_internal.h</label>
@@ -70,14 +156,6 @@
         </childnode>
         <childnode refid="616" relation="include">
         </childnode>
-      </node>
-      <node id="623">
-        <label>src/libsphinxbase/lm/ngram_model.c</label>
-        <link refid="ngram__model_8c_source"/>
-      </node>
-      <node id="633">
-        <label>src/libsphinxbase/util/huff_code.c</label>
-        <link refid="huff__code_8c_source"/>
       </node>
       <node id="610">
         <label>include/sphinxbase/hash_table.h</label>
@@ -109,83 +187,9 @@
         <childnode refid="617" relation="include">
         </childnode>
       </node>
-      <node id="612">
-        <label>include/sphinxbase/jsgf.h</label>
-        <link refid="jsgf_8h"/>
-        <childnode refid="613" relation="include">
-        </childnode>
-        <childnode refid="614" relation="include">
-        </childnode>
-        <childnode refid="617" relation="include">
-        </childnode>
-      </node>
-      <node id="624">
-        <label>src/libsphinxbase/lm/ngram_model_trie.c</label>
-        <link refid="ngram__model__trie_8c_source"/>
-      </node>
-      <node id="617">
-        <label>src/sphinx_jsgf2fsg/main.c</label>
-        <link refid="main_8c_source"/>
-      </node>
-      <node id="622">
-        <label>src/libsphinxbase/lm/ngram_model_trie.h</label>
-        <link refid="ngram__model__trie_8h_source"/>
-        <childnode refid="623" relation="include">
-        </childnode>
-        <childnode refid="624" relation="include">
-        </childnode>
-      </node>
-      <node id="616">
-        <label>src/libsphinxbase/lm/jsgf_scanner.c</label>
-        <link refid="jsgf__scanner_8c_source"/>
-      </node>
-      <node id="627">
-        <label>src/libsphinxbase/lm/ngram_model_set.c</label>
-        <link refid="ngram__model__set_8c"/>
-      </node>
-      <node id="634">
-        <label>src/sphinx_fe/sphinx_fe.c</label>
-        <link refid="sphinx__fe_8c_source"/>
-      </node>
-      <node id="626">
-        <label>src/libsphinxbase/lm/ngram_model_set.h</label>
-        <link refid="ngram__model__set_8h"/>
-        <childnode refid="627" relation="include">
-        </childnode>
-      </node>
-      <node id="632">
-        <label>src/libsphinxbase/util/hash_table.c</label>
-        <link refid="hash__table_8c_source"/>
-      </node>
-      <node id="625">
-        <label>src/libsphinxbase/lm/lm_trie_quant.c</label>
-        <link refid="lm__trie__quant_8c_source"/>
-      </node>
-      <node id="630">
-        <label>src/libsphinxbase/lm/lm_trie_quant.h</label>
-        <link refid="lm__trie__quant_8h_source"/>
-        <childnode refid="620" relation="include">
-        </childnode>
-        <childnode refid="621" relation="include">
-        </childnode>
-        <childnode refid="625" relation="include">
-        </childnode>
-      </node>
-      <node id="621">
-        <label>src/libsphinxbase/lm/lm_trie.c</label>
-        <link refid="lm__trie_8c_source"/>
-      </node>
-      <node id="620">
-        <label>src/libsphinxbase/lm/lm_trie.h</label>
-        <link refid="lm__trie_8h_source"/>
-        <childnode refid="621" relation="include">
-        </childnode>
-        <childnode refid="622" relation="include">
-        </childnode>
-      </node>
-      <node id="615">
-        <label>src/libsphinxbase/lm/jsgf_parser.c</label>
-        <link refid="jsgf__parser_8c_source"/>
+      <node id="618">
+        <label>src/libsphinxbase/lm/fsg_model.c</label>
+        <link refid="fsg__model_8c_source"/>
       </node>
       <node id="619">
         <label>src/libsphinxbase/lm/ngram_model_internal.h</label>
@@ -203,26 +207,6 @@
         <childnode refid="628" relation="include">
         </childnode>
       </node>
-      <node id="631">
-        <label>src/libsphinxbase/util/cmd_ln.c</label>
-        <link refid="cmd__ln_8c_source"/>
-      </node>
-      <node id="613">
-        <label>src/libsphinxbase/lm/jsgf.c</label>
-        <link refid="jsgf_8c"/>
-      </node>
-      <node id="611">
-        <label>include/sphinxbase/fsg_model.h</label>
-        <link refid="fsg__model_8h_source"/>
-        <childnode refid="612" relation="include">
-        </childnode>
-        <childnode refid="618" relation="include">
-        </childnode>
-        <childnode refid="614" relation="include">
-        </childnode>
-        <childnode refid="617" relation="include">
-        </childnode>
-      </node>
       <node id="628">
         <label>src/libsphinxbase/lm/ngrams_raw.c</label>
         <link refid="ngrams__raw_8c_source"/>
@@ -234,6 +218,22 @@
         </childnode>
         <childnode refid="628" relation="include">
         </childnode>
+      </node>
+      <node id="624">
+        <label>src/libsphinxbase/lm/ngram_model_trie.c</label>
+        <link refid="ngram__model__trie_8c_source"/>
+      </node>
+      <node id="622">
+        <label>src/libsphinxbase/lm/ngram_model_trie.h</label>
+        <link refid="ngram__model__trie_8h_source"/>
+        <childnode refid="623" relation="include">
+        </childnode>
+        <childnode refid="624" relation="include">
+        </childnode>
+      </node>
+      <node id="613">
+        <label>src/libsphinxbase/lm/jsgf.c</label>
+        <link refid="jsgf_8c"/>
       </node>
     </invincdepgraph>
     <innerclass refid="structhash__entry__s" prot="public">hash_entry_s</innerclass>

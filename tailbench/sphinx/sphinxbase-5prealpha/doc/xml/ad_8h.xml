@@ -14,19 +14,6 @@
     <includedby refid="ad__win32_8c" local="yes">src/libsphinxad/ad_win32.c</includedby>
     <includedby refid="cont__seg_8c" local="no">src/sphinx_adtools/cont_seg.c</includedby>
     <incdepgraph>
-      <node id="131">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
-      </node>
-      <node id="132">
-        <label>sphinxbase/prim_type.h</label>
-        <link refid="prim__type_8h"/>
-        <childnode refid="130" relation="include">
-        </childnode>
-      </node>
-      <node id="130">
-        <label>sphinx_config.h</label>
-      </node>
       <node id="129">
         <label>include/sphinxbase/ad.h</label>
         <link refid="ad_8h"/>
@@ -37,39 +24,24 @@
         <childnode refid="132" relation="include">
         </childnode>
       </node>
+      <node id="132">
+        <label>sphinxbase/prim_type.h</label>
+        <link refid="prim__type_8h"/>
+        <childnode refid="130" relation="include">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
+      </node>
+      <node id="130">
+        <label>sphinx_config.h</label>
+      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="134">
-        <label>src/libsphinxad/ad_alsa.c</label>
-        <link refid="ad__alsa_8c_source"/>
-      </node>
-      <node id="138">
-        <label>src/libsphinxad/ad_oss.c</label>
-        <link refid="ad__oss_8c_source"/>
-      </node>
       <node id="136">
         <label>src/libsphinxad/ad_jack.c</label>
         <link refid="ad__jack_8c_source"/>
-      </node>
-      <node id="141">
-        <label>src/sphinx_adtools/cont_seg.c</label>
-        <link refid="cont__seg_8c_source"/>
-      </node>
-      <node id="139">
-        <label>src/libsphinxad/ad_pulse.c</label>
-        <link refid="ad__pulse_8c_source"/>
-      </node>
-      <node id="135">
-        <label>src/libsphinxad/ad_base.c</label>
-        <link refid="ad__base_8c_source"/>
-      </node>
-      <node id="137">
-        <label>src/libsphinxad/ad_openal.c</label>
-        <link refid="ad__openal_8c_source"/>
-      </node>
-      <node id="140">
-        <label>src/libsphinxad/ad_win32.c</label>
-        <link refid="ad__win32_8c_source"/>
       </node>
       <node id="133">
         <label>include/sphinxbase/ad.h</label>
@@ -90,6 +62,34 @@
         </childnode>
         <childnode refid="141" relation="include">
         </childnode>
+      </node>
+      <node id="135">
+        <label>src/libsphinxad/ad_base.c</label>
+        <link refid="ad__base_8c_source"/>
+      </node>
+      <node id="139">
+        <label>src/libsphinxad/ad_pulse.c</label>
+        <link refid="ad__pulse_8c_source"/>
+      </node>
+      <node id="134">
+        <label>src/libsphinxad/ad_alsa.c</label>
+        <link refid="ad__alsa_8c_source"/>
+      </node>
+      <node id="137">
+        <label>src/libsphinxad/ad_openal.c</label>
+        <link refid="ad__openal_8c_source"/>
+      </node>
+      <node id="138">
+        <label>src/libsphinxad/ad_oss.c</label>
+        <link refid="ad__oss_8c_source"/>
+      </node>
+      <node id="141">
+        <label>src/sphinx_adtools/cont_seg.c</label>
+        <link refid="cont__seg_8c_source"/>
+      </node>
+      <node id="140">
+        <label>src/libsphinxad/ad_win32.c</label>
+        <link refid="ad__win32_8c_source"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="define">

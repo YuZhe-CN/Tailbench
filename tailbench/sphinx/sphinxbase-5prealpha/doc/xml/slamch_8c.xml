@@ -4,15 +4,15 @@
     <compoundname>slamch.c</compoundname>
     <includes refid="f2c_8h" local="yes">sphinxbase/f2c.h</includes>
     <incdepgraph>
-      <node id="2409">
-        <label>sphinxbase/f2c.h</label>
-        <link refid="f2c_8h_source"/>
-      </node>
       <node id="2408">
         <label>src/libsphinxbase/util/slamch.c</label>
         <link refid="slamch_8c"/>
         <childnode refid="2409" relation="include">
         </childnode>
+      </node>
+      <node id="2409">
+        <label>sphinxbase/f2c.h</label>
+        <link refid="f2c_8h_source"/>
       </node>
     </incdepgraph>
       <sectiondef kind="var">

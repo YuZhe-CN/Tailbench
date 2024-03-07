@@ -11,12 +11,126 @@
     <includes refid="fe__warp_8h" local="yes">fe_warp.h</includes>
     <includes refid="fe__warp__affine_8h" local="yes">fe_warp_affine.h</includes>
     <incdepgraph>
+      <node id="1401">
+        <label>sphinxbase/fixpoint.h</label>
+        <link refid="fixpoint_8h_source"/>
+        <childnode refid="1402" relation="include">
+        </childnode>
+        <childnode refid="1392" relation="include">
+        </childnode>
+        <childnode refid="1393" relation="include">
+        </childnode>
+      </node>
+      <node id="1391">
+        <label>stdarg.h</label>
+      </node>
+      <node id="1387">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1396">
+        <label>errno.h</label>
+      </node>
+      <node id="1403">
+        <label>fe_noise.h</label>
+        <link refid="fe__noise_8h_source"/>
+        <childnode refid="1399" relation="include">
+        </childnode>
+        <childnode refid="1401" relation="include">
+        </childnode>
+        <childnode refid="1404" relation="include">
+        </childnode>
+      </node>
+      <node id="1393">
+        <label>sphinxbase/prim_type.h</label>
+        <link refid="prim__type_8h"/>
+        <childnode refid="1394" relation="include">
+        </childnode>
+      </node>
       <node id="1392">
         <label>sphinxbase/sphinxbase_export.h</label>
         <link refid="sphinxbase__export_8h_source"/>
       </node>
-      <node id="1391">
-        <label>stdarg.h</label>
+      <node id="1398">
+        <label>fe_internal.h</label>
+        <link refid="fe__internal_8h_source"/>
+        <childnode refid="1399" relation="include">
+        </childnode>
+        <childnode refid="1401" relation="include">
+        </childnode>
+        <childnode refid="1403" relation="include">
+        </childnode>
+        <childnode refid="1405" relation="include">
+        </childnode>
+        <childnode refid="1404" relation="include">
+        </childnode>
+      </node>
+      <node id="1402">
+        <label>limits.h</label>
+      </node>
+      <node id="1405">
+        <label>fe_prespch_buf.h</label>
+        <link refid="fe__prespch__buf_8h_source"/>
+        <childnode refid="1399" relation="include">
+        </childnode>
+      </node>
+      <node id="1397">
+        <label>fe_warp.h</label>
+        <link refid="fe__warp_8h_source"/>
+        <childnode refid="1398" relation="include">
+        </childnode>
+      </node>
+      <node id="1394">
+        <label>sphinx_config.h</label>
+      </node>
+      <node id="1395">
+        <label>sphinxbase/err.h</label>
+        <link refid="err_8h"/>
+        <childnode refid="1391" relation="include">
+        </childnode>
+        <childnode refid="1386" relation="include">
+        </childnode>
+        <childnode refid="1387" relation="include">
+        </childnode>
+        <childnode refid="1396" relation="include">
+        </childnode>
+        <childnode refid="1392" relation="include">
+        </childnode>
+      </node>
+      <node id="1390">
+        <label>sphinxbase/strfuncs.h</label>
+        <link refid="strfuncs_8h"/>
+        <childnode refid="1391" relation="include">
+        </childnode>
+        <childnode refid="1392" relation="include">
+        </childnode>
+        <childnode refid="1393" relation="include">
+        </childnode>
+      </node>
+      <node id="1389">
+        <label>string.h</label>
+      </node>
+      <node id="1404">
+        <label>fe_type.h</label>
+        <link refid="fe__type_8h_source"/>
+        <childnode refid="1399" relation="include">
+        </childnode>
+        <childnode refid="1401" relation="include">
+        </childnode>
+      </node>
+      <node id="1400">
+        <label>sphinxbase/cmd_ln.h</label>
+        <link refid="cmd__ln_8h"/>
+        <childnode refid="1386" relation="include">
+        </childnode>
+        <childnode refid="1391" relation="include">
+        </childnode>
+        <childnode refid="1392" relation="include">
+        </childnode>
+        <childnode refid="1393" relation="include">
+        </childnode>
+      </node>
+      <node id="1388">
+        <label>math.h</label>
       </node>
       <node id="1385">
         <label>src/libsphinxbase/fe/fe_warp_affine.c</label>
@@ -44,96 +158,6 @@
         <childnode refid="1399" relation="include">
         </childnode>
       </node>
-      <node id="1390">
-        <label>sphinxbase/strfuncs.h</label>
-        <link refid="strfuncs_8h"/>
-        <childnode refid="1391" relation="include">
-        </childnode>
-        <childnode refid="1392" relation="include">
-        </childnode>
-        <childnode refid="1393" relation="include">
-        </childnode>
-      </node>
-      <node id="1403">
-        <label>fe_noise.h</label>
-        <link refid="fe__noise_8h_source"/>
-        <childnode refid="1399" relation="include">
-        </childnode>
-        <childnode refid="1401" relation="include">
-        </childnode>
-        <childnode refid="1404" relation="include">
-        </childnode>
-      </node>
-      <node id="1387">
-        <label>stdlib.h</label>
-      </node>
-      <node id="1396">
-        <label>errno.h</label>
-      </node>
-      <node id="1405">
-        <label>fe_prespch_buf.h</label>
-        <link refid="fe__prespch__buf_8h_source"/>
-        <childnode refid="1399" relation="include">
-        </childnode>
-      </node>
-      <node id="1393">
-        <label>sphinxbase/prim_type.h</label>
-        <link refid="prim__type_8h"/>
-        <childnode refid="1394" relation="include">
-        </childnode>
-      </node>
-      <node id="1402">
-        <label>limits.h</label>
-      </node>
-      <node id="1400">
-        <label>sphinxbase/cmd_ln.h</label>
-        <link refid="cmd__ln_8h"/>
-        <childnode refid="1386" relation="include">
-        </childnode>
-        <childnode refid="1391" relation="include">
-        </childnode>
-        <childnode refid="1392" relation="include">
-        </childnode>
-        <childnode refid="1393" relation="include">
-        </childnode>
-      </node>
-      <node id="1394">
-        <label>sphinx_config.h</label>
-      </node>
-      <node id="1389">
-        <label>string.h</label>
-      </node>
-      <node id="1395">
-        <label>sphinxbase/err.h</label>
-        <link refid="err_8h"/>
-        <childnode refid="1391" relation="include">
-        </childnode>
-        <childnode refid="1386" relation="include">
-        </childnode>
-        <childnode refid="1387" relation="include">
-        </childnode>
-        <childnode refid="1396" relation="include">
-        </childnode>
-        <childnode refid="1392" relation="include">
-        </childnode>
-      </node>
-      <node id="1398">
-        <label>fe_internal.h</label>
-        <link refid="fe__internal_8h_source"/>
-        <childnode refid="1399" relation="include">
-        </childnode>
-        <childnode refid="1401" relation="include">
-        </childnode>
-        <childnode refid="1403" relation="include">
-        </childnode>
-        <childnode refid="1405" relation="include">
-        </childnode>
-        <childnode refid="1404" relation="include">
-        </childnode>
-      </node>
-      <node id="1388">
-        <label>math.h</label>
-      </node>
       <node id="1399">
         <label>sphinxbase/fe.h</label>
         <link refid="fe_8h_source"/>
@@ -144,32 +168,8 @@
         <childnode refid="1401" relation="include">
         </childnode>
       </node>
-      <node id="1397">
-        <label>fe_warp.h</label>
-        <link refid="fe__warp_8h_source"/>
-        <childnode refid="1398" relation="include">
-        </childnode>
-      </node>
-      <node id="1404">
-        <label>fe_type.h</label>
-        <link refid="fe__type_8h_source"/>
-        <childnode refid="1399" relation="include">
-        </childnode>
-        <childnode refid="1401" relation="include">
-        </childnode>
-      </node>
       <node id="1386">
         <label>stdio.h</label>
-      </node>
-      <node id="1401">
-        <label>sphinxbase/fixpoint.h</label>
-        <link refid="fixpoint_8h_source"/>
-        <childnode refid="1402" relation="include">
-        </childnode>
-        <childnode refid="1392" relation="include">
-        </childnode>
-        <childnode refid="1393" relation="include">
-        </childnode>
       </node>
     </incdepgraph>
       <sectiondef kind="define">

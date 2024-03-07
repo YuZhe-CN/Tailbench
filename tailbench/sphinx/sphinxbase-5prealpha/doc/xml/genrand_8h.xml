@@ -25,6 +25,14 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="569">
+        <label>src/libsphinxbase/util/genrand.c</label>
+        <link refid="genrand_8c_source"/>
+      </node>
+      <node id="567">
+        <label>src/libsphinxbase/fe/fe_interface.c</label>
+        <link refid="fe__interface_8c_source"/>
+      </node>
       <node id="566">
         <label>include/sphinxbase/genrand.h</label>
         <link refid="genrand_8h"/>
@@ -35,17 +43,9 @@
         <childnode refid="569" relation="include">
         </childnode>
       </node>
-      <node id="569">
-        <label>src/libsphinxbase/util/genrand.c</label>
-        <link refid="genrand_8c_source"/>
-      </node>
       <node id="568">
         <label>src/libsphinxbase/fe/fe_sigproc.c</label>
         <link refid="fe__sigproc_8c_source"/>
-      </node>
-      <node id="567">
-        <label>src/libsphinxbase/fe/fe_interface.c</label>
-        <link refid="fe__interface_8c_source"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="define">

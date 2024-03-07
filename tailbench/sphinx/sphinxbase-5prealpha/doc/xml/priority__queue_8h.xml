@@ -8,6 +8,9 @@
     <includedby refid="ngrams__raw_8c" local="no">src/libsphinxbase/lm/ngrams_raw.c</includedby>
     <includedby refid="priority__queue_8c" local="no">src/libsphinxbase/util/priority_queue.c</includedby>
     <incdepgraph>
+      <node id="904">
+        <label>stdlib.h</label>
+      </node>
       <node id="905">
         <label>sphinxbase/sphinxbase_export.h</label>
         <link refid="sphinxbase__export_8h_source"/>
@@ -20,11 +23,20 @@
         <childnode refid="905" relation="include">
         </childnode>
       </node>
-      <node id="904">
-        <label>stdlib.h</label>
-      </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="907">
+        <label>src/libsphinxbase/lm/lm_trie.c</label>
+        <link refid="lm__trie_8c_source"/>
+      </node>
+      <node id="909">
+        <label>src/libsphinxbase/util/priority_queue.c</label>
+        <link refid="priority__queue_8c_source"/>
+      </node>
+      <node id="908">
+        <label>src/libsphinxbase/lm/ngrams_raw.c</label>
+        <link refid="ngrams__raw_8c_source"/>
+      </node>
       <node id="906">
         <label>include/sphinxbase/priority_queue.h</label>
         <link refid="priority__queue_8h"/>
@@ -34,18 +46,6 @@
         </childnode>
         <childnode refid="909" relation="include">
         </childnode>
-      </node>
-      <node id="909">
-        <label>src/libsphinxbase/util/priority_queue.c</label>
-        <link refid="priority__queue_8c_source"/>
-      </node>
-      <node id="907">
-        <label>src/libsphinxbase/lm/lm_trie.c</label>
-        <link refid="lm__trie_8c_source"/>
-      </node>
-      <node id="908">
-        <label>src/libsphinxbase/lm/ngrams_raw.c</label>
-        <link refid="ngrams__raw_8c_source"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="typedef">

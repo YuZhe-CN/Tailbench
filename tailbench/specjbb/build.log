@@ -1,0 +1,11 @@
+Buildfile: /home/tailbench/specjbb/build.xml
+
+init:
+
+compile:
+    [javac] /home/tailbench/specjbb/build.xml:37: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+dist:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds

@@ -4,15 +4,15 @@
     <compoundname>sphinx_wave2feat.h</compoundname>
     <includedby refid="sphinx__fe_8c" local="yes">src/sphinx_fe/sphinx_fe.c</includedby>
     <invincdepgraph>
+      <node id="2528">
+        <label>src/sphinx_fe/sphinx_fe.c</label>
+        <link refid="sphinx__fe_8c_source"/>
+      </node>
       <node id="2527">
         <label>src/sphinx_fe/sphinx_wave2feat.h</label>
         <link refid="sphinx__wave2feat_8h"/>
         <childnode refid="2528" relation="include">
         </childnode>
-      </node>
-      <node id="2528">
-        <label>src/sphinx_fe/sphinx_fe.c</label>
-        <link refid="sphinx__fe_8c_source"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="typedef">

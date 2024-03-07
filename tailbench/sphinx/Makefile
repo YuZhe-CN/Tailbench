@@ -23,7 +23,7 @@ all : $(BINS)
 
 decoder.o : decoder.cpp
 	export PKG_CONFIG_PATH=$(PKG_CONFIG_PATH) && \
-	$(CXX) `pkg-config --cflags pocketsphinx sphinxbase` $< -c -o $@ $(CXXFLAGS)
+	$(CXX) `pkg-config --cflags pocketsphinx sphinxbase` $< -c -o $@ $(CXXFLAGS) -I ./sphinx-install/include/pocketsphinx -I ./sphinx-install/include/sphinxbase
 
 client.o : client.cpp
 	export PKG_CONFIG_PATH=$(PKG_CONFIG_PATH) && \

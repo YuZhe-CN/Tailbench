@@ -40,6 +40,7 @@ backends/flint/flint_database.lo: backends/flint/flint_database.cc \
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar2.h \
  /usr/include/c++/7/bits/allocator.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h \
  /usr/include/c++/7/ext/new_allocator.h /usr/include/c++/7/new \
@@ -125,14 +126,18 @@ backends/flint/flint_database.lo: backends/flint/flint_database.cc \
  /usr/include/x86_64-linux-gnu/bits/select.h \
  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+ /usr/include/x86_64-linux-gnu/bits/select2.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
  /usr/include/x86_64-linux-gnu/bits/sysmacros.h /usr/include/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h \
  /usr/include/c++/7/bits/std_abs.h /usr/include/c++/7/bits/algorithmfwd.h \
  /usr/include/c++/7/bits/stl_heap.h /usr/include/c++/7/bits/stl_tempbuf.h \
  /usr/include/c++/7/cstring /usr/include/string.h /usr/include/strings.h \
- common/unaligned.h common/omassert.h /usr/include/zlib.h \
- /usr/include/zconf.h \
+ /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+ /usr/include/x86_64-linux-gnu/bits/string_fortified.h common/unaligned.h \
+ common/omassert.h /usr/include/zlib.h /usr/include/zconf.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
@@ -146,10 +151,11 @@ backends/flint/flint_database.lo: backends/flint/flint_database.cc \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- backends/flint/flint_utils.h common/omassert.h common/positionlist.h \
- backends/flint/flint_postlist.h common/leafpostlist.h common/postlist.h \
- common/positionlist.h common/weightinternal.h include/xapian/weight.h \
- include/xapian/query.h common/database.h /usr/include/c++/7/map \
+ /usr/include/x86_64-linux-gnu/bits/unistd.h backends/flint/flint_utils.h \
+ common/omassert.h common/positionlist.h backends/flint/flint_postlist.h \
+ common/leafpostlist.h common/postlist.h common/positionlist.h \
+ common/weightinternal.h include/xapian/weight.h include/xapian/query.h \
+ common/database.h /usr/include/c++/7/map \
  /usr/include/c++/7/bits/stl_tree.h /usr/include/c++/7/bits/stl_map.h \
  /usr/include/c++/7/bits/stl_multimap.h common/autoptr.h \
  /usr/include/c++/7/memory /usr/include/c++/7/bits/stl_raw_storage_iter.h \
@@ -172,7 +178,8 @@ backends/flint/flint_database.lo: backends/flint/flint_database.cc \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/linux/falloc.h /usr/include/x86_64-linux-gnu/bits/stat.h \
- common/safeunistd.h common/remoteconnection.h common/remoteprotocol.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl2.h common/safeunistd.h \
+ common/remoteconnection.h common/remoteprotocol.h \
  common/replicate_utils.h common/replication.h \
  common/replicationprotocol.h common/serialise.h common/noreturn.h \
  common/utils.h common/safesysstat.h \
@@ -185,7 +192,9 @@ backends/flint/flint_database.lo: backends/flint/flint_database.cc \
  /usr/include/x86_64-linux-gnu/bits/libio.h \
  /usr/include/x86_64-linux-gnu/bits/_G_config.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/x86_64-linux-gnu/bits/sys_errlist.h /usr/include/c++/7/list \
+ /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h /usr/include/c++/7/list \
  /usr/include/c++/7/bits/stl_list.h /usr/include/c++/7/bits/list.tcc
 
 /usr/include/stdc-predef.h:
@@ -285,6 +294,8 @@ common/database.h:
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
 
 /usr/include/c++/7/bits/allocator.h:
 
@@ -522,13 +533,19 @@ common/stringutils.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
+/usr/include/x86_64-linux-gnu/bits/select2.h:
+
 /usr/include/x86_64-linux-gnu/sys/sysmacros.h:
 
 /usr/include/x86_64-linux-gnu/bits/sysmacros.h:
 
 /usr/include/alloca.h:
 
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
+
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 /usr/include/c++/7/bits/std_abs.h:
 
@@ -543,6 +560,10 @@ common/stringutils.h:
 /usr/include/string.h:
 
 /usr/include/strings.h:
+
+/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
+
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
 
 common/unaligned.h:
 
@@ -581,6 +602,8 @@ common/omassert.h:
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
 
 backends/flint/flint_utils.h:
 
@@ -696,6 +719,8 @@ common/safefcntl.h:
 
 /usr/include/x86_64-linux-gnu/bits/stat.h:
 
+/usr/include/x86_64-linux-gnu/bits/fcntl2.h:
+
 common/safeunistd.h:
 
 common/remoteconnection.h:
@@ -747,6 +772,10 @@ common/safesysstat.h:
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
 
 /usr/include/c++/7/list:
 

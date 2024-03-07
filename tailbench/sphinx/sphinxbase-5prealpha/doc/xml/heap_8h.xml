@@ -8,6 +8,15 @@
     <includedby refid="heap_8c" local="yes">src/libsphinxbase/util/heap.c</includedby>
     <includedby refid="huff__code_8c" local="yes">src/libsphinxbase/util/huff_code.c</includedby>
     <incdepgraph>
+      <node id="636">
+        <label>stdlib.h</label>
+      </node>
+      <node id="638">
+        <label>sphinxbase/prim_type.h</label>
+        <link refid="prim__type_8h"/>
+        <childnode refid="639" relation="include">
+        </childnode>
+      </node>
       <node id="637">
         <label>sphinxbase/sphinxbase_export.h</label>
         <link refid="sphinxbase__export_8h_source"/>
@@ -22,20 +31,15 @@
         <childnode refid="638" relation="include">
         </childnode>
       </node>
-      <node id="636">
-        <label>stdlib.h</label>
-      </node>
-      <node id="638">
-        <label>sphinxbase/prim_type.h</label>
-        <link refid="prim__type_8h"/>
-        <childnode refid="639" relation="include">
-        </childnode>
-      </node>
       <node id="639">
         <label>sphinx_config.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="642">
+        <label>src/libsphinxbase/util/huff_code.c</label>
+        <link refid="huff__code_8c_source"/>
+      </node>
       <node id="640">
         <label>include/sphinxbase/heap.h</label>
         <link refid="heap_8h"/>
@@ -43,10 +47,6 @@
         </childnode>
         <childnode refid="642" relation="include">
         </childnode>
-      </node>
-      <node id="642">
-        <label>src/libsphinxbase/util/huff_code.c</label>
-        <link refid="huff__code_8c_source"/>
       </node>
       <node id="641">
         <label>src/libsphinxbase/util/heap.c</label>

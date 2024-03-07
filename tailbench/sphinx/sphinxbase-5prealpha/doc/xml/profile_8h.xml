@@ -7,19 +7,6 @@
     <includes refid="prim__type_8h" local="no">sphinxbase/prim_type.h</includes>
     <includedby refid="profile_8c" local="yes">src/libsphinxbase/util/profile.c</includedby>
     <incdepgraph>
-      <node id="912">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
-      </node>
-      <node id="913">
-        <label>sphinxbase/prim_type.h</label>
-        <link refid="prim__type_8h"/>
-        <childnode refid="914" relation="include">
-        </childnode>
-      </node>
-      <node id="914">
-        <label>sphinx_config.h</label>
-      </node>
       <node id="910">
         <label>include/sphinxbase/profile.h</label>
         <link refid="profile_8h"/>
@@ -30,20 +17,33 @@
         <childnode refid="913" relation="include">
         </childnode>
       </node>
+      <node id="913">
+        <label>sphinxbase/prim_type.h</label>
+        <link refid="prim__type_8h"/>
+        <childnode refid="914" relation="include">
+        </childnode>
+      </node>
+      <node id="912">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
+      </node>
+      <node id="914">
+        <label>sphinx_config.h</label>
+      </node>
       <node id="911">
         <label>stdio.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="916">
-        <label>src/libsphinxbase/util/profile.c</label>
-        <link refid="profile_8c_source"/>
-      </node>
       <node id="915">
         <label>include/sphinxbase/profile.h</label>
         <link refid="profile_8h"/>
         <childnode refid="916" relation="include">
         </childnode>
+      </node>
+      <node id="916">
+        <label>src/libsphinxbase/util/profile.c</label>
+        <link refid="profile_8c_source"/>
       </node>
     </invincdepgraph>
     <innerclass refid="structpctr__t" prot="public">pctr_t</innerclass>

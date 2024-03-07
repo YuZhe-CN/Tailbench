@@ -5,6 +5,14 @@
     <includes local="no">stdio.h</includes>
     <includes refid="genrand_8h" local="yes">sphinxbase/genrand.h</includes>
     <incdepgraph>
+      <node id="2206">
+        <label>src/libsphinxbase/util/genrand.c</label>
+        <link refid="genrand_8c"/>
+        <childnode refid="2207" relation="include">
+        </childnode>
+        <childnode refid="2208" relation="include">
+        </childnode>
+      </node>
       <node id="2209">
         <label>sphinxbase/sphinxbase_export.h</label>
         <link refid="sphinxbase__export_8h_source"/>
@@ -15,14 +23,6 @@
         <childnode refid="2207" relation="include">
         </childnode>
         <childnode refid="2209" relation="include">
-        </childnode>
-      </node>
-      <node id="2206">
-        <label>src/libsphinxbase/util/genrand.c</label>
-        <link refid="genrand_8c"/>
-        <childnode refid="2207" relation="include">
-        </childnode>
-        <childnode refid="2208" relation="include">
         </childnode>
       </node>
       <node id="2207">

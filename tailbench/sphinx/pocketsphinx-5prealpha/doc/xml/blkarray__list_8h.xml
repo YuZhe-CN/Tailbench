@@ -18,26 +18,6 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="529">
-        <label>src/libpocketsphinx/fsg_search.c</label>
-        <link refid="fsg__search_8c_source"/>
-      </node>
-      <node id="523">
-        <label>src/libpocketsphinx/allphone_search.c</label>
-        <link refid="allphone__search_8c_source"/>
-      </node>
-      <node id="522">
-        <label>src/libpocketsphinx/allphone_search.h</label>
-        <link refid="allphone__search_8h_source"/>
-        <childnode refid="523" relation="include">
-        </childnode>
-        <childnode refid="524" relation="include">
-        </childnode>
-      </node>
-      <node id="524">
-        <label>src/libpocketsphinx/pocketsphinx.c</label>
-        <link refid="pocketsphinx_8c_source"/>
-      </node>
       <node id="527">
         <label>src/libpocketsphinx/fsg_search_internal.h</label>
         <link refid="fsg__search__internal_8h_source"/>
@@ -48,13 +28,31 @@
         <childnode refid="524" relation="include">
         </childnode>
       </node>
-      <node id="525">
-        <label>src/libpocketsphinx/blkarray_list.c</label>
-        <link refid="blkarray__list_8c_source"/>
+      <node id="524">
+        <label>src/libpocketsphinx/pocketsphinx.c</label>
+        <link refid="pocketsphinx_8c_source"/>
+      </node>
+      <node id="529">
+        <label>src/libpocketsphinx/fsg_search.c</label>
+        <link refid="fsg__search_8c_source"/>
       </node>
       <node id="528">
         <label>src/libpocketsphinx/fsg_history.c</label>
         <link refid="fsg__history_8c_source"/>
+      </node>
+      <node id="526">
+        <label>src/libpocketsphinx/fsg_history.h</label>
+        <link refid="fsg__history_8h_source"/>
+        <childnode refid="527" relation="include">
+        </childnode>
+        <childnode refid="528" relation="include">
+        </childnode>
+        <childnode refid="529" relation="include">
+        </childnode>
+      </node>
+      <node id="525">
+        <label>src/libpocketsphinx/blkarray_list.c</label>
+        <link refid="blkarray__list_8c_source"/>
       </node>
       <node id="521">
         <label>src/libpocketsphinx/blkarray_list.h</label>
@@ -66,14 +64,16 @@
         <childnode refid="526" relation="include">
         </childnode>
       </node>
-      <node id="526">
-        <label>src/libpocketsphinx/fsg_history.h</label>
-        <link refid="fsg__history_8h_source"/>
-        <childnode refid="527" relation="include">
+      <node id="523">
+        <label>src/libpocketsphinx/allphone_search.c</label>
+        <link refid="allphone__search_8c_source"/>
+      </node>
+      <node id="522">
+        <label>src/libpocketsphinx/allphone_search.h</label>
+        <link refid="allphone__search_8h_source"/>
+        <childnode refid="523" relation="include">
         </childnode>
-        <childnode refid="528" relation="include">
-        </childnode>
-        <childnode refid="529" relation="include">
+        <childnode refid="524" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

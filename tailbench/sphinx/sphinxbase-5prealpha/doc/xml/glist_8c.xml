@@ -9,10 +9,6 @@
     <includes refid="glist_8h" local="yes">sphinxbase/glist.h</includes>
     <includes refid="ckd__alloc_8h" local="yes">sphinxbase/ckd_alloc.h</includes>
     <incdepgraph>
-      <node id="2217">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
-      </node>
       <node id="2215">
         <label>assert.h</label>
       </node>
@@ -21,22 +17,6 @@
       </node>
       <node id="2221">
         <label>setjmp.h</label>
-      </node>
-      <node id="2211">
-        <label>src/libsphinxbase/util/glist.c</label>
-        <link refid="glist_8c"/>
-        <childnode refid="2212" relation="include">
-        </childnode>
-        <childnode refid="2213" relation="include">
-        </childnode>
-        <childnode refid="2214" relation="include">
-        </childnode>
-        <childnode refid="2215" relation="include">
-        </childnode>
-        <childnode refid="2216" relation="include">
-        </childnode>
-        <childnode refid="2220" relation="include">
-        </childnode>
       </node>
       <node id="2218">
         <label>sphinxbase/prim_type.h</label>
@@ -56,8 +36,31 @@
         <childnode refid="2218" relation="include">
         </childnode>
       </node>
+      <node id="2217">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
+      </node>
       <node id="2219">
         <label>sphinx_config.h</label>
+      </node>
+      <node id="2214">
+        <label>string.h</label>
+      </node>
+      <node id="2211">
+        <label>src/libsphinxbase/util/glist.c</label>
+        <link refid="glist_8c"/>
+        <childnode refid="2212" relation="include">
+        </childnode>
+        <childnode refid="2213" relation="include">
+        </childnode>
+        <childnode refid="2214" relation="include">
+        </childnode>
+        <childnode refid="2215" relation="include">
+        </childnode>
+        <childnode refid="2216" relation="include">
+        </childnode>
+        <childnode refid="2220" relation="include">
+        </childnode>
       </node>
       <node id="2216">
         <label>sphinxbase/glist.h</label>
@@ -68,9 +71,6 @@
         </childnode>
         <childnode refid="2218" relation="include">
         </childnode>
-      </node>
-      <node id="2214">
-        <label>string.h</label>
       </node>
       <node id="2212">
         <label>stdio.h</label>

@@ -13,9 +13,15 @@
     <includedby refid="fe__sigproc_8c" local="yes">src/libsphinxbase/fe/fe_sigproc.c</includedby>
     <includedby refid="fixlog_8c" local="yes">src/libsphinxbase/fe/fixlog.c</includedby>
     <incdepgraph>
-      <node id="1186">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
+      <node id="1192">
+        <label>sphinxbase/fixpoint.h</label>
+        <link refid="fixpoint_8h_source"/>
+        <childnode refid="1193" relation="include">
+        </childnode>
+        <childnode refid="1186" relation="include">
+        </childnode>
+        <childnode refid="1190" relation="include">
+        </childnode>
       </node>
       <node id="1189">
         <label>stdarg.h</label>
@@ -30,35 +36,15 @@
         <childnode refid="1195" relation="include">
         </childnode>
       </node>
-      <node id="1196">
-        <label>fe_prespch_buf.h</label>
-        <link refid="fe__prespch__buf_8h_source"/>
-        <childnode refid="1185" relation="include">
-        </childnode>
-      </node>
       <node id="1190">
         <label>sphinxbase/prim_type.h</label>
         <link refid="prim__type_8h"/>
         <childnode refid="1191" relation="include">
         </childnode>
       </node>
-      <node id="1193">
-        <label>limits.h</label>
-      </node>
-      <node id="1187">
-        <label>sphinxbase/cmd_ln.h</label>
-        <link refid="cmd__ln_8h"/>
-        <childnode refid="1188" relation="include">
-        </childnode>
-        <childnode refid="1189" relation="include">
-        </childnode>
-        <childnode refid="1186" relation="include">
-        </childnode>
-        <childnode refid="1190" relation="include">
-        </childnode>
-      </node>
-      <node id="1191">
-        <label>sphinx_config.h</label>
+      <node id="1186">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
       </node>
       <node id="1184">
         <label>src/libsphinxbase/fe/fe_internal.h</label>
@@ -74,6 +60,38 @@
         <childnode refid="1195" relation="include">
         </childnode>
       </node>
+      <node id="1193">
+        <label>limits.h</label>
+      </node>
+      <node id="1196">
+        <label>fe_prespch_buf.h</label>
+        <link refid="fe__prespch__buf_8h_source"/>
+        <childnode refid="1185" relation="include">
+        </childnode>
+      </node>
+      <node id="1191">
+        <label>sphinx_config.h</label>
+      </node>
+      <node id="1195">
+        <label>fe_type.h</label>
+        <link refid="fe__type_8h_source"/>
+        <childnode refid="1185" relation="include">
+        </childnode>
+        <childnode refid="1192" relation="include">
+        </childnode>
+      </node>
+      <node id="1187">
+        <label>sphinxbase/cmd_ln.h</label>
+        <link refid="cmd__ln_8h"/>
+        <childnode refid="1188" relation="include">
+        </childnode>
+        <childnode refid="1189" relation="include">
+        </childnode>
+        <childnode refid="1186" relation="include">
+        </childnode>
+        <childnode refid="1190" relation="include">
+        </childnode>
+      </node>
       <node id="1185">
         <label>sphinxbase/fe.h</label>
         <link refid="fe_8h_source"/>
@@ -84,52 +102,30 @@
         <childnode refid="1192" relation="include">
         </childnode>
       </node>
-      <node id="1195">
-        <label>fe_type.h</label>
-        <link refid="fe__type_8h_source"/>
-        <childnode refid="1185" relation="include">
-        </childnode>
-        <childnode refid="1192" relation="include">
-        </childnode>
-      </node>
       <node id="1188">
         <label>stdio.h</label>
       </node>
-      <node id="1192">
-        <label>sphinxbase/fixpoint.h</label>
-        <link refid="fixpoint_8h_source"/>
-        <childnode refid="1193" relation="include">
-        </childnode>
-        <childnode refid="1186" relation="include">
-        </childnode>
-        <childnode refid="1190" relation="include">
-        </childnode>
-      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="1202">
-        <label>src/libsphinxbase/fe/fe_warp_affine.c</label>
-        <link refid="fe__warp__affine_8c_source"/>
+      <node id="1203">
+        <label>src/libsphinxbase/fe/fe_warp_inverse_linear.c</label>
+        <link refid="fe__warp__inverse__linear_8c_source"/>
       </node>
       <node id="1206">
         <label>src/libsphinxbase/fe/fixlog.c</label>
         <link refid="fixlog_8c_source"/>
       </node>
-      <node id="1205">
-        <label>src/libsphinxbase/fe/fe_noise.c</label>
-        <link refid="fe__noise_8c_source"/>
-      </node>
-      <node id="1203">
-        <label>src/libsphinxbase/fe/fe_warp_inverse_linear.c</label>
-        <link refid="fe__warp__inverse__linear_8c_source"/>
-      </node>
-      <node id="1200">
-        <label>src/libsphinxbase/fe/fe_sigproc.c</label>
-        <link refid="fe__sigproc_8c_source"/>
+      <node id="1204">
+        <label>src/libsphinxbase/fe/fe_warp_piecewise_linear.c</label>
+        <link refid="fe__warp__piecewise__linear_8c_source"/>
       </node>
       <node id="1198">
         <label>src/libsphinxbase/fe/fe_interface.c</label>
         <link refid="fe__interface_8c_source"/>
+      </node>
+      <node id="1205">
+        <label>src/libsphinxbase/fe/fe_noise.c</label>
+        <link refid="fe__noise_8c_source"/>
       </node>
       <node id="1197">
         <label>src/libsphinxbase/fe/fe_internal.h</label>
@@ -144,10 +140,6 @@
         </childnode>
         <childnode refid="1206" relation="include">
         </childnode>
-      </node>
-      <node id="1204">
-        <label>src/libsphinxbase/fe/fe_warp_piecewise_linear.c</label>
-        <link refid="fe__warp__piecewise__linear_8c_source"/>
       </node>
       <node id="1201">
         <label>src/libsphinxbase/fe/fe_warp.c</label>
@@ -168,6 +160,14 @@
         </childnode>
         <childnode refid="1204" relation="include">
         </childnode>
+      </node>
+      <node id="1202">
+        <label>src/libsphinxbase/fe/fe_warp_affine.c</label>
+        <link refid="fe__warp__affine_8c_source"/>
+      </node>
+      <node id="1200">
+        <label>src/libsphinxbase/fe/fe_sigproc.c</label>
+        <link refid="fe__sigproc_8c_source"/>
       </node>
     </invincdepgraph>
     <innerclass refid="structmelfb__s" prot="public">melfb_s</innerclass>

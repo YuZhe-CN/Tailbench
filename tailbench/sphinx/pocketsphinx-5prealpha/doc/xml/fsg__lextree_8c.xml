@@ -12,67 +12,15 @@
       <node id="770">
         <label>sphinxbase/hash_table.h</label>
       </node>
-      <node id="771">
-        <label>dict.h</label>
-        <link refid="dict_8h"/>
-        <childnode refid="770" relation="include">
-        </childnode>
-        <childnode refid="772" relation="include">
-        </childnode>
-        <childnode refid="766" relation="include">
-        </childnode>
-        <childnode refid="768" relation="include">
-        </childnode>
-      </node>
       <node id="757">
         <label>assert.h</label>
-      </node>
-      <node id="772">
-        <label>s3types.h</label>
-        <link refid="s3types_8h"/>
-        <childnode refid="773" relation="include">
-        </childnode>
-        <childnode refid="757" relation="include">
-        </childnode>
-        <childnode refid="774" relation="include">
-        </childnode>
-        <childnode refid="759" relation="include">
-        </childnode>
-        <childnode refid="758" relation="include">
-        </childnode>
-      </node>
-      <node id="773">
-        <label>float.h</label>
-      </node>
-      <node id="761">
-        <label>sphinxbase/cmd_ln.h</label>
-      </node>
-      <node id="764">
-        <label>sphinxbase/fixpoint.h</label>
       </node>
       <node id="768">
         <label>pocketsphinx_export.h</label>
         <link refid="pocketsphinx__export_8h_source"/>
       </node>
-      <node id="767">
-        <label>sphinxbase/mmio.h</label>
-      </node>
-      <node id="758">
-        <label>sphinxbase/ckd_alloc.h</label>
-      </node>
-      <node id="765">
-        <label>sphinxbase/listelem_alloc.h</label>
-      </node>
-      <node id="769">
-        <label>mdef.h</label>
-        <link refid="mdef_8h"/>
-        <childnode refid="755" relation="include">
-        </childnode>
-        <childnode refid="770" relation="include">
-        </childnode>
-      </node>
-      <node id="756">
-        <label>string.h</label>
+      <node id="773">
+        <label>float.h</label>
       </node>
       <node id="775">
         <label>dict2pid.h</label>
@@ -90,23 +38,26 @@
         <childnode refid="771" relation="include">
         </childnode>
       </node>
-      <node id="774">
-        <label>sphinxbase/prim_type.h</label>
+      <node id="761">
+        <label>sphinxbase/cmd_ln.h</label>
       </node>
-      <node id="763">
-        <label>hmm.h</label>
-        <link refid="hmm_8h"/>
-        <childnode refid="755" relation="include">
+      <node id="764">
+        <label>sphinxbase/fixpoint.h</label>
+      </node>
+      <node id="771">
+        <label>dict.h</label>
+        <link refid="dict_8h"/>
+        <childnode refid="770" relation="include">
         </childnode>
-        <childnode refid="764" relation="include">
-        </childnode>
-        <childnode refid="765" relation="include">
+        <childnode refid="772" relation="include">
         </childnode>
         <childnode refid="766" relation="include">
         </childnode>
+        <childnode refid="768" relation="include">
+        </childnode>
       </node>
-      <node id="777">
-        <label>sphinxbase/bitvec.h</label>
+      <node id="767">
+        <label>sphinxbase/mmio.h</label>
       </node>
       <node id="766">
         <label>bin_mdef.h</label>
@@ -120,8 +71,42 @@
         <childnode refid="769" relation="include">
         </childnode>
       </node>
-      <node id="759">
-        <label>sphinxbase/err.h</label>
+      <node id="758">
+        <label>sphinxbase/ckd_alloc.h</label>
+      </node>
+      <node id="765">
+        <label>sphinxbase/listelem_alloc.h</label>
+      </node>
+      <node id="756">
+        <label>string.h</label>
+      </node>
+      <node id="774">
+        <label>sphinxbase/prim_type.h</label>
+      </node>
+      <node id="772">
+        <label>s3types.h</label>
+        <link refid="s3types_8h"/>
+        <childnode refid="773" relation="include">
+        </childnode>
+        <childnode refid="757" relation="include">
+        </childnode>
+        <childnode refid="774" relation="include">
+        </childnode>
+        <childnode refid="759" relation="include">
+        </childnode>
+        <childnode refid="758" relation="include">
+        </childnode>
+      </node>
+      <node id="777">
+        <label>sphinxbase/bitvec.h</label>
+      </node>
+      <node id="769">
+        <label>mdef.h</label>
+        <link refid="mdef_8h"/>
+        <childnode refid="755" relation="include">
+        </childnode>
+        <childnode refid="770" relation="include">
+        </childnode>
       </node>
       <node id="754">
         <label>src/libpocketsphinx/fsg_lextree.c</label>
@@ -153,6 +138,9 @@
         <childnode refid="775" relation="include">
         </childnode>
       </node>
+      <node id="759">
+        <label>sphinxbase/err.h</label>
+      </node>
       <node id="762">
         <label>sphinxbase/fsg_model.h</label>
       </node>
@@ -161,6 +149,18 @@
       </node>
       <node id="755">
         <label>stdio.h</label>
+      </node>
+      <node id="763">
+        <label>hmm.h</label>
+        <link refid="hmm_8h"/>
+        <childnode refid="755" relation="include">
+        </childnode>
+        <childnode refid="764" relation="include">
+        </childnode>
+        <childnode refid="765" relation="include">
+        </childnode>
+        <childnode refid="766" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <innerclass refid="structfsg__glist__linklist__t" prot="public">fsg_glist_linklist_t</innerclass>

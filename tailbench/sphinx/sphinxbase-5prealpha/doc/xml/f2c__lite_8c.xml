@@ -12,10 +12,6 @@
       <node id="2193">
         <label>assert.h</label>
       </node>
-      <node id="2194">
-        <label>sphinxbase/f2c.h</label>
-        <link refid="f2c_8h_source"/>
-      </node>
       <node id="2191">
         <label>stdlib.h</label>
       </node>
@@ -43,6 +39,10 @@
       </node>
       <node id="2190">
         <label>stdio.h</label>
+      </node>
+      <node id="2194">
+        <label>sphinxbase/f2c.h</label>
+        <link refid="f2c_8h_source"/>
       </node>
     </incdepgraph>
       <sectiondef kind="define">

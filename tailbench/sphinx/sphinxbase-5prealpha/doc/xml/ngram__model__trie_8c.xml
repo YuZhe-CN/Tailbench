@@ -13,12 +13,143 @@
       <node id="1976">
         <label>sys/stat.h</label>
       </node>
+      <node id="1970">
+        <label>stdarg.h</label>
+      </node>
+      <node id="1992">
+        <label>sphinxbase/bitarr.h</label>
+        <link refid="bitarr_8h"/>
+        <childnode refid="1993" relation="include">
+        </childnode>
+        <childnode refid="1968" relation="include">
+        </childnode>
+        <childnode refid="1994" relation="include">
+        </childnode>
+        <childnode refid="1977" relation="include">
+        </childnode>
+        <childnode refid="1974" relation="include">
+        </childnode>
+      </node>
+      <node id="1993">
+        <label>assert.h</label>
+      </node>
+      <node id="1994">
+        <label>stdint.h</label>
+      </node>
+      <node id="1972">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1991">
+        <label>lm_trie.h</label>
+        <link refid="lm__trie_8h_source"/>
+        <childnode refid="1975" relation="include">
+        </childnode>
+        <childnode refid="1992" relation="include">
+        </childnode>
+        <childnode refid="1986" relation="include">
+        </childnode>
+        <childnode refid="1995" relation="include">
+        </childnode>
+      </node>
+      <node id="1981">
+        <label>setjmp.h</label>
+      </node>
+      <node id="1973">
+        <label>errno.h</label>
+      </node>
+      <node id="1995">
+        <label>lm_trie_quant.h</label>
+        <link refid="lm__trie__quant_8h_source"/>
+        <childnode refid="1992" relation="include">
+        </childnode>
+        <childnode refid="1996" relation="include">
+        </childnode>
+      </node>
+      <node id="1977">
+        <label>sphinxbase/prim_type.h</label>
+        <link refid="prim__type_8h"/>
+        <childnode refid="1978" relation="include">
+        </childnode>
+      </node>
+      <node id="1980">
+        <label>sphinxbase/ckd_alloc.h</label>
+        <link refid="ckd__alloc_8h"/>
+        <childnode refid="1972" relation="include">
+        </childnode>
+        <childnode refid="1981" relation="include">
+        </childnode>
+        <childnode refid="1974" relation="include">
+        </childnode>
+        <childnode refid="1977" relation="include">
+        </childnode>
+      </node>
       <node id="1974">
         <label>sphinxbase/sphinxbase_export.h</label>
         <link refid="sphinxbase__export_8h_source"/>
       </node>
-      <node id="1970">
-        <label>stdarg.h</label>
+      <node id="1978">
+        <label>sphinx_config.h</label>
+      </node>
+      <node id="1969">
+        <label>sphinxbase/err.h</label>
+        <link refid="err_8h"/>
+        <childnode refid="1970" relation="include">
+        </childnode>
+        <childnode refid="1971" relation="include">
+        </childnode>
+        <childnode refid="1972" relation="include">
+        </childnode>
+        <childnode refid="1973" relation="include">
+        </childnode>
+        <childnode refid="1974" relation="include">
+        </childnode>
+      </node>
+      <node id="1979">
+        <label>sphinxbase/strfuncs.h</label>
+        <link refid="strfuncs_8h"/>
+        <childnode refid="1970" relation="include">
+        </childnode>
+        <childnode refid="1974" relation="include">
+        </childnode>
+        <childnode refid="1977" relation="include">
+        </childnode>
+      </node>
+      <node id="1968">
+        <label>string.h</label>
+      </node>
+      <node id="1975">
+        <label>sphinxbase/pio.h</label>
+        <link refid="pio_8h"/>
+        <childnode refid="1971" relation="include">
+        </childnode>
+        <childnode refid="1976" relation="include">
+        </childnode>
+        <childnode refid="1974" relation="include">
+        </childnode>
+        <childnode refid="1977" relation="include">
+        </childnode>
+      </node>
+      <node id="1985">
+        <label>sphinxbase/cmd_ln.h</label>
+        <link refid="cmd__ln_8h"/>
+        <childnode refid="1971" relation="include">
+        </childnode>
+        <childnode refid="1970" relation="include">
+        </childnode>
+        <childnode refid="1974" relation="include">
+        </childnode>
+        <childnode refid="1977" relation="include">
+        </childnode>
+      </node>
+      <node id="1984">
+        <label>sphinxbase/logmath.h</label>
+        <link refid="logmath_8h"/>
+        <childnode refid="1974" relation="include">
+        </childnode>
+        <childnode refid="1977" relation="include">
+        </childnode>
+        <childnode refid="1985" relation="include">
+        </childnode>
       </node>
       <node id="1987">
         <label>sphinxbase/ngram_model.h</label>
@@ -36,27 +167,25 @@
         <childnode refid="1988" relation="include">
         </childnode>
       </node>
-      <node id="1993">
-        <label>assert.h</label>
-      </node>
-      <node id="1979">
-        <label>sphinxbase/strfuncs.h</label>
-        <link refid="strfuncs_8h"/>
-        <childnode refid="1970" relation="include">
+      <node id="1990">
+        <label>sphinxbase/glist.h</label>
+        <link refid="glist_8h"/>
+        <childnode refid="1972" relation="include">
         </childnode>
         <childnode refid="1974" relation="include">
         </childnode>
         <childnode refid="1977" relation="include">
         </childnode>
       </node>
-      <node id="1994">
-        <label>stdint.h</label>
+      <node id="1988">
+        <label>sphinxbase/mmio.h</label>
+        <link refid="mmio_8h"/>
+        <childnode refid="1974" relation="include">
+        </childnode>
       </node>
-      <node id="1972">
-        <label>stdlib.h</label>
-      </node>
-      <node id="1981">
-        <label>setjmp.h</label>
+      <node id="1982">
+        <label>sphinxbase/byteorder.h</label>
+        <link refid="byteorder_8h_source"/>
       </node>
       <node id="1989">
         <label>sphinxbase/hash_table.h</label>
@@ -68,19 +197,29 @@
         <childnode refid="1990" relation="include">
         </childnode>
       </node>
-      <node id="1973">
-        <label>errno.h</label>
+      <node id="1971">
+        <label>stdio.h</label>
       </node>
-      <node id="1988">
-        <label>sphinxbase/mmio.h</label>
-        <link refid="mmio_8h"/>
-        <childnode refid="1974" relation="include">
+      <node id="1986">
+        <label>ngram_model_internal.h</label>
+        <link refid="ngram__model__internal_8h_source"/>
+        <childnode refid="1987" relation="include">
+        </childnode>
+        <childnode refid="1989" relation="include">
         </childnode>
       </node>
-      <node id="1977">
-        <label>sphinxbase/prim_type.h</label>
-        <link refid="prim__type_8h"/>
-        <childnode refid="1978" relation="include">
+      <node id="1996">
+        <label>ngrams_raw.h</label>
+        <link refid="ngrams__raw_8h_source"/>
+        <childnode refid="1989" relation="include">
+        </childnode>
+        <childnode refid="1984" relation="include">
+        </childnode>
+        <childnode refid="1977" relation="include">
+        </childnode>
+        <childnode refid="1975" relation="include">
+        </childnode>
+        <childnode refid="1969" relation="include">
         </childnode>
       </node>
       <node id="1967">
@@ -111,145 +250,6 @@
         <childnode refid="1986" relation="include">
         </childnode>
         <childnode refid="1991" relation="include">
-        </childnode>
-      </node>
-      <node id="1980">
-        <label>sphinxbase/ckd_alloc.h</label>
-        <link refid="ckd__alloc_8h"/>
-        <childnode refid="1972" relation="include">
-        </childnode>
-        <childnode refid="1981" relation="include">
-        </childnode>
-        <childnode refid="1974" relation="include">
-        </childnode>
-        <childnode refid="1977" relation="include">
-        </childnode>
-      </node>
-      <node id="1984">
-        <label>sphinxbase/logmath.h</label>
-        <link refid="logmath_8h"/>
-        <childnode refid="1974" relation="include">
-        </childnode>
-        <childnode refid="1977" relation="include">
-        </childnode>
-        <childnode refid="1985" relation="include">
-        </childnode>
-      </node>
-      <node id="1985">
-        <label>sphinxbase/cmd_ln.h</label>
-        <link refid="cmd__ln_8h"/>
-        <childnode refid="1971" relation="include">
-        </childnode>
-        <childnode refid="1970" relation="include">
-        </childnode>
-        <childnode refid="1974" relation="include">
-        </childnode>
-        <childnode refid="1977" relation="include">
-        </childnode>
-      </node>
-      <node id="1978">
-        <label>sphinx_config.h</label>
-      </node>
-      <node id="1990">
-        <label>sphinxbase/glist.h</label>
-        <link refid="glist_8h"/>
-        <childnode refid="1972" relation="include">
-        </childnode>
-        <childnode refid="1974" relation="include">
-        </childnode>
-        <childnode refid="1977" relation="include">
-        </childnode>
-      </node>
-      <node id="1968">
-        <label>string.h</label>
-      </node>
-      <node id="1995">
-        <label>lm_trie_quant.h</label>
-        <link refid="lm__trie__quant_8h_source"/>
-        <childnode refid="1992" relation="include">
-        </childnode>
-        <childnode refid="1996" relation="include">
-        </childnode>
-      </node>
-      <node id="1992">
-        <label>sphinxbase/bitarr.h</label>
-        <link refid="bitarr_8h"/>
-        <childnode refid="1993" relation="include">
-        </childnode>
-        <childnode refid="1968" relation="include">
-        </childnode>
-        <childnode refid="1994" relation="include">
-        </childnode>
-        <childnode refid="1977" relation="include">
-        </childnode>
-        <childnode refid="1974" relation="include">
-        </childnode>
-      </node>
-      <node id="1969">
-        <label>sphinxbase/err.h</label>
-        <link refid="err_8h"/>
-        <childnode refid="1970" relation="include">
-        </childnode>
-        <childnode refid="1971" relation="include">
-        </childnode>
-        <childnode refid="1972" relation="include">
-        </childnode>
-        <childnode refid="1973" relation="include">
-        </childnode>
-        <childnode refid="1974" relation="include">
-        </childnode>
-      </node>
-      <node id="1991">
-        <label>lm_trie.h</label>
-        <link refid="lm__trie_8h_source"/>
-        <childnode refid="1975" relation="include">
-        </childnode>
-        <childnode refid="1992" relation="include">
-        </childnode>
-        <childnode refid="1986" relation="include">
-        </childnode>
-        <childnode refid="1995" relation="include">
-        </childnode>
-      </node>
-      <node id="1982">
-        <label>sphinxbase/byteorder.h</label>
-        <link refid="byteorder_8h_source"/>
-      </node>
-      <node id="1986">
-        <label>ngram_model_internal.h</label>
-        <link refid="ngram__model__internal_8h_source"/>
-        <childnode refid="1987" relation="include">
-        </childnode>
-        <childnode refid="1989" relation="include">
-        </childnode>
-      </node>
-      <node id="1975">
-        <label>sphinxbase/pio.h</label>
-        <link refid="pio_8h"/>
-        <childnode refid="1971" relation="include">
-        </childnode>
-        <childnode refid="1976" relation="include">
-        </childnode>
-        <childnode refid="1974" relation="include">
-        </childnode>
-        <childnode refid="1977" relation="include">
-        </childnode>
-      </node>
-      <node id="1971">
-        <label>stdio.h</label>
-      </node>
-      <node id="1996">
-        <label>ngrams_raw.h</label>
-        <link refid="ngrams__raw_8h_source"/>
-        <childnode refid="1989" relation="include">
-        </childnode>
-        <childnode refid="1984" relation="include">
-        </childnode>
-        <childnode refid="1977" relation="include">
-        </childnode>
-        <childnode refid="1975" relation="include">
-        </childnode>
-        <childnode refid="1969" relation="include">
         </childnode>
       </node>
     </incdepgraph>

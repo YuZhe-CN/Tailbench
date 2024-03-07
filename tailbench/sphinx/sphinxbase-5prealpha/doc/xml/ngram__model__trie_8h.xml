@@ -12,12 +12,118 @@
       <node id="2014">
         <label>sys/stat.h</label>
       </node>
+      <node id="2005">
+        <label>stdarg.h</label>
+      </node>
+      <node id="2015">
+        <label>sphinxbase/bitarr.h</label>
+        <link refid="bitarr_8h"/>
+        <childnode refid="2016" relation="include">
+        </childnode>
+        <childnode refid="2017" relation="include">
+        </childnode>
+        <childnode refid="2018" relation="include">
+        </childnode>
+        <childnode refid="1999" relation="include">
+        </childnode>
+        <childnode refid="2002" relation="include">
+        </childnode>
+      </node>
+      <node id="2016">
+        <label>assert.h</label>
+      </node>
+      <node id="2018">
+        <label>stdint.h</label>
+      </node>
+      <node id="2011">
+        <label>stdlib.h</label>
+      </node>
+      <node id="2012">
+        <label>lm_trie.h</label>
+        <link refid="lm__trie_8h_source"/>
+        <childnode refid="2013" relation="include">
+        </childnode>
+        <childnode refid="2015" relation="include">
+        </childnode>
+        <childnode refid="2006" relation="include">
+        </childnode>
+        <childnode refid="2019" relation="include">
+        </childnode>
+      </node>
+      <node id="2022">
+        <label>errno.h</label>
+      </node>
+      <node id="2019">
+        <label>lm_trie_quant.h</label>
+        <link refid="lm__trie__quant_8h_source"/>
+        <childnode refid="2015" relation="include">
+        </childnode>
+        <childnode refid="2020" relation="include">
+        </childnode>
+      </node>
+      <node id="1999">
+        <label>sphinxbase/prim_type.h</label>
+        <link refid="prim__type_8h"/>
+        <childnode refid="2000" relation="include">
+        </childnode>
+      </node>
       <node id="2002">
         <label>sphinxbase/sphinxbase_export.h</label>
         <link refid="sphinxbase__export_8h_source"/>
       </node>
-      <node id="2005">
-        <label>stdarg.h</label>
+      <node id="2000">
+        <label>sphinx_config.h</label>
+      </node>
+      <node id="2021">
+        <label>sphinxbase/err.h</label>
+        <link refid="err_8h"/>
+        <childnode refid="2005" relation="include">
+        </childnode>
+        <childnode refid="2004" relation="include">
+        </childnode>
+        <childnode refid="2011" relation="include">
+        </childnode>
+        <childnode refid="2022" relation="include">
+        </childnode>
+        <childnode refid="2002" relation="include">
+        </childnode>
+      </node>
+      <node id="2017">
+        <label>string.h</label>
+      </node>
+      <node id="2013">
+        <label>sphinxbase/pio.h</label>
+        <link refid="pio_8h"/>
+        <childnode refid="2004" relation="include">
+        </childnode>
+        <childnode refid="2014" relation="include">
+        </childnode>
+        <childnode refid="2002" relation="include">
+        </childnode>
+        <childnode refid="1999" relation="include">
+        </childnode>
+      </node>
+      <node id="2003">
+        <label>sphinxbase/cmd_ln.h</label>
+        <link refid="cmd__ln_8h"/>
+        <childnode refid="2004" relation="include">
+        </childnode>
+        <childnode refid="2005" relation="include">
+        </childnode>
+        <childnode refid="2002" relation="include">
+        </childnode>
+        <childnode refid="1999" relation="include">
+        </childnode>
+      </node>
+      <node id="2001">
+        <label>sphinxbase/logmath.h</label>
+        <link refid="logmath_8h"/>
+        <childnode refid="2002" relation="include">
+        </childnode>
+        <childnode refid="1999" relation="include">
+        </childnode>
+        <childnode refid="2003" relation="include">
+        </childnode>
       </node>
       <node id="2007">
         <label>sphinxbase/ngram_model.h</label>
@@ -35,14 +141,21 @@
         <childnode refid="2008" relation="include">
         </childnode>
       </node>
-      <node id="2016">
-        <label>assert.h</label>
+      <node id="2010">
+        <label>sphinxbase/glist.h</label>
+        <link refid="glist_8h"/>
+        <childnode refid="2011" relation="include">
+        </childnode>
+        <childnode refid="2002" relation="include">
+        </childnode>
+        <childnode refid="1999" relation="include">
+        </childnode>
       </node>
-      <node id="2018">
-        <label>stdint.h</label>
-      </node>
-      <node id="2011">
-        <label>stdlib.h</label>
+      <node id="2008">
+        <label>sphinxbase/mmio.h</label>
+        <link refid="mmio_8h"/>
+        <childnode refid="2002" relation="include">
+        </childnode>
       </node>
       <node id="2009">
         <label>sphinxbase/hash_table.h</label>
@@ -54,118 +167,8 @@
         <childnode refid="2010" relation="include">
         </childnode>
       </node>
-      <node id="2022">
-        <label>errno.h</label>
-      </node>
-      <node id="2008">
-        <label>sphinxbase/mmio.h</label>
-        <link refid="mmio_8h"/>
-        <childnode refid="2002" relation="include">
-        </childnode>
-      </node>
-      <node id="1999">
-        <label>sphinxbase/prim_type.h</label>
-        <link refid="prim__type_8h"/>
-        <childnode refid="2000" relation="include">
-        </childnode>
-      </node>
-      <node id="1998">
-        <label>src/libsphinxbase/lm/ngram_model_trie.h</label>
-        <link refid="ngram__model__trie_8h"/>
-        <childnode refid="1999" relation="include">
-        </childnode>
-        <childnode refid="2001" relation="include">
-        </childnode>
-        <childnode refid="2006" relation="include">
-        </childnode>
-        <childnode refid="2012" relation="include">
-        </childnode>
-      </node>
-      <node id="2001">
-        <label>sphinxbase/logmath.h</label>
-        <link refid="logmath_8h"/>
-        <childnode refid="2002" relation="include">
-        </childnode>
-        <childnode refid="1999" relation="include">
-        </childnode>
-        <childnode refid="2003" relation="include">
-        </childnode>
-      </node>
-      <node id="2003">
-        <label>sphinxbase/cmd_ln.h</label>
-        <link refid="cmd__ln_8h"/>
-        <childnode refid="2004" relation="include">
-        </childnode>
-        <childnode refid="2005" relation="include">
-        </childnode>
-        <childnode refid="2002" relation="include">
-        </childnode>
-        <childnode refid="1999" relation="include">
-        </childnode>
-      </node>
-      <node id="2000">
-        <label>sphinx_config.h</label>
-      </node>
-      <node id="2010">
-        <label>sphinxbase/glist.h</label>
-        <link refid="glist_8h"/>
-        <childnode refid="2011" relation="include">
-        </childnode>
-        <childnode refid="2002" relation="include">
-        </childnode>
-        <childnode refid="1999" relation="include">
-        </childnode>
-      </node>
-      <node id="2017">
-        <label>string.h</label>
-      </node>
-      <node id="2019">
-        <label>lm_trie_quant.h</label>
-        <link refid="lm__trie__quant_8h_source"/>
-        <childnode refid="2015" relation="include">
-        </childnode>
-        <childnode refid="2020" relation="include">
-        </childnode>
-      </node>
-      <node id="2015">
-        <label>sphinxbase/bitarr.h</label>
-        <link refid="bitarr_8h"/>
-        <childnode refid="2016" relation="include">
-        </childnode>
-        <childnode refid="2017" relation="include">
-        </childnode>
-        <childnode refid="2018" relation="include">
-        </childnode>
-        <childnode refid="1999" relation="include">
-        </childnode>
-        <childnode refid="2002" relation="include">
-        </childnode>
-      </node>
-      <node id="2021">
-        <label>sphinxbase/err.h</label>
-        <link refid="err_8h"/>
-        <childnode refid="2005" relation="include">
-        </childnode>
-        <childnode refid="2004" relation="include">
-        </childnode>
-        <childnode refid="2011" relation="include">
-        </childnode>
-        <childnode refid="2022" relation="include">
-        </childnode>
-        <childnode refid="2002" relation="include">
-        </childnode>
-      </node>
-      <node id="2012">
-        <label>lm_trie.h</label>
-        <link refid="lm__trie_8h_source"/>
-        <childnode refid="2013" relation="include">
-        </childnode>
-        <childnode refid="2015" relation="include">
-        </childnode>
-        <childnode refid="2006" relation="include">
-        </childnode>
-        <childnode refid="2019" relation="include">
-        </childnode>
+      <node id="2004">
+        <label>stdio.h</label>
       </node>
       <node id="2006">
         <label>ngram_model_internal.h</label>
@@ -174,21 +177,6 @@
         </childnode>
         <childnode refid="2009" relation="include">
         </childnode>
-      </node>
-      <node id="2013">
-        <label>sphinxbase/pio.h</label>
-        <link refid="pio_8h"/>
-        <childnode refid="2004" relation="include">
-        </childnode>
-        <childnode refid="2014" relation="include">
-        </childnode>
-        <childnode refid="2002" relation="include">
-        </childnode>
-        <childnode refid="1999" relation="include">
-        </childnode>
-      </node>
-      <node id="2004">
-        <label>stdio.h</label>
       </node>
       <node id="2020">
         <label>ngrams_raw.h</label>
@@ -202,6 +190,18 @@
         <childnode refid="2013" relation="include">
         </childnode>
         <childnode refid="2021" relation="include">
+        </childnode>
+      </node>
+      <node id="1998">
+        <label>src/libsphinxbase/lm/ngram_model_trie.h</label>
+        <link refid="ngram__model__trie_8h"/>
+        <childnode refid="1999" relation="include">
+        </childnode>
+        <childnode refid="2001" relation="include">
+        </childnode>
+        <childnode refid="2006" relation="include">
+        </childnode>
+        <childnode refid="2012" relation="include">
         </childnode>
       </node>
     </incdepgraph>

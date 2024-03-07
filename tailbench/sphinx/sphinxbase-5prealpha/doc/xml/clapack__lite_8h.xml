@@ -5,27 +5,27 @@
     <includes refid="f2c_8h" local="yes">f2c.h</includes>
     <includedby refid="matrix_8c" local="yes">src/libsphinxbase/util/matrix.c</includedby>
     <incdepgraph>
-      <node id="287">
-        <label>f2c.h</label>
-        <link refid="f2c_8h_source"/>
-      </node>
       <node id="286">
         <label>include/sphinxbase/clapack_lite.h</label>
         <link refid="clapack__lite_8h"/>
         <childnode refid="287" relation="include">
         </childnode>
       </node>
+      <node id="287">
+        <label>f2c.h</label>
+        <link refid="f2c_8h_source"/>
+      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="289">
-        <label>src/libsphinxbase/util/matrix.c</label>
-        <link refid="matrix_8c_source"/>
-      </node>
       <node id="288">
         <label>include/sphinxbase/clapack_lite.h</label>
         <link refid="clapack__lite_8h"/>
         <childnode refid="289" relation="include">
         </childnode>
+      </node>
+      <node id="289">
+        <label>src/libsphinxbase/util/matrix.c</label>
+        <link refid="matrix_8c_source"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="func">

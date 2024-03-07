@@ -12,9 +12,18 @@
     <includedby refid="pio_8c" local="yes">src/libsphinxbase/util/pio.c</includedby>
     <includedby refid="sphinx__fe_8c" local="no">src/sphinx_fe/sphinx_fe.c</includedby>
     <incdepgraph>
+      <node id="493">
+        <label>sphinxbase/prim_type.h</label>
+        <link refid="prim__type_8h"/>
+        <childnode refid="494" relation="include">
+        </childnode>
+      </node>
       <node id="492">
         <label>sphinxbase/sphinxbase_export.h</label>
         <link refid="sphinxbase__export_8h_source"/>
+      </node>
+      <node id="494">
+        <label>sphinx_config.h</label>
       </node>
       <node id="491">
         <label>include/sphinxbase/filename.h</label>
@@ -24,28 +33,19 @@
         <childnode refid="493" relation="include">
         </childnode>
       </node>
-      <node id="493">
-        <label>sphinxbase/prim_type.h</label>
-        <link refid="prim__type_8h"/>
-        <childnode refid="494" relation="include">
-        </childnode>
-      </node>
-      <node id="494">
-        <label>sphinx_config.h</label>
-      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="497">
-        <label>src/libsphinxbase/lm/ngram_model.c</label>
-        <link refid="ngram__model_8c_source"/>
-      </node>
       <node id="501">
         <label>src/libsphinxbase/util/pio.c</label>
         <link refid="pio_8c_source"/>
       </node>
-      <node id="499">
-        <label>src/libsphinxbase/util/err.c</label>
-        <link refid="err_8c"/>
+      <node id="502">
+        <label>src/sphinx_fe/sphinx_fe.c</label>
+        <link refid="sphinx__fe_8c_source"/>
+      </node>
+      <node id="497">
+        <label>src/libsphinxbase/lm/ngram_model.c</label>
+        <link refid="ngram__model_8c_source"/>
       </node>
       <node id="500">
         <label>src/libsphinxbase/util/filename.c</label>
@@ -69,13 +69,13 @@
         <childnode refid="502" relation="include">
         </childnode>
       </node>
+      <node id="499">
+        <label>src/libsphinxbase/util/err.c</label>
+        <link refid="err_8c"/>
+      </node>
       <node id="498">
         <label>src/libsphinxbase/lm/ngram_model_set.c</label>
         <link refid="ngram__model__set_8c"/>
-      </node>
-      <node id="502">
-        <label>src/sphinx_fe/sphinx_fe.c</label>
-        <link refid="sphinx__fe_8c_source"/>
       </node>
       <node id="496">
         <label>src/libsphinxbase/lm/jsgf.c</label>

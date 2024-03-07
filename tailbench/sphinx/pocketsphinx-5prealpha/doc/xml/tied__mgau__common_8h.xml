@@ -23,6 +23,10 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="2276">
+        <label>src/libpocketsphinx/ptm_mgau.c</label>
+        <link refid="ptm__mgau_8c_source"/>
+      </node>
       <node id="2275">
         <label>src/libpocketsphinx/tied_mgau_common.h</label>
         <link refid="tied__mgau__common_8h"/>
@@ -30,10 +34,6 @@
         </childnode>
         <childnode refid="2277" relation="include">
         </childnode>
-      </node>
-      <node id="2276">
-        <label>src/libpocketsphinx/ptm_mgau.c</label>
-        <link refid="ptm__mgau_8c_source"/>
       </node>
       <node id="2277">
         <label>src/libpocketsphinx/s2_semi_mgau.c</label>

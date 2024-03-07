@@ -15,25 +15,17 @@
       <node id="2352">
         <label>sys/stat.h</label>
       </node>
-      <node id="2353">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
-      </node>
       <node id="2358">
         <label>stdarg.h</label>
       </node>
       <node id="2350">
         <label>assert.h</label>
       </node>
-      <node id="2360">
-        <label>sphinxbase/strfuncs.h</label>
-        <link refid="strfuncs_8h"/>
-        <childnode refid="2358" relation="include">
-        </childnode>
-        <childnode refid="2353" relation="include">
-        </childnode>
-        <childnode refid="2354" relation="include">
-        </childnode>
+      <node id="2348">
+        <label>stdlib.h</label>
+      </node>
+      <node id="2362">
+        <label>setjmp.h</label>
       </node>
       <node id="2346">
         <label>src/libsphinxbase/util/pio.c</label>
@@ -57,22 +49,8 @@
         <childnode refid="2361" relation="include">
         </childnode>
       </node>
-      <node id="2348">
-        <label>stdlib.h</label>
-      </node>
-      <node id="2362">
-        <label>setjmp.h</label>
-      </node>
       <node id="2359">
         <label>errno.h</label>
-      </node>
-      <node id="2356">
-        <label>sphinxbase/filename.h</label>
-        <link refid="filename_8h"/>
-        <childnode refid="2353" relation="include">
-        </childnode>
-        <childnode refid="2354" relation="include">
-        </childnode>
       </node>
       <node id="2354">
         <label>sphinxbase/prim_type.h</label>
@@ -92,11 +70,12 @@
         <childnode refid="2354" relation="include">
         </childnode>
       </node>
+      <node id="2353">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
+      </node>
       <node id="2355">
         <label>sphinx_config.h</label>
-      </node>
-      <node id="2349">
-        <label>string.h</label>
       </node>
       <node id="2357">
         <label>sphinxbase/err.h</label>
@@ -110,6 +89,27 @@
         <childnode refid="2359" relation="include">
         </childnode>
         <childnode refid="2353" relation="include">
+        </childnode>
+      </node>
+      <node id="2360">
+        <label>sphinxbase/strfuncs.h</label>
+        <link refid="strfuncs_8h"/>
+        <childnode refid="2358" relation="include">
+        </childnode>
+        <childnode refid="2353" relation="include">
+        </childnode>
+        <childnode refid="2354" relation="include">
+        </childnode>
+      </node>
+      <node id="2349">
+        <label>string.h</label>
+      </node>
+      <node id="2356">
+        <label>sphinxbase/filename.h</label>
+        <link refid="filename_8h"/>
+        <childnode refid="2353" relation="include">
+        </childnode>
+        <childnode refid="2354" relation="include">
         </childnode>
       </node>
       <node id="2351">

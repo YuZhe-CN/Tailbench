@@ -24,15 +24,15 @@
       <node id="772">
         <label>sys/stat.h</label>
       </node>
-      <node id="773">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
-      </node>
       <node id="774">
         <label>sphinxbase/prim_type.h</label>
         <link refid="prim__type_8h"/>
         <childnode refid="775" relation="include">
         </childnode>
+      </node>
+      <node id="773">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
       </node>
       <node id="775">
         <label>sphinx_config.h</label>
@@ -54,59 +54,13 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="778">
-        <label>src/libsphinxbase/lm/fsg_model.c</label>
-        <link refid="fsg__model_8c_source"/>
+      <node id="777">
+        <label>src/libsphinxbase/feat/feat.c</label>
+        <link refid="feat_8c_source"/>
       </node>
       <node id="793">
         <label>src/sphinx_lmtools/sphinx_lm_convert.c</label>
         <link refid="sphinx__lm__convert_8c"/>
-      </node>
-      <node id="782">
-        <label>src/libsphinxbase/lm/ngram_model.c</label>
-        <link refid="ngram__model_8c_source"/>
-      </node>
-      <node id="789">
-        <label>src/libsphinxbase/util/pio.c</label>
-        <link refid="pio_8c_source"/>
-      </node>
-      <node id="788">
-        <label>src/libsphinxbase/util/huff_code.c</label>
-        <link refid="huff__code_8c_source"/>
-      </node>
-      <node id="783">
-        <label>src/libsphinxbase/lm/ngram_model_trie.c</label>
-        <link refid="ngram__model__trie_8c_source"/>
-      </node>
-      <node id="781">
-        <label>src/libsphinxbase/lm/ngram_model_trie.h</label>
-        <link refid="ngram__model__trie_8h_source"/>
-        <childnode refid="782" relation="include">
-        </childnode>
-        <childnode refid="783" relation="include">
-        </childnode>
-      </node>
-      <node id="792">
-        <label>src/sphinx_fe/sphinx_fe.c</label>
-        <link refid="sphinx__fe_8c_source"/>
-      </node>
-      <node id="786">
-        <label>src/libsphinxbase/lm/lm_trie_quant.c</label>
-        <link refid="lm__trie__quant_8c_source"/>
-      </node>
-      <node id="785">
-        <label>src/libsphinxbase/lm/lm_trie_quant.h</label>
-        <link refid="lm__trie__quant_8h_source"/>
-        <childnode refid="779" relation="include">
-        </childnode>
-        <childnode refid="780" relation="include">
-        </childnode>
-        <childnode refid="786" relation="include">
-        </childnode>
-      </node>
-      <node id="791">
-        <label>src/sphinx_cepview/main_cepview.c</label>
-        <link refid="main__cepview_8c"/>
       </node>
       <node id="780">
         <label>src/libsphinxbase/lm/lm_trie.c</label>
@@ -120,17 +74,47 @@
         <childnode refid="781" relation="include">
         </childnode>
       </node>
-      <node id="794">
-        <label>src/sphinx_lmtools/sphinx_lm_eval.c</label>
-        <link refid="sphinx__lm__eval_8c"/>
+      <node id="789">
+        <label>src/libsphinxbase/util/pio.c</label>
+        <link refid="pio_8c_source"/>
+      </node>
+      <node id="786">
+        <label>src/libsphinxbase/lm/lm_trie_quant.c</label>
+        <link refid="lm__trie__quant_8c_source"/>
+      </node>
+      <node id="792">
+        <label>src/sphinx_fe/sphinx_fe.c</label>
+        <link refid="sphinx__fe_8c_source"/>
+      </node>
+      <node id="785">
+        <label>src/libsphinxbase/lm/lm_trie_quant.h</label>
+        <link refid="lm__trie__quant_8h_source"/>
+        <childnode refid="779" relation="include">
+        </childnode>
+        <childnode refid="780" relation="include">
+        </childnode>
+        <childnode refid="786" relation="include">
+        </childnode>
+      </node>
+      <node id="788">
+        <label>src/libsphinxbase/util/huff_code.c</label>
+        <link refid="huff__code_8c_source"/>
+      </node>
+      <node id="791">
+        <label>src/sphinx_cepview/main_cepview.c</label>
+        <link refid="main__cepview_8c"/>
       </node>
       <node id="790">
         <label>src/sphinx_adtools/sphinx_pitch.c</label>
         <link refid="sphinx__pitch_8c_source"/>
       </node>
-      <node id="777">
-        <label>src/libsphinxbase/feat/feat.c</label>
-        <link refid="feat_8c_source"/>
+      <node id="782">
+        <label>src/libsphinxbase/lm/ngram_model.c</label>
+        <link refid="ngram__model_8c_source"/>
+      </node>
+      <node id="794">
+        <label>src/sphinx_lmtools/sphinx_lm_eval.c</label>
+        <link refid="sphinx__lm__eval_8c"/>
       </node>
       <node id="776">
         <label>include/sphinxbase/pio.h</label>
@@ -164,6 +148,10 @@
         <childnode refid="794" relation="include">
         </childnode>
       </node>
+      <node id="778">
+        <label>src/libsphinxbase/lm/fsg_model.c</label>
+        <link refid="fsg__model_8c_source"/>
+      </node>
       <node id="787">
         <label>src/libsphinxbase/lm/ngrams_raw.c</label>
         <link refid="ngrams__raw_8c_source"/>
@@ -174,6 +162,18 @@
         <childnode refid="785" relation="include">
         </childnode>
         <childnode refid="787" relation="include">
+        </childnode>
+      </node>
+      <node id="783">
+        <label>src/libsphinxbase/lm/ngram_model_trie.c</label>
+        <link refid="ngram__model__trie_8c_source"/>
+      </node>
+      <node id="781">
+        <label>src/libsphinxbase/lm/ngram_model_trie.h</label>
+        <link refid="ngram__model__trie_8h_source"/>
+        <childnode refid="782" relation="include">
+        </childnode>
+        <childnode refid="783" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

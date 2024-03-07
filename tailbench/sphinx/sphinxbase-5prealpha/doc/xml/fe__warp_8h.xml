@@ -10,9 +10,15 @@
     <includedby refid="fe__warp__inverse__linear_8c" local="yes">src/libsphinxbase/fe/fe_warp_inverse_linear.c</includedby>
     <includedby refid="fe__warp__piecewise__linear_8c" local="yes">src/libsphinxbase/fe/fe_warp_piecewise_linear.c</includedby>
     <incdepgraph>
-      <node id="1367">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
+      <node id="1373">
+        <label>sphinxbase/fixpoint.h</label>
+        <link refid="fixpoint_8h_source"/>
+        <childnode refid="1374" relation="include">
+        </childnode>
+        <childnode refid="1367" relation="include">
+        </childnode>
+        <childnode refid="1371" relation="include">
+        </childnode>
       </node>
       <node id="1370">
         <label>stdarg.h</label>
@@ -27,35 +33,15 @@
         <childnode refid="1376" relation="include">
         </childnode>
       </node>
-      <node id="1377">
-        <label>fe_prespch_buf.h</label>
-        <link refid="fe__prespch__buf_8h_source"/>
-        <childnode refid="1366" relation="include">
-        </childnode>
-      </node>
       <node id="1371">
         <label>sphinxbase/prim_type.h</label>
         <link refid="prim__type_8h"/>
         <childnode refid="1372" relation="include">
         </childnode>
       </node>
-      <node id="1374">
-        <label>limits.h</label>
-      </node>
-      <node id="1368">
-        <label>sphinxbase/cmd_ln.h</label>
-        <link refid="cmd__ln_8h"/>
-        <childnode refid="1369" relation="include">
-        </childnode>
-        <childnode refid="1370" relation="include">
-        </childnode>
-        <childnode refid="1367" relation="include">
-        </childnode>
-        <childnode refid="1371" relation="include">
-        </childnode>
-      </node>
-      <node id="1372">
-        <label>sphinx_config.h</label>
+      <node id="1367">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
       </node>
       <node id="1365">
         <label>fe_internal.h</label>
@@ -71,6 +57,44 @@
         <childnode refid="1376" relation="include">
         </childnode>
       </node>
+      <node id="1374">
+        <label>limits.h</label>
+      </node>
+      <node id="1377">
+        <label>fe_prespch_buf.h</label>
+        <link refid="fe__prespch__buf_8h_source"/>
+        <childnode refid="1366" relation="include">
+        </childnode>
+      </node>
+      <node id="1364">
+        <label>src/libsphinxbase/fe/fe_warp.h</label>
+        <link refid="fe__warp_8h"/>
+        <childnode refid="1365" relation="include">
+        </childnode>
+      </node>
+      <node id="1372">
+        <label>sphinx_config.h</label>
+      </node>
+      <node id="1376">
+        <label>fe_type.h</label>
+        <link refid="fe__type_8h_source"/>
+        <childnode refid="1366" relation="include">
+        </childnode>
+        <childnode refid="1373" relation="include">
+        </childnode>
+      </node>
+      <node id="1368">
+        <label>sphinxbase/cmd_ln.h</label>
+        <link refid="cmd__ln_8h"/>
+        <childnode refid="1369" relation="include">
+        </childnode>
+        <childnode refid="1370" relation="include">
+        </childnode>
+        <childnode refid="1367" relation="include">
+        </childnode>
+        <childnode refid="1371" relation="include">
+        </childnode>
+      </node>
       <node id="1366">
         <label>sphinxbase/fe.h</label>
         <link refid="fe_8h_source"/>
@@ -81,54 +105,22 @@
         <childnode refid="1373" relation="include">
         </childnode>
       </node>
-      <node id="1364">
-        <label>src/libsphinxbase/fe/fe_warp.h</label>
-        <link refid="fe__warp_8h"/>
-        <childnode refid="1365" relation="include">
-        </childnode>
-      </node>
-      <node id="1376">
-        <label>fe_type.h</label>
-        <link refid="fe__type_8h_source"/>
-        <childnode refid="1366" relation="include">
-        </childnode>
-        <childnode refid="1373" relation="include">
-        </childnode>
-      </node>
       <node id="1369">
         <label>stdio.h</label>
       </node>
-      <node id="1373">
-        <label>sphinxbase/fixpoint.h</label>
-        <link refid="fixpoint_8h_source"/>
-        <childnode refid="1374" relation="include">
-        </childnode>
-        <childnode refid="1367" relation="include">
-        </childnode>
-        <childnode refid="1371" relation="include">
-        </childnode>
-      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="1382">
-        <label>src/libsphinxbase/fe/fe_warp_affine.c</label>
-        <link refid="fe__warp__affine_8c_source"/>
-      </node>
       <node id="1383">
         <label>src/libsphinxbase/fe/fe_warp_inverse_linear.c</label>
         <link refid="fe__warp__inverse__linear_8c_source"/>
       </node>
-      <node id="1380">
-        <label>src/libsphinxbase/fe/fe_sigproc.c</label>
-        <link refid="fe__sigproc_8c_source"/>
+      <node id="1384">
+        <label>src/libsphinxbase/fe/fe_warp_piecewise_linear.c</label>
+        <link refid="fe__warp__piecewise__linear_8c_source"/>
       </node>
       <node id="1379">
         <label>src/libsphinxbase/fe/fe_interface.c</label>
         <link refid="fe__interface_8c_source"/>
-      </node>
-      <node id="1384">
-        <label>src/libsphinxbase/fe/fe_warp_piecewise_linear.c</label>
-        <link refid="fe__warp__piecewise__linear_8c_source"/>
       </node>
       <node id="1381">
         <label>src/libsphinxbase/fe/fe_warp.c</label>
@@ -149,6 +141,14 @@
         </childnode>
         <childnode refid="1384" relation="include">
         </childnode>
+      </node>
+      <node id="1382">
+        <label>src/libsphinxbase/fe/fe_warp_affine.c</label>
+        <link refid="fe__warp__affine_8c_source"/>
+      </node>
+      <node id="1380">
+        <label>src/libsphinxbase/fe/fe_sigproc.c</label>
+        <link refid="fe__sigproc_8c_source"/>
       </node>
     </invincdepgraph>
     <innerclass refid="structfe__warp__conf__t" prot="public">fe_warp_conf_t</innerclass>

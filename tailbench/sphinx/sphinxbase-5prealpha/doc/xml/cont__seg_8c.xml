@@ -15,9 +15,15 @@
     <includes refid="ckd__alloc_8h" local="no">sphinxbase/ckd_alloc.h</includes>
     <includes refid="err_8h" local="no">sphinxbase/err.h</includes>
     <incdepgraph>
-      <node id="2437">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
+      <node id="2441">
+        <label>sphinxbase/fixpoint.h</label>
+        <link refid="fixpoint_8h_source"/>
+        <childnode refid="2442" relation="include">
+        </childnode>
+        <childnode refid="2437" relation="include">
+        </childnode>
+        <childnode refid="2434" relation="include">
+        </childnode>
       </node>
       <node id="2440">
         <label>stdarg.h</label>
@@ -34,8 +40,88 @@
       <node id="2444">
         <label>setjmp.h</label>
       </node>
+      <node id="2436">
+        <label>sphinxbase/ad.h</label>
+        <link refid="ad_8h"/>
+        <childnode refid="2435" relation="include">
+        </childnode>
+        <childnode refid="2437" relation="include">
+        </childnode>
+        <childnode refid="2434" relation="include">
+        </childnode>
+      </node>
       <node id="2446">
         <label>errno.h</label>
+      </node>
+      <node id="2434">
+        <label>sphinxbase/prim_type.h</label>
+        <link refid="prim__type_8h"/>
+        <childnode refid="2435" relation="include">
+        </childnode>
+      </node>
+      <node id="2443">
+        <label>sphinxbase/ckd_alloc.h</label>
+        <link refid="ckd__alloc_8h"/>
+        <childnode refid="2429" relation="include">
+        </childnode>
+        <childnode refid="2444" relation="include">
+        </childnode>
+        <childnode refid="2437" relation="include">
+        </childnode>
+        <childnode refid="2434" relation="include">
+        </childnode>
+      </node>
+      <node id="2437">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
+      </node>
+      <node id="2442">
+        <label>limits.h</label>
+      </node>
+      <node id="2435">
+        <label>sphinx_config.h</label>
+      </node>
+      <node id="2445">
+        <label>sphinxbase/err.h</label>
+        <link refid="err_8h"/>
+        <childnode refid="2440" relation="include">
+        </childnode>
+        <childnode refid="2428" relation="include">
+        </childnode>
+        <childnode refid="2429" relation="include">
+        </childnode>
+        <childnode refid="2446" relation="include">
+        </childnode>
+        <childnode refid="2437" relation="include">
+        </childnode>
+      </node>
+      <node id="2430">
+        <label>string.h</label>
+      </node>
+      <node id="2439">
+        <label>sphinxbase/cmd_ln.h</label>
+        <link refid="cmd__ln_8h"/>
+        <childnode refid="2428" relation="include">
+        </childnode>
+        <childnode refid="2440" relation="include">
+        </childnode>
+        <childnode refid="2437" relation="include">
+        </childnode>
+        <childnode refid="2434" relation="include">
+        </childnode>
+      </node>
+      <node id="2432">
+        <label>math.h</label>
+      </node>
+      <node id="2438">
+        <label>sphinxbase/fe.h</label>
+        <link refid="fe_8h_source"/>
+        <childnode refid="2437" relation="include">
+        </childnode>
+        <childnode refid="2439" relation="include">
+        </childnode>
+        <childnode refid="2441" relation="include">
+        </childnode>
       </node>
       <node id="2427">
         <label>src/sphinx_adtools/cont_seg.c</label>
@@ -65,94 +151,8 @@
         <childnode refid="2445" relation="include">
         </childnode>
       </node>
-      <node id="2434">
-        <label>sphinxbase/prim_type.h</label>
-        <link refid="prim__type_8h"/>
-        <childnode refid="2435" relation="include">
-        </childnode>
-      </node>
-      <node id="2443">
-        <label>sphinxbase/ckd_alloc.h</label>
-        <link refid="ckd__alloc_8h"/>
-        <childnode refid="2429" relation="include">
-        </childnode>
-        <childnode refid="2444" relation="include">
-        </childnode>
-        <childnode refid="2437" relation="include">
-        </childnode>
-        <childnode refid="2434" relation="include">
-        </childnode>
-      </node>
-      <node id="2442">
-        <label>limits.h</label>
-      </node>
-      <node id="2439">
-        <label>sphinxbase/cmd_ln.h</label>
-        <link refid="cmd__ln_8h"/>
-        <childnode refid="2428" relation="include">
-        </childnode>
-        <childnode refid="2440" relation="include">
-        </childnode>
-        <childnode refid="2437" relation="include">
-        </childnode>
-        <childnode refid="2434" relation="include">
-        </childnode>
-      </node>
-      <node id="2435">
-        <label>sphinx_config.h</label>
-      </node>
-      <node id="2430">
-        <label>string.h</label>
-      </node>
-      <node id="2445">
-        <label>sphinxbase/err.h</label>
-        <link refid="err_8h"/>
-        <childnode refid="2440" relation="include">
-        </childnode>
-        <childnode refid="2428" relation="include">
-        </childnode>
-        <childnode refid="2429" relation="include">
-        </childnode>
-        <childnode refid="2446" relation="include">
-        </childnode>
-        <childnode refid="2437" relation="include">
-        </childnode>
-      </node>
-      <node id="2432">
-        <label>math.h</label>
-      </node>
-      <node id="2438">
-        <label>sphinxbase/fe.h</label>
-        <link refid="fe_8h_source"/>
-        <childnode refid="2437" relation="include">
-        </childnode>
-        <childnode refid="2439" relation="include">
-        </childnode>
-        <childnode refid="2441" relation="include">
-        </childnode>
-      </node>
-      <node id="2436">
-        <label>sphinxbase/ad.h</label>
-        <link refid="ad_8h"/>
-        <childnode refid="2435" relation="include">
-        </childnode>
-        <childnode refid="2437" relation="include">
-        </childnode>
-        <childnode refid="2434" relation="include">
-        </childnode>
-      </node>
       <node id="2428">
         <label>stdio.h</label>
-      </node>
-      <node id="2441">
-        <label>sphinxbase/fixpoint.h</label>
-        <link refid="fixpoint_8h_source"/>
-        <childnode refid="2442" relation="include">
-        </childnode>
-        <childnode refid="2437" relation="include">
-        </childnode>
-        <childnode refid="2434" relation="include">
-        </childnode>
       </node>
     </incdepgraph>
       <sectiondef kind="define">

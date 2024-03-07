@@ -10,9 +10,21 @@
     <includedby refid="cmd__ln_8c" local="yes">src/libsphinxbase/util/cmd_ln.c</includedby>
     <includedby refid="hash__table_8c" local="yes">src/libsphinxbase/util/hash_table.c</includedby>
     <incdepgraph>
+      <node id="221">
+        <label>sphinxbase/prim_type.h</label>
+        <link refid="prim__type_8h"/>
+        <childnode refid="222" relation="include">
+        </childnode>
+      </node>
       <node id="223">
         <label>sphinxbase/sphinxbase_export.h</label>
         <link refid="sphinxbase__export_8h_source"/>
+      </node>
+      <node id="222">
+        <label>sphinx_config.h</label>
+      </node>
+      <node id="220">
+        <label>string.h</label>
       </node>
       <node id="219">
         <label>include/sphinxbase/case.h</label>
@@ -24,20 +36,24 @@
         <childnode refid="223" relation="include">
         </childnode>
       </node>
-      <node id="221">
-        <label>sphinxbase/prim_type.h</label>
-        <link refid="prim__type_8h"/>
-        <childnode refid="222" relation="include">
-        </childnode>
-      </node>
-      <node id="222">
-        <label>sphinx_config.h</label>
-      </node>
-      <node id="220">
-        <label>string.h</label>
-      </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="228">
+        <label>src/libsphinxbase/util/hash_table.c</label>
+        <link refid="hash__table_8c_source"/>
+      </node>
+      <node id="226">
+        <label>src/libsphinxbase/util/case.c</label>
+        <link refid="case_8c_source"/>
+      </node>
+      <node id="225">
+        <label>src/libsphinxbase/lm/ngram_model.c</label>
+        <link refid="ngram__model_8c_source"/>
+      </node>
+      <node id="227">
+        <label>src/libsphinxbase/util/cmd_ln.c</label>
+        <link refid="cmd__ln_8c_source"/>
+      </node>
       <node id="224">
         <label>include/sphinxbase/case.h</label>
         <link refid="case_8h"/>
@@ -49,22 +65,6 @@
         </childnode>
         <childnode refid="228" relation="include">
         </childnode>
-      </node>
-      <node id="225">
-        <label>src/libsphinxbase/lm/ngram_model.c</label>
-        <link refid="ngram__model_8c_source"/>
-      </node>
-      <node id="228">
-        <label>src/libsphinxbase/util/hash_table.c</label>
-        <link refid="hash__table_8c_source"/>
-      </node>
-      <node id="227">
-        <label>src/libsphinxbase/util/cmd_ln.c</label>
-        <link refid="cmd__ln_8c_source"/>
-      </node>
-      <node id="226">
-        <label>src/libsphinxbase/util/case.c</label>
-        <link refid="case_8c_source"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="define">

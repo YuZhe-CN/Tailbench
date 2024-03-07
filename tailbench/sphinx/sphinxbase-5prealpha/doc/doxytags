@@ -2,7 +2,7 @@
 <tagfile>
   <compound kind="file">
     <name>ad.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>ad_8h</filename>
     <includes id="prim__type_8h" name="prim_type.h" local="no" imported="no">sphinxbase/prim_type.h</includes>
     <member kind="function">
@@ -29,7 +29,7 @@
   </compound>
   <compound kind="file">
     <name>agc.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>agc_8h</filename>
     <includes id="prim__type_8h" name="prim_type.h" local="no" imported="no">sphinxbase/prim_type.h</includes>
     <class kind="struct">agc_s</class>
@@ -141,7 +141,7 @@
   </compound>
   <compound kind="file">
     <name>bio.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>bio_8h</filename>
     <includes id="prim__type_8h" name="prim_type.h" local="no" imported="no">sphinxbase/prim_type.h</includes>
     <member kind="define">
@@ -245,7 +245,7 @@
   </compound>
   <compound kind="file">
     <name>bitarr.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>bitarr_8h</filename>
     <includes id="prim__type_8h" name="prim_type.h" local="no" imported="no">sphinxbase/prim_type.h</includes>
     <class kind="struct">bitarr_mask_s</class>
@@ -337,7 +337,7 @@
   </compound>
   <compound kind="file">
     <name>bitvec.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>bitvec_8h</filename>
     <includes id="prim__type_8h" name="prim_type.h" local="no" imported="no">sphinxbase/prim_type.h</includes>
     <includes id="ckd__alloc_8h" name="ckd_alloc.h" local="no" imported="no">sphinxbase/ckd_alloc.h</includes>
@@ -421,7 +421,7 @@
   </compound>
   <compound kind="file">
     <name>case.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>case_8h</filename>
     <includes id="prim__type_8h" name="prim_type.h" local="no" imported="no">sphinxbase/prim_type.h</includes>
     <member kind="define">
@@ -469,7 +469,7 @@
   </compound>
   <compound kind="file">
     <name>ckd_alloc.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>ckd__alloc_8h</filename>
     <includes id="prim__type_8h" name="prim_type.h" local="no" imported="no">sphinxbase/prim_type.h</includes>
     <member kind="define">
@@ -636,7 +636,7 @@
   </compound>
   <compound kind="file">
     <name>cmd_ln.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>cmd__ln_8h</filename>
     <includes id="prim__type_8h" name="prim_type.h" local="no" imported="no">sphinxbase/prim_type.h</includes>
     <class kind="struct">arg_s</class>
@@ -1140,7 +1140,7 @@
   </compound>
   <compound kind="file">
     <name>cmn.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>cmn_8h</filename>
     <includes id="prim__type_8h" name="prim_type.h" local="no" imported="no">sphinxbase/prim_type.h</includes>
     <class kind="struct">cmn_t</class>
@@ -1210,7 +1210,7 @@
   </compound>
   <compound kind="file">
     <name>err.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>err_8h</filename>
     <member kind="define">
       <type>#define</type>
@@ -1320,7 +1320,7 @@
   </compound>
   <compound kind="file">
     <name>feat.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>feat_8h</filename>
     <includes id="prim__type_8h" name="prim_type.h" local="no" imported="no">sphinxbase/prim_type.h</includes>
     <includes id="cmn_8h" name="cmn.h" local="no" imported="no">sphinxbase/cmn.h</includes>
@@ -1504,7 +1504,7 @@
   </compound>
   <compound kind="file">
     <name>filename.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>filename_8h</filename>
     <includes id="prim__type_8h" name="prim_type.h" local="no" imported="no">sphinxbase/prim_type.h</includes>
     <member kind="function">
@@ -1538,7 +1538,7 @@
   </compound>
   <compound kind="file">
     <name>genrand.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>genrand_8h</filename>
     <member kind="define">
       <type>#define</type>
@@ -1578,7 +1578,7 @@
   </compound>
   <compound kind="file">
     <name>glist.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>glist_8h</filename>
     <includes id="prim__type_8h" name="prim_type.h" local="no" imported="no">sphinxbase/prim_type.h</includes>
     <class kind="struct">gnode_s</class>
@@ -1704,7 +1704,7 @@
   </compound>
   <compound kind="file">
     <name>hash_table.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>hash__table_8h</filename>
     <includes id="prim__type_8h" name="prim_type.h" local="no" imported="no">sphinxbase/prim_type.h</includes>
     <includes id="glist_8h" name="glist.h" local="no" imported="no">sphinxbase/glist.h</includes>
@@ -1882,7 +1882,7 @@
   </compound>
   <compound kind="file">
     <name>heap.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>heap_8h</filename>
     <includes id="prim__type_8h" name="prim_type.h" local="no" imported="no">sphinxbase/prim_type.h</includes>
     <member kind="function">
@@ -1937,7 +1937,7 @@
   </compound>
   <compound kind="file">
     <name>huff_code.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>huff__code_8h</filename>
     <includes id="prim__type_8h" name="prim_type.h" local="no" imported="no">sphinxbase/prim_type.h</includes>
     <includes id="cmd__ln_8h" name="cmd_ln.h" local="no" imported="no">sphinxbase/cmd_ln.h</includes>
@@ -2035,7 +2035,7 @@
   </compound>
   <compound kind="file">
     <name>jsgf.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>jsgf_8h</filename>
     <includes id="hash__table_8h" name="hash_table.h" local="no" imported="no">sphinxbase/hash_table.h</includes>
     <includes id="logmath_8h" name="logmath.h" local="no" imported="no">sphinxbase/logmath.h</includes>
@@ -2175,7 +2175,7 @@
   </compound>
   <compound kind="file">
     <name>listelem_alloc.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>listelem__alloc_8h</filename>
     <includes id="prim__type_8h" name="prim_type.h" local="no" imported="no">sphinxbase/prim_type.h</includes>
     <member kind="define">
@@ -2244,7 +2244,7 @@
   </compound>
   <compound kind="file">
     <name>logmath.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>logmath_8h</filename>
     <includes id="prim__type_8h" name="prim_type.h" local="no" imported="no">sphinxbase/prim_type.h</includes>
     <includes id="cmd__ln_8h" name="cmd_ln.h" local="no" imported="no">sphinxbase/cmd_ln.h</includes>
@@ -2413,7 +2413,7 @@
   </compound>
   <compound kind="file">
     <name>matrix.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>matrix_8h</filename>
     <includes id="prim__type_8h" name="prim_type.h" local="no" imported="no">sphinxbase/prim_type.h</includes>
     <member kind="function">
@@ -2503,7 +2503,7 @@
   </compound>
   <compound kind="file">
     <name>mmio.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>mmio_8h</filename>
     <member kind="typedef">
       <type>struct mmio_file_s</type>
@@ -2536,12 +2536,12 @@
   </compound>
   <compound kind="file">
     <name>mulaw.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>mulaw_8h</filename>
   </compound>
   <compound kind="file">
     <name>ngram_model.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>ngram__model_8h</filename>
     <includes id="prim__type_8h" name="prim_type.h" local="no" imported="no">sphinxbase/prim_type.h</includes>
     <includes id="cmd__ln_8h" name="cmd_ln.h" local="no" imported="no">sphinxbase/cmd_ln.h</includes>
@@ -3001,7 +3001,7 @@
   </compound>
   <compound kind="file">
     <name>pio.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>pio_8h</filename>
     <includes id="prim__type_8h" name="prim_type.h" local="no" imported="no">sphinxbase/prim_type.h</includes>
     <class kind="struct">lineiter_t</class>
@@ -3162,7 +3162,7 @@
   </compound>
   <compound kind="file">
     <name>prim_type.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>prim__type_8h</filename>
     <class kind="union">anytype_s</class>
     <member kind="typedef">
@@ -3175,7 +3175,7 @@
   </compound>
   <compound kind="file">
     <name>profile.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>profile_8h</filename>
     <includes id="prim__type_8h" name="prim_type.h" local="no" imported="no">sphinxbase/prim_type.h</includes>
     <class kind="struct">pctr_t</class>
@@ -3267,7 +3267,7 @@
   </compound>
   <compound kind="file">
     <name>sbthread.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>sbthread_8h</filename>
     <includes id="cmd__ln_8h" name="cmd_ln.h" local="no" imported="no">sphinxbase/cmd_ln.h</includes>
     <member kind="typedef">
@@ -3448,7 +3448,7 @@
   </compound>
   <compound kind="file">
     <name>strfuncs.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>strfuncs_8h</filename>
     <includes id="prim__type_8h" name="prim_type.h" local="no" imported="no">sphinxbase/prim_type.h</includes>
     <member kind="enumeration">
@@ -3514,7 +3514,7 @@
   </compound>
   <compound kind="file">
     <name>yin.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/include/sphinxbase/</path>
     <filename>yin_8h</filename>
     <includes id="prim__type_8h" name="prim_type.h" local="no" imported="no">sphinxbase/prim_type.h</includes>
     <member kind="typedef">
@@ -3583,7 +3583,7 @@
   </compound>
   <compound kind="file">
     <name>yin.c</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/src/libsphinxbase/fe/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/src/libsphinxbase/fe/</path>
     <filename>yin_8c</filename>
     <includes id="prim__type_8h" name="prim_type.h" local="yes" imported="no">sphinxbase/prim_type.h</includes>
     <includes id="ckd__alloc_8h" name="ckd_alloc.h" local="yes" imported="no">sphinxbase/ckd_alloc.h</includes>
@@ -3648,7 +3648,7 @@
   </compound>
   <compound kind="file">
     <name>jsgf.c</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/src/libsphinxbase/lm/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/src/libsphinxbase/lm/</path>
     <filename>jsgf_8c</filename>
     <includes id="ckd__alloc_8h" name="ckd_alloc.h" local="yes" imported="no">sphinxbase/ckd_alloc.h</includes>
     <includes id="strfuncs_8h" name="strfuncs.h" local="yes" imported="no">sphinxbase/strfuncs.h</includes>
@@ -3765,7 +3765,7 @@
   </compound>
   <compound kind="file">
     <name>jsgf_internal.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/src/libsphinxbase/lm/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/src/libsphinxbase/lm/</path>
     <filename>jsgf__internal_8h</filename>
     <includes id="hash__table_8h" name="hash_table.h" local="no" imported="no">sphinxbase/hash_table.h</includes>
     <includes id="glist_8h" name="glist.h" local="no" imported="no">sphinxbase/glist.h</includes>
@@ -3781,7 +3781,7 @@
   </compound>
   <compound kind="file">
     <name>ngram_model_set.c</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/src/libsphinxbase/lm/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/src/libsphinxbase/lm/</path>
     <filename>ngram__model__set_8c</filename>
     <includes id="err_8h" name="err.h" local="yes" imported="no">sphinxbase/err.h</includes>
     <includes id="ckd__alloc_8h" name="ckd_alloc.h" local="yes" imported="no">sphinxbase/ckd_alloc.h</includes>
@@ -3903,7 +3903,7 @@
   </compound>
   <compound kind="file">
     <name>ngram_model_set.h</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/src/libsphinxbase/lm/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/src/libsphinxbase/lm/</path>
     <filename>ngram__model__set_8h</filename>
     <class kind="struct">ngram_model_set_s</class>
     <class kind="struct">ngram_model_set_iter_s</class>
@@ -3917,7 +3917,7 @@
   </compound>
   <compound kind="file">
     <name>err.c</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/src/libsphinxbase/util/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/src/libsphinxbase/util/</path>
     <filename>err_8c</filename>
     <includes id="err_8h" name="err.h" local="yes" imported="no">sphinxbase/err.h</includes>
     <includes id="prim__type_8h" name="prim_type.h" local="yes" imported="no">sphinxbase/prim_type.h</includes>
@@ -3968,7 +3968,7 @@
   </compound>
   <compound kind="file">
     <name>sbthread.c</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/src/libsphinxbase/util/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/src/libsphinxbase/util/</path>
     <filename>sbthread_8c</filename>
     <includes id="sbthread_8h" name="sbthread.h" local="yes" imported="no">sphinxbase/sbthread.h</includes>
     <includes id="ckd__alloc_8h" name="ckd_alloc.h" local="yes" imported="no">sphinxbase/ckd_alloc.h</includes>
@@ -4120,7 +4120,7 @@
   </compound>
   <compound kind="file">
     <name>main_cepview.c</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/src/sphinx_cepview/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/src/sphinx_cepview/</path>
     <filename>main__cepview_8c</filename>
     <includes id="strfuncs_8h" name="strfuncs.h" local="no" imported="no">sphinxbase/strfuncs.h</includes>
     <includes id="prim__type_8h" name="prim_type.h" local="no" imported="no">sphinxbase/prim_type.h</includes>
@@ -4132,7 +4132,7 @@
   </compound>
   <compound kind="file">
     <name>sphinx_lm_convert.c</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/src/sphinx_lmtools/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/src/sphinx_lmtools/</path>
     <filename>sphinx__lm__convert_8c</filename>
     <includes id="logmath_8h" name="logmath.h" local="no" imported="no">sphinxbase/logmath.h</includes>
     <includes id="ngram__model_8h" name="ngram_model.h" local="no" imported="no">sphinxbase/ngram_model.h</includes>
@@ -4144,7 +4144,7 @@
   </compound>
   <compound kind="file">
     <name>sphinx_lm_eval.c</name>
-    <path>/home/tailbench/Tailbench/tailbench/sphinx/sphinxbase-5prealpha/src/sphinx_lmtools/</path>
+    <path>/home/tailbench/sphinx/sphinxbase-5prealpha/src/sphinx_lmtools/</path>
     <filename>sphinx__lm__eval_8c</filename>
     <includes id="logmath_8h" name="logmath.h" local="no" imported="no">sphinxbase/logmath.h</includes>
     <includes id="ngram__model_8h" name="ngram_model.h" local="no" imported="no">sphinxbase/ngram_model.h</includes>

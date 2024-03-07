@@ -4,9 +4,17 @@
     <compoundname>bitvec.c</compoundname>
     <includes refid="bitvec_8h" local="yes">sphinxbase/bitvec.h</includes>
     <incdepgraph>
-      <node id="2106">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
+      <node id="2110">
+        <label>stdlib.h</label>
+      </node>
+      <node id="2111">
+        <label>setjmp.h</label>
+      </node>
+      <node id="2107">
+        <label>sphinxbase/prim_type.h</label>
+        <link refid="prim__type_8h"/>
+        <childnode refid="2108" relation="include">
+        </childnode>
       </node>
       <node id="2104">
         <label>sphinxbase/bitvec.h</label>
@@ -20,18 +28,6 @@
         <childnode refid="2109" relation="include">
         </childnode>
       </node>
-      <node id="2110">
-        <label>stdlib.h</label>
-      </node>
-      <node id="2111">
-        <label>setjmp.h</label>
-      </node>
-      <node id="2107">
-        <label>sphinxbase/prim_type.h</label>
-        <link refid="prim__type_8h"/>
-        <childnode refid="2108" relation="include">
-        </childnode>
-      </node>
       <node id="2109">
         <label>sphinxbase/ckd_alloc.h</label>
         <link refid="ckd__alloc_8h"/>
@@ -43,6 +39,10 @@
         </childnode>
         <childnode refid="2107" relation="include">
         </childnode>
+      </node>
+      <node id="2106">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
       </node>
       <node id="2108">
         <label>sphinx_config.h</label>

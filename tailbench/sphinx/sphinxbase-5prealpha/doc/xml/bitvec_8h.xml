@@ -9,9 +9,17 @@
     <includedby refid="fsg__model_8h" local="no">include/sphinxbase/fsg_model.h</includedby>
     <includedby refid="bitvec_8c" local="yes">src/libsphinxbase/util/bitvec.c</includedby>
     <incdepgraph>
-      <node id="188">
-        <label>sphinxbase/sphinxbase_export.h</label>
-        <link refid="sphinxbase__export_8h_source"/>
+      <node id="192">
+        <label>stdlib.h</label>
+      </node>
+      <node id="193">
+        <label>setjmp.h</label>
+      </node>
+      <node id="189">
+        <label>sphinxbase/prim_type.h</label>
+        <link refid="prim__type_8h"/>
+        <childnode refid="190" relation="include">
+        </childnode>
       </node>
       <node id="186">
         <label>include/sphinxbase/bitvec.h</label>
@@ -23,18 +31,6 @@
         <childnode refid="189" relation="include">
         </childnode>
         <childnode refid="191" relation="include">
-        </childnode>
-      </node>
-      <node id="192">
-        <label>stdlib.h</label>
-      </node>
-      <node id="193">
-        <label>setjmp.h</label>
-      </node>
-      <node id="189">
-        <label>sphinxbase/prim_type.h</label>
-        <link refid="prim__type_8h"/>
-        <childnode refid="190" relation="include">
         </childnode>
       </node>
       <node id="191">
@@ -49,6 +45,10 @@
         <childnode refid="189" relation="include">
         </childnode>
       </node>
+      <node id="188">
+        <label>sphinxbase/sphinxbase_export.h</label>
+        <link refid="sphinxbase__export_8h_source"/>
+      </node>
       <node id="190">
         <label>sphinx_config.h</label>
       </node>
@@ -57,28 +57,6 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="202">
-        <label>src/libsphinxbase/lm/fsg_model.c</label>
-        <link refid="fsg__model_8c_source"/>
-      </node>
-      <node id="194">
-        <label>include/sphinxbase/bitvec.h</label>
-        <link refid="bitvec_8h"/>
-        <childnode refid="195" relation="include">
-        </childnode>
-        <childnode refid="203" relation="include">
-        </childnode>
-      </node>
-      <node id="198">
-        <label>src/libsphinxbase/lm/jsgf_internal.h</label>
-        <link refid="jsgf__internal_8h"/>
-        <childnode refid="197" relation="include">
-        </childnode>
-        <childnode refid="199" relation="include">
-        </childnode>
-        <childnode refid="200" relation="include">
-        </childnode>
-      </node>
       <node id="196">
         <label>include/sphinxbase/jsgf.h</label>
         <link refid="jsgf_8h"/>
@@ -93,17 +71,17 @@
         <label>src/sphinx_jsgf2fsg/main.c</label>
         <link refid="main_8c_source"/>
       </node>
-      <node id="200">
-        <label>src/libsphinxbase/lm/jsgf_scanner.c</label>
-        <link refid="jsgf__scanner_8c_source"/>
+      <node id="194">
+        <label>include/sphinxbase/bitvec.h</label>
+        <link refid="bitvec_8h"/>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
       </node>
-      <node id="199">
-        <label>src/libsphinxbase/lm/jsgf_parser.c</label>
-        <link refid="jsgf__parser_8c_source"/>
-      </node>
-      <node id="197">
-        <label>src/libsphinxbase/lm/jsgf.c</label>
-        <link refid="jsgf_8c"/>
+      <node id="203">
+        <label>src/libsphinxbase/util/bitvec.c</label>
+        <link refid="bitvec_8c_source"/>
       </node>
       <node id="195">
         <label>include/sphinxbase/fsg_model.h</label>
@@ -117,9 +95,31 @@
         <childnode refid="201" relation="include">
         </childnode>
       </node>
-      <node id="203">
-        <label>src/libsphinxbase/util/bitvec.c</label>
-        <link refid="bitvec_8c_source"/>
+      <node id="200">
+        <label>src/libsphinxbase/lm/jsgf_scanner.c</label>
+        <link refid="jsgf__scanner_8c_source"/>
+      </node>
+      <node id="199">
+        <label>src/libsphinxbase/lm/jsgf_parser.c</label>
+        <link refid="jsgf__parser_8c_source"/>
+      </node>
+      <node id="198">
+        <label>src/libsphinxbase/lm/jsgf_internal.h</label>
+        <link refid="jsgf__internal_8h"/>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+      </node>
+      <node id="202">
+        <label>src/libsphinxbase/lm/fsg_model.c</label>
+        <link refid="fsg__model_8c_source"/>
+      </node>
+      <node id="197">
+        <label>src/libsphinxbase/lm/jsgf.c</label>
+        <link refid="jsgf_8c"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="define">
