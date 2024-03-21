@@ -77,12 +77,19 @@ class NetworkedServer : public Server {
                                // This is incremented by 1 on each go. This
                                // avoids unfairly favoring some clients over
                                // others
+        //Modification----------------------------------------------------------------
+        int socket_fd; // The file descriptor for the server socket
+        //Modification----------------------------------------------------------------
 
         void printDebugStats() const;
 
         // Helper Functions
         void removeClient(int fd);
         bool checkRecv(int recvd, int expected, int fd);
+
+        void setSocketFd(int fd);
+
+        void checkIncomingClients();
     public:
         NetworkedServer(int nthreads, std::string ip, int port, int nclients);
         ~NetworkedServer();
