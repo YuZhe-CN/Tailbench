@@ -33,6 +33,7 @@
 #include <sys/socket.h>
 #include <netdb.h>
 #include <unistd.h>
+#include <fcntl.h>
 
 #include <algorithm>
 #include <cstdlib>
@@ -90,7 +91,7 @@ NetworkedServer::NetworkedServer(int nthreads, std::string ip, int port,
 
     int yes = 1;
     // Modification of the socket options SOCK_NONBLOCK
-    if (setsockopt(listener, SOL_SOCKET, SO_REUSEADDR | SOCK_NONBLOCK, &yes, sizeof(yes)) == -1)
+    if (setsockopt(listener, SOL_SOCKET, SO_REUSEADDR, &yes, sizeof(yes)) == -1)
     {
         std::cerr << "setsockopt() failed: " << strerror(errno) << std::endl;
         exit(-1);
@@ -357,6 +358,8 @@ void NetworkedServer::checkIncomingClients() {
     struct sockaddr_storage clientAddr;
     socklen_t clientAddrSize;
 
+    fcntl(socket_fd, F_SETFL, O_NONBLOCK);
+
     memset(&clientAddr, 0, clientAddrSize);
     clientAddrSize = sizeof(clientAddr);
     int clientFd = accept(socket_fd,
@@ -375,6 +378,7 @@ void NetworkedServer::checkIncomingClients() {
         clientFds.push_back(clientFd);
         std::cout << "New client connected" << std::endl;
     }
+
 }
 //Modification----------------------------------------------------------------
 
