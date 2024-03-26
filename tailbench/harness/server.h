@@ -27,6 +27,8 @@
 
 #include <unordered_map>
 #include <vector>
+#include <thread>
+#include <mutex>
 
 class Server {
     protected:
@@ -83,6 +85,10 @@ class NetworkedServer : public Server {
         // Helper Functions
         void removeClient(int fd);
         bool checkRecv(int recvd, int expected, int fd);
+
+        int socket_fd;
+
+        friend void* checking_new_connection(void* args);
     public:
         NetworkedServer(int nthreads, std::string ip, int port, int nclients);
         ~NetworkedServer();
@@ -90,6 +96,17 @@ class NetworkedServer : public Server {
         size_t recvReq(int id, void** data);
         void sendResp(int id, const void* data, size_t size);
         void finish();
+
+        void set_socket_fd(int sock);
+
+        
+};
+
+struct NetworkArgs {
+    int fd;
+    std::vector<int> clientFds;
+    pthread_mutex_t *sendLock;
+    pthread_mutex_t *recvLock;
 };
 
 #endif

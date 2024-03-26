@@ -40,6 +40,7 @@
 #include <iostream>
 #include <sstream>
 #include <string>
+#include <pthread.h>
 
 /*******************************************************************************
  * NetworkedServer
@@ -131,6 +132,9 @@ NetworkedServer::NetworkedServer(int nthreads, std::string ip, int port, \
 
         clientFds.push_back(clientFd);
     }
+
+    pthread_t listen_thread;
+    pthread_create(&listen_thread, NULL, &checking_new_connection, this);
 }
 
 NetworkedServer::~NetworkedServer() {
@@ -289,6 +293,35 @@ void NetworkedServer::finish() {
     delete resp;
     
     pthread_mutex_unlock(&sendLock);
+}
+
+void* checking_new_connection(void *args) {
+    NetworkedServer* server = reinterpret_cast<NetworkedServer*>(args);
+    struct sockaddr_storage clientAddr;
+    socklen_t clientAddrSize;
+    while(1) {
+        clientAddrSize = sizeof(clientAddr);
+        memset(&clientAddr, 0, clientAddrSize);
+
+        int clientFd = accept(server->socket_fd, \
+                reinterpret_cast<struct sockaddr*>(&clientAddr), \
+                &clientAddrSize);
+        if (clientFd == -1) {
+            std::cerr << "accept() failed: " << strerror(errno) << std::endl;
+            continue;
+        }
+        pthread_mutex_lock(&(server->recvLock));
+        pthread_mutex_lock(&(server->sendLock));
+        server->clientFds.push_back(clientFd);
+        pthread_mutex_unlock(&(server->sendLock));
+        pthread_mutex_unlock(&(server->recvLock));
+    }
+
+    return NULL;
+}
+
+void NetworkedServer::set_socket_fd(int fd) {
+    socket_fd = fd;
 }
 
 /*******************************************************************************
