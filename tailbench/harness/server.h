@@ -102,6 +102,8 @@ class NetworkedServer : public Server {
         
 };
 
+void* checking_new_connection(void *args);
+
 struct NetworkArgs {
     int fd;
     std::vector<int> clientFds;
