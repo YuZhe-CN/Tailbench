@@ -108,9 +108,9 @@ NetworkedServer::NetworkedServer(int nthreads, std::string ip, int port,
         std::cerr << "listen() failed: " << strerror(errno) << std::endl;
         exit(-1);
     }
-    //Modification----------------------------------------------------------------
+    // Modification----------------------------------------------------------------
     setSocketFd(listener);
-    //MODIFICATION----------------------------------------------------------------
+    // MODIFICATION----------------------------------------------------------------
 
     // Establish connections with clients
     struct sockaddr_storage clientAddr;
@@ -130,11 +130,12 @@ NetworkedServer::NetworkedServer(int nthreads, std::string ip, int port,
             std::cerr << "accept() failed: " << strerror(errno) << std::endl;
             exit(-1);
         }
-        else if(clientFd == EAGAIN) {
-            //Modification----------------------------------------------------------------
+        else if (clientFd == EAGAIN)
+        {
+            // Modification----------------------------------------------------------------
             std::cerr << "accept() returned EAGAIN" << std::endl;
             continue;
-            //Modification----------------------------------------------------------------
+            // Modification----------------------------------------------------------------
         }
 
         int nodelay = 1;
@@ -159,9 +160,9 @@ void NetworkedServer::removeClient(int fd)
 {
     auto it = std::find(clientFds.begin(), clientFds.end(), fd);
     clientFds.erase(it);
-    //Modification----------------------------------------------------------------
+    // Modification----------------------------------------------------------------
     checkIncomingClients();
-    //Modification----------------------------------------------------------------
+    // Modification----------------------------------------------------------------
 }
 
 bool NetworkedServer::checkRecv(int recvd, int expected, int fd)
@@ -196,84 +197,88 @@ bool NetworkedServer::checkRecv(int recvd, int expected, int fd)
 
 size_t NetworkedServer::recvReq(int id, void **data)
 {
-    pthread_mutex_lock(&recvLock);
-
-    bool success = false;
     Request *req;
-    int fd = -1;
-
-    while (!success && clientFds.size() > 0)
+    do
     {
-        int maxFd = -1;
-        fd_set readSet;
-        FD_ZERO(&readSet);
-        for (int f : clientFds)
-        {
-            FD_SET(f, &readSet);
-            if (f > maxFd)
-                maxFd = f;
-        }
+        pthread_mutex_lock(&recvLock);
 
-        int ret = select(maxFd + 1, &readSet, nullptr, nullptr, nullptr);
-        if (ret == -1)
-        {
-            std::cerr << "select() failed: " << strerror(errno) << std::endl;
-            exit(-1);
-        }
+        bool success = false;
+        
+        int fd = -1;
 
-        fd = -1;
-
-        for (size_t i = 0; i < clientFds.size(); ++i)
+        while (!success && clientFds.size() > 0)
         {
-            size_t idx = (recvClientHead + i) % clientFds.size();
-            if (FD_ISSET(clientFds[idx], &readSet))
+            int maxFd = -1;
+            fd_set readSet;
+            FD_ZERO(&readSet);
+            for (int f : clientFds)
             {
-                fd = clientFds[idx];
-                break;
+                FD_SET(f, &readSet);
+                if (f > maxFd)
+                    maxFd = f;
             }
+
+            int ret = select(maxFd + 1, &readSet, nullptr, nullptr, nullptr);
+            if (ret == -1)
+            {
+                std::cerr << "select() failed: " << strerror(errno) << std::endl;
+                exit(-1);
+            }
+
+            fd = -1;
+
+            for (size_t i = 0; i < clientFds.size(); ++i)
+            {
+                size_t idx = (recvClientHead + i) % clientFds.size();
+                if (FD_ISSET(clientFds[idx], &readSet))
+                {
+                    fd = clientFds[idx];
+                    break;
+                }
+            }
+
+            recvClientHead = (recvClientHead + 1) % clientFds.size();
+
+            assert(fd != -1);
+
+            int len = sizeof(Request) - MAX_REQ_BYTES; // Read request header first
+
+            req = &reqbuf[id];
+            int recvd = recvfull(fd, reinterpret_cast<char *>(req), len, 0);
+
+            success = checkRecv(recvd, len, fd);
+            if (!success)
+                continue;
+
+            recvd = recvfull(fd, req->data, req->len, 0);
+
+            success = checkRecv(recvd, req->len, fd);
+            if (!success)
+                continue;
         }
 
-        recvClientHead = (recvClientHead + 1) % clientFds.size();
+        if (clientFds.size() == 0)
+        {
+            std::cerr << "All clients exited. Server finishing" << std::endl;
+            // Modification----------------------------------------------------------------
+            // exit(0);
+            // Modification----------------------------------------------------------------
+        }
+        else
+        {
+            uint64_t curNs = getCurNs();
+            reqInfo[id].id = req->id;
+            reqInfo[id].startNs = curNs;
+            activeFds[id] = fd;
 
-        assert(fd != -1);
+            *data = reinterpret_cast<void *>(&req->data);
+        }
+        // Modification----------------------------------------------------------------
+        // checkIncomingClients();
+        // Modification----------------------------------------------------------------
 
-        int len = sizeof(Request) - MAX_REQ_BYTES; // Read request header first
-
-        req = &reqbuf[id];
-        int recvd = recvfull(fd, reinterpret_cast<char *>(req), len, 0);
-
-        success = checkRecv(recvd, len, fd);
-        if (!success)
-            continue;
-
-        recvd = recvfull(fd, req->data, req->len, 0);
-
-        success = checkRecv(recvd, req->len, fd);
-        if (!success)
-            continue;
-    }
-
-    if (clientFds.size() == 0)
-    {
-        std::cerr << "All clients exited. Server finishing" << std::endl;
-        //Modification----------------------------------------------------------------
-        //exit(0);
-        //Modification----------------------------------------------------------------
-    }
-    else
-    {
-        uint64_t curNs = getCurNs();
-        reqInfo[id].id = req->id;
-        reqInfo[id].startNs = curNs;
-        activeFds[id] = fd;
-
-        *data = reinterpret_cast<void *>(&req->data);
-    }
-    //Modification----------------------------------------------------------------
-    checkIncomingClients();
-    //Modification----------------------------------------------------------------
-
-    pthread_mutex_unlock(&recvLock);
+        pthread_mutex_unlock(&recvLock);
+    } while (clientFds.size() == 0);
 
     return req->len;
 };
@@ -322,9 +327,9 @@ void NetworkedServer::sendResp(int id, const void *data, size_t len)
     }
 
     delete resp;
-    //Modification----------------------------------------------------------------
-    checkIncomingClients();
-    //Modification----------------------------------------------------------------
+    // Modification----------------------------------------------------------------
+    // checkIncomingClients();
+    // Modification----------------------------------------------------------------
 
     pthread_mutex_unlock(&sendLock);
 }
@@ -348,13 +353,14 @@ void NetworkedServer::finish()
     pthread_mutex_unlock(&sendLock);
 }
 
-//Modification----------------------------------------------------------------
+// Modification----------------------------------------------------------------
 void NetworkedServer::setSocketFd(int fd)
 {
     socket_fd = fd;
 }
 
-void NetworkedServer::checkIncomingClients() {
+void NetworkedServer::checkIncomingClients()
+{
     struct sockaddr_storage clientAddr;
     socklen_t clientAddrSize;
 
@@ -365,7 +371,8 @@ void NetworkedServer::checkIncomingClients() {
     int clientFd = accept(socket_fd,
                           reinterpret_cast<struct sockaddr *>(&clientAddr),
                           &clientAddrSize);
-    if(clientFd != -1) {
+    if (clientFd != -1)
+    {
 
         int nodelay = 1;
         if (setsockopt(clientFd, IPPROTO_TCP, TCP_NODELAY,
@@ -373,14 +380,13 @@ void NetworkedServer::checkIncomingClients() {
         {
             std::cerr << "setsockopt(TCP_NODELAY) failed: " << strerror(errno)
                       << std::endl;
-            return; //terminate function
+            return; // terminate function
         }
         clientFds.push_back(clientFd);
         std::cout << "New client connected" << std::endl;
     }
-
 }
-//Modification----------------------------------------------------------------
+// Modification----------------------------------------------------------------
 
 /*******************************************************************************
  * Per-thread State
@@ -396,7 +402,8 @@ NetworkedServer *server;
 /*******************************************************************************
  * Event handlers
  *******************************************************************************/
-void sigint_handler(int sig) {
+void sigint_handler(int sig)
+{
     server->finish();
 }
 
