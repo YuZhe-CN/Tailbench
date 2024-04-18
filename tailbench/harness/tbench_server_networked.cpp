@@ -257,6 +257,24 @@ size_t NetworkedServer::recvReq(int id, void **data)
         if (clientFds.size() == 0)
         {
             std::cerr << "All clients exited. Server finishing" << std::endl;
+            //Modification
+            int maxFd = -1;
+            fd_set readSet;
+            FD_ZERO(&readSet);
+
+            
+            FD_SET(listenfd, &readSet);
+            maxFd = listenfd;
+            
+
+            for (int f : clientFds)
+            {
+                FD_SET(f, &readSet);
+                if (f > maxFd)
+                    maxFd = f;
+            }
+            checkNewConnection(listenfd, &readSet);
+            //Modification
             // exit(0);
         }
         else
@@ -341,15 +359,18 @@ void NetworkedServer::finish()
 
     pthread_mutex_unlock(&sendLock);
 }
-
+//Modification
 void NetworkedServer::set_listenfd(int fd) {
     listenfd = fd;
 }
 
+
 void NetworkedServer::checkNewConnection(int fd, fd_set *set) {
     struct sockaddr_storage clientAddr;
     socklen_t clientAddrSize;
+    std::cout << "Checking new connection" << std::endl;
     if(FD_ISSET(fd, set)) {
+        std::cout << "New connection" << std::endl;
         clientAddrSize = sizeof(clientAddr);
         memset(&clientAddr, 0, clientAddrSize);
 
@@ -375,6 +396,7 @@ void NetworkedServer::checkNewConnection(int fd, fd_set *set) {
         clientFds.push_back(clientFd);
     }
 }
+//Modification
 /*******************************************************************************
  * Per-thread State
  *******************************************************************************/
