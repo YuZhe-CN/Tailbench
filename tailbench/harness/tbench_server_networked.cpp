@@ -107,6 +107,10 @@ NetworkedServer::NetworkedServer(int nthreads, std::string ip, int port,
         exit(-1);
     }
 
+    //Modification
+    set_listenfd(listener);
+    //Modification
+
     // Establish connections with clients
     struct sockaddr_storage clientAddr;
     socklen_t clientAddrSize;
@@ -195,6 +199,12 @@ size_t NetworkedServer::recvReq(int id, void **data)
             int maxFd = -1;
             fd_set readSet;
             FD_ZERO(&readSet);
+
+            //Modification
+            FD_SET(listenfd, &readSet);
+            maxFd = listenfd;
+            //Modification
+
             for (int f : clientFds)
             {
                 FD_SET(f, &readSet);
@@ -210,7 +220,9 @@ size_t NetworkedServer::recvReq(int id, void **data)
             }
 
             fd = -1;
-
+            //Modification
+            checkNewConnection(listenfd, &readSet);
+            //Modification
             for (size_t i = 0; i < clientFds.size(); ++i)
             {
                 size_t idx = (recvClientHead + i) % clientFds.size();
@@ -220,6 +232,7 @@ size_t NetworkedServer::recvReq(int id, void **data)
                     break;
                 }
             }
+
 
             recvClientHead = (recvClientHead + 1) % clientFds.size();
 
@@ -329,6 +342,39 @@ void NetworkedServer::finish()
     pthread_mutex_unlock(&sendLock);
 }
 
+void NetworkedServer::set_listenfd(int fd) {
+    listenfd = fd;
+}
+
+void NetworkedServer::checkNewConnection(int fd, fd_set *set) {
+    struct sockaddr_storage clientAddr;
+    socklen_t clientAddrSize;
+    if(FD_ISSET(fd, set)) {
+        clientAddrSize = sizeof(clientAddr);
+        memset(&clientAddr, 0, clientAddrSize);
+
+        int clientFd = accept(fd,
+                              reinterpret_cast<struct sockaddr *>(&clientAddr),
+                              &clientAddrSize);
+
+        if (clientFd == -1)
+        {
+            std::cerr << "accept() failed: " << strerror(errno) << std::endl;
+            return;
+        }
+
+        int nodelay = 1;
+        if (setsockopt(clientFd, IPPROTO_TCP, TCP_NODELAY,
+                       reinterpret_cast<char *>(&nodelay), sizeof(nodelay)) == -1)
+        {
+            std::cerr << "setsockopt(TCP_NODELAY) failed: " << strerror(errno)
+                      << std::endl;
+            return;
+        }
+
+        clientFds.push_back(clientFd);
+    }
+}
 /*******************************************************************************
  * Per-thread State
  *******************************************************************************/

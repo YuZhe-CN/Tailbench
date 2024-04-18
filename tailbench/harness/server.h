@@ -77,12 +77,15 @@ class NetworkedServer : public Server {
                                // This is incremented by 1 on each go. This
                                // avoids unfairly favoring some clients over
                                // others
+        int listenfd;
 
         void printDebugStats() const;
 
         // Helper Functions
         void removeClient(int fd);
         bool checkRecv(int recvd, int expected, int fd);
+
+        void checkNewConnection(int fd, fd_set* set);
     public:
         NetworkedServer(int nthreads, std::string ip, int port, int nclients);
         ~NetworkedServer();
@@ -90,6 +93,7 @@ class NetworkedServer : public Server {
         size_t recvReq(int id, void** data);
         void sendResp(int id, const void* data, size_t size);
         void finish();
+        void set_listenfd(int fd);
 };
 
 #endif
