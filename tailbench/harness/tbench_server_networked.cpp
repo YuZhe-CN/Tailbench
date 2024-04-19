@@ -54,6 +54,9 @@ NetworkedServer::NetworkedServer(int nthreads, std::string ip, int port,
     reqbuf = new Request[nthreads];
 
     activeFds.resize(nthreads);
+    //Modification
+    clientFds = std::vector<int>();
+    //Modification
 
     recvClientHead = 0;
 
