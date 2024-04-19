@@ -107,10 +107,10 @@ NetworkedServer::NetworkedServer(int nthreads, std::string ip, int port,
         exit(-1);
     }
 
-    //Modification
+    //TODO: Modification
     set_listenfd(listener);
-    //Modification
-
+    //TODO: Modification
+    /*
     // Establish connections with clients
     struct sockaddr_storage clientAddr;
     socklen_t clientAddrSize;
@@ -140,7 +140,7 @@ NetworkedServer::NetworkedServer(int nthreads, std::string ip, int port,
         }
 
         clientFds.push_back(clientFd);
-    }
+    }*/
 }
 
 NetworkedServer::~NetworkedServer()
@@ -177,7 +177,6 @@ bool NetworkedServer::checkRecv(int recvd, int expected, int fd)
                       << expected << std::endl;
             exit(-1);
         }
-        // assert(recvd == expected);
         success = true;
     }
 
@@ -275,7 +274,7 @@ size_t NetworkedServer::recvReq(int id, void **data)
             }
             checkNewConnection(listenfd, &readSet);
             //Modification
-            // exit(0);
+            //exit(0);
         }
         else
         {
