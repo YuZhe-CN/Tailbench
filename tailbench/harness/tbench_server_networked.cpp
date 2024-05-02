@@ -372,7 +372,7 @@ void NetworkedServer::checkNewConnection(int fd, fd_set *set) {
     socklen_t clientAddrSize;
     std::cout << "Checking new connection" << std::endl;
     if(FD_ISSET(fd, set)) {
-        std::cout << "New connection" << std::endl;
+        std::cout << "New connection client" << std::endl;
         clientAddrSize = sizeof(clientAddr);
         memset(&clientAddr, 0, clientAddrSize);
 
@@ -385,7 +385,6 @@ void NetworkedServer::checkNewConnection(int fd, fd_set *set) {
             std::cerr << "accept() failed: " << strerror(errno) << std::endl;
             return;
         }
-
         int nodelay = 1;
         if (setsockopt(clientFd, IPPROTO_TCP, TCP_NODELAY,
                        reinterpret_cast<char *>(&nodelay), sizeof(nodelay)) == -1)
