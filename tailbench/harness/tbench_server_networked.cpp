@@ -376,9 +376,9 @@ void NetworkedServer::checkNewConnection(int fd, fd_set *set) {
         clientAddrSize = sizeof(clientAddr);
         memset(&clientAddr, 0, clientAddrSize);
 
-        int clientFd = accept(fd,
+        int clientFd = accept4(fd,
                               reinterpret_cast<struct sockaddr *>(&clientAddr),
-                              &clientAddrSize);
+                              &clientAddrSize, SOCK_NONBLOCK);
 
         if (clientFd == -1)
         {
