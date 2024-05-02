@@ -40,6 +40,9 @@
 #include <iostream>
 #include <sstream>
 #include <string>
+// Modification
+#include <fcntl.h>
+// Modification
 
 /*******************************************************************************
  * NetworkedServer
@@ -54,9 +57,9 @@ NetworkedServer::NetworkedServer(int nthreads, std::string ip, int port,
     reqbuf = new Request[nthreads];
 
     activeFds.resize(nthreads);
-    //Modification
+    // Modification
     clientFds = std::vector<int>();
-    //Modification
+    // Modification
 
     recvClientHead = 0;
 
@@ -85,12 +88,15 @@ NetworkedServer::NetworkedServer(int nthreads, std::string ip, int port,
     // Create listening socket
     int listener = socket(servInfo->ai_family, servInfo->ai_socktype,
                           servInfo->ai_protocol);
+
     if (listener == -1)
     {
         std::cerr << "socket() failed: " << strerror(errno) << std::endl;
         exit(-1);
     }
-
+    // Modification
+    fcntl(listener, O_NONBLOCK);
+    // Modification
     int yes = 1;
     if (setsockopt(listener, SOL_SOCKET, SO_REUSEADDR, &yes, sizeof(yes)) == -1)
     {
@@ -110,9 +116,9 @@ NetworkedServer::NetworkedServer(int nthreads, std::string ip, int port,
         exit(-1);
     }
 
-    //TODO: Modification
+    // TODO: Modification
     set_listenfd(listener);
-    //TODO: Modification
+    // TODO: Modification
     /*
     // Establish connections with clients
     struct sockaddr_storage clientAddr;
@@ -202,10 +208,10 @@ size_t NetworkedServer::recvReq(int id, void **data)
             fd_set readSet;
             FD_ZERO(&readSet);
 
-            //Modification
+            // Modification
             FD_SET(listenfd, &readSet);
             maxFd = listenfd;
-            //Modification
+            // Modification
 
             for (int f : clientFds)
             {
@@ -222,9 +228,9 @@ size_t NetworkedServer::recvReq(int id, void **data)
             }
 
             fd = -1;
-            //Modification
+            // Modification
             checkNewConnection(listenfd, &readSet);
-            //Modification
+            // Modification
             for (size_t i = 0; i < clientFds.size(); ++i)
             {
                 size_t idx = (recvClientHead + i) % clientFds.size();
@@ -234,7 +240,6 @@ size_t NetworkedServer::recvReq(int id, void **data)
                     break;
                 }
             }
-
 
             recvClientHead = (recvClientHead + 1) % clientFds.size();
 
@@ -259,15 +264,13 @@ size_t NetworkedServer::recvReq(int id, void **data)
         if (clientFds.size() == 0)
         {
             std::cerr << "All clients exited. Server finishing" << std::endl;
-            //Modification
+            // Modification
             int maxFd = -1;
             fd_set readSet;
             FD_ZERO(&readSet);
 
-            
             FD_SET(listenfd, &readSet);
             maxFd = listenfd;
-            
 
             for (int f : clientFds)
             {
@@ -276,8 +279,8 @@ size_t NetworkedServer::recvReq(int id, void **data)
                     maxFd = f;
             }
             checkNewConnection(listenfd, &readSet);
-            //Modification
-            //exit(0);
+            // Modification
+            // exit(0);
         }
         else
         {
@@ -361,24 +364,26 @@ void NetworkedServer::finish()
 
     pthread_mutex_unlock(&sendLock);
 }
-//Modification
-void NetworkedServer::set_listenfd(int fd) {
+// Modification
+void NetworkedServer::set_listenfd(int fd)
+{
     listenfd = fd;
 }
 
-
-void NetworkedServer::checkNewConnection(int fd, fd_set *set) {
+void NetworkedServer::checkNewConnection(int fd, fd_set *set)
+{
     struct sockaddr_storage clientAddr;
     socklen_t clientAddrSize;
     std::cout << "Checking new connection" << std::endl;
-    if(FD_ISSET(fd, set)) {
+    if (FD_ISSET(fd, set))
+    {
         std::cout << "New connection client" << std::endl;
         clientAddrSize = sizeof(clientAddr);
         memset(&clientAddr, 0, clientAddrSize);
 
         int clientFd = accept4(fd,
-                              reinterpret_cast<struct sockaddr *>(&clientAddr),
-                              &clientAddrSize, SOCK_NONBLOCK);
+                               reinterpret_cast<struct sockaddr *>(&clientAddr),
+                               &clientAddrSize, SOCK_NONBLOCK);
 
         if (clientFd == -1)
         {
@@ -397,7 +402,7 @@ void NetworkedServer::checkNewConnection(int fd, fd_set *set) {
         clientFds.push_back(clientFd);
     }
 }
-//Modification
+// Modification
 /*******************************************************************************
  * Per-thread State
  *******************************************************************************/
