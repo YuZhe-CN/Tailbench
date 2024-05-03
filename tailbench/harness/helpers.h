@@ -65,9 +65,9 @@ static int sendfull(int fd, const char* msg, int len, int flags) {
     int remaining = len;
     const char* cur = msg;
     int sent;
-
+    
     while (remaining > 0) {
-        sent = send(fd, reinterpret_cast<const void*>(cur), remaining, flags);
+        sent = send(fd, reinterpret_cast<const void*>(cur), remaining, flags | MSG_NOSIGNAL);
         if (sent == -1) {
             std::cerr << "send() failed: " << strerror(errno) << std::endl;
             break;

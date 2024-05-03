@@ -94,9 +94,7 @@ NetworkedServer::NetworkedServer(int nthreads, std::string ip, int port,
         std::cerr << "socket() failed: " << strerror(errno) << std::endl;
         exit(-1);
     }
-    // Modification
-    fcntl(listener, O_NONBLOCK);
-    // Modification
+
     int yes = 1;
     if (setsockopt(listener, SOL_SOCKET, SO_REUSEADDR, &yes, sizeof(yes)) == -1)
     {
@@ -116,8 +114,18 @@ NetworkedServer::NetworkedServer(int nthreads, std::string ip, int port,
         exit(-1);
     }
 
-    // TODO: Modification
+    // Modification
     set_listenfd(listener);
+    // Salva
+    {
+        int flags = fcntl(listener, F_GETFL, 0);
+        fcntl(listener, F_SETFL, flags | O_NONBLOCK);
+    }
+    // Salva
+    // Modification
+
+    // Salva
+
     // TODO: Modification
     /*
     // Establish connections with clients
@@ -199,6 +207,45 @@ size_t NetworkedServer::recvReq(int id, void **data)
     {
         pthread_mutex_lock(&recvLock);
 
+        // Modification
+        {
+            // Establish connections with clients
+            struct sockaddr_storage clientAddr;
+            socklen_t clientAddrSize;
+
+            // for (int c = 0; c < nclients; ++c)
+            //{
+            clientAddrSize = sizeof(clientAddr);
+            memset(&clientAddr, 0, clientAddrSize);
+
+            int clientFd = accept(listenfd,
+                                  reinterpret_cast<struct sockaddr *>(&clientAddr),
+                                  &clientAddrSize);
+
+            if (clientFd == -1)
+            {
+                if (errno != EAGAIN && errno != EWOULDBLOCK)
+                {
+                    std::cerr << "accept() failed: " << strerror(errno) << std::endl;
+                    exit(-1);
+                }
+            }
+            else
+            {
+                int nodelay = 1;
+                if (setsockopt(clientFd, IPPROTO_TCP, TCP_NODELAY,
+                               reinterpret_cast<char *>(&nodelay), sizeof(nodelay)) == -1)
+                {
+                    std::cerr << "setsockopt(TCP_NODELAY) failed: " << strerror(errno)
+                              << std::endl;
+                    exit(-1);
+                }
+                clientFds.push_back(clientFd);
+            }
+            //}
+        }
+        // Modification
+
         bool success = false;
         int fd = -1;
 
@@ -209,8 +256,8 @@ size_t NetworkedServer::recvReq(int id, void **data)
             FD_ZERO(&readSet);
 
             // Modification
-            FD_SET(listenfd, &readSet);
-            maxFd = listenfd;
+            //FD_SET(listenfd, &readSet);
+            //maxFd = listenfd;
             // Modification
 
             for (int f : clientFds)
@@ -229,7 +276,7 @@ size_t NetworkedServer::recvReq(int id, void **data)
 
             fd = -1;
             // Modification
-            checkNewConnection(listenfd, &readSet);
+            //checkNewConnection(listenfd, &readSet);
             // Modification
             for (size_t i = 0; i < clientFds.size(); ++i)
             {
@@ -263,9 +310,9 @@ size_t NetworkedServer::recvReq(int id, void **data)
 
         if (clientFds.size() == 0)
         {
-            std::cerr << "All clients exited. Server finishing" << std::endl;
             // Modification
-            int maxFd = -1;
+            //std::cerr << "All clients exited. Server finishing" << std::endl;
+            /*int maxFd = -1;
             fd_set readSet;
             FD_ZERO(&readSet);
 
@@ -278,7 +325,7 @@ size_t NetworkedServer::recvReq(int id, void **data)
                 if (f > maxFd)
                     maxFd = f;
             }
-            checkNewConnection(listenfd, &readSet);
+            checkNewConnection(listenfd, &readSet);*/
             // Modification
             // exit(0);
         }
@@ -293,6 +340,7 @@ size_t NetworkedServer::recvReq(int id, void **data)
         }
 
         pthread_mutex_unlock(&recvLock);
+
     } while (clientFds.size() == 0);
 
     return req->len;
@@ -316,7 +364,9 @@ void NetworkedServer::sendResp(int id, const void *data, size_t len)
     int fd = activeFds[id];
     int totalLen = sizeof(Response) - MAX_RESP_BYTES + len;
     int sent = sendfull(fd, reinterpret_cast<const char *>(resp), totalLen, 0);
-    assert(sent == totalLen);
+    //Modification
+    //assert(sent == totalLen);
+    //Modification
 
     ++finishedReqs;
 
